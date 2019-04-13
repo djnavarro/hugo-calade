@@ -1,16 +1,14 @@
 ---
-author: Yihui Xie
-categories:
-- Example
-- Hugo
-date: "2016-02-14"
+author: Danielle Navarro
 tags:
 - blogdown
 - Markdown
 - MathJax
 - Pandoc
 - RStudio
-title: A Plain Markdown Post
+title: "A post in plain markdown"
+date: "2019-04-12"
+slug: a-post-in-plain-markdown 
 ---
 
 This sample post is mainly for [**blogdown**](https://github.com/rstudio/blogdown) users. If you do not use **blogdown**, you can skip the first section.

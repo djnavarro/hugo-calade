@@ -1,9 +1,12 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2015-07-23T21:13:14-05:00
-categories: ["R"]
+title: "A post in R Markdown"
+author: "Danielle Navarro"
+date: "2019-04-13"
+slug: a-post-in-r-markdown
 tags: ["R Markdown", "plot", "regression"]
+header:
+  caption: "A blank ggplot"
+  image: 'header/theme_grey.png'
 ---
 
 ```{r setup, include=FALSE}
