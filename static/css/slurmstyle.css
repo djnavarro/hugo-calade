@@ -58,6 +58,7 @@ body {
   background-color: var(--behind);
   color: var(--primary);
   counter-reset: sidenote-counter;
+  margin: 0;
 }
 .main-content {
   margin-left: auto;
@@ -192,12 +193,14 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 
 /* formatting for header images */
 .article-header {
+  padding: 0;
   max-width: 100%;
   width: 100%;
   position: relative; /* Required for caption positioning */
   clear: both;
 }
 .article-banner {
+  padding: 0;
   max-width: 100%;
   width: 100%;
   height: auto;
