@@ -1,10 +1,19 @@
 @charset "UTF-8";
 
-:root {
+
+/* :root {
   --primary: #111;
   --subtle: #ccc;
   --behind: #fcfcfc;
+} */
+
+
+:root {
+  --primary: #eee;
+  --subtle: #aaa;
+  --behind: #111;
 }
+
 
 /* font size and family */
 html {font-size: 15px;}
