@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* font size and family */
+html {font-size: 15px;}
+body {font-family: Palatino, "Palatino Linotype", serif;}
+code {font-family: Monaco, monospace;}
+
+/* main text elements */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  background-color: #f8f8f8;
+  color: #111;
+  max-width: 800px;
+  counter-reset: sidenote-counter;
+}
+p, ol, ul {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+p {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+}
+
+/* headings */
+h1 {
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.7rem;
+  line-height: 1;
+}
+h2 {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+/* blockquotes and code blocks */
+blockquote {
+  background: none;
+  border-left: 1px solid #ccc;
+  padding: 3px 1em 3px;
+  max-width: 800px;
+}
+pre {
+  background: none;
+  margin-left: 5%;
+  border-left: 1px solid #ccc;
+  padding: 1em;
+  overflow-x: auto;
+}
+code {
+  background: none;
+  max-width: 800px;
+}
+
+/* links */
+a:link, a:visited {
+  color: inherit;
+}
+
+/* horizontal rule styling */
+hr {
+  display: block;
+  height: 1px;
+  width: 75%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* header and footer areas */
+.menu { padding: 0; }
+.menu li { display: inline-block; }
+.article-meta, .menu a {
+  text-decoration: none;
+  background: #eee;
+  padding-left: 5%;
+  padding: 5px;
+}
+.menu, .article-meta { text-align: left; }
+.title { font-size: 1.1em; }
+footer {
+  text-align: center;
+  color: #ddd;
+}
+footer a { text-decoration: none; }
+
+/* miscellaneous elements */
+img, iframe, video { max-width: 100%; }
+main { hyphens: auto; }
+
+/* table formatting */
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
