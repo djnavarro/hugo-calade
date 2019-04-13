@@ -40,6 +40,13 @@ footer {
 }
 footer a { text-decoration: none; }
 
+p, ol, ul { font-size: 1.4rem;
+            line-height: 2rem; }
+
+p { margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline; }
 
 /* misc elements */
 img, iframe, video { max-width: 100%; }
