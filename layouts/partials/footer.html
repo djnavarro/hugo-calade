@@ -1,7 +1,7 @@
   <footer>
   {{ partial "foot_custom.html" . }}
   {{ with .Site.Params.footer }}
-  <hr/>
+  <br/><br/>
   {{ . | markdownify }}
   {{ end }}
   </footer>
