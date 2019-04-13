@@ -1,0 +1,13 @@
+name = "SLURM"
+license = "MIT"
+licenselink = "https://github.com/djnavarro/hugo-slurm/blob/master/LICENSE.md"
+description = "SLURM: A slightly less unremittingly minimal Hugo theme for blogdown"
+homepage = "https://github.com/djnavarro/hugo-slurm/"
+tags = ["minimal", "blog", "personal", "clean", "simple", "starter"]
+features = ["blog"]
+min_version = "0.0.1"
+
+[author]
+  name = "Danielle Navarro"
+  homepage = "https://djnavarro.net"
+
