@@ -9,13 +9,6 @@
   </head>
 
   <body>
-    {{ partial "feature.html" . }}
+    {{ partial "header_image.html" . }}
     <div class="main-content">
-    <nav>
-    <ul class="menu">
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-    <br/>
-    </nav>
+      {{ partial "menu_strip.html" . }}
