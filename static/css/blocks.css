@@ -6,11 +6,19 @@ blockquote {
   padding: 3px 1em 3px;
 }
 
-pre, code {
-  background: none;
-  border: 1px solid #ccc;
+
+/* pre and code */
+pre {
+  border: 1px solid #ddd;
   box-shadow: 5px 5px 5px #eee;
-  padding: 3px 1em 3px;
+  padding: 1em;
   overflow-x: auto;
+}
+code {
+  background: #cccccc;
+}
+pre code {
+  background: none;
   max-width: 800px;
 }
+
