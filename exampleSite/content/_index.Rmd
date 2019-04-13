@@ -2,8 +2,7 @@
 title: Home
 ---
 
-# HUGO SLURM
-
+# Slurm theme for Hugo
 
 
 ```{r, warning=FALSE}
