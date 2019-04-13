@@ -1,24 +1,23 @@
 /* blockquotes and code blocks */
 
 blockquote {
-  background: #f9f9f9;
+  background: none;
   border-left: 1px solid #ccc;
   padding: 3px 1em 3px;
+  max-width: 800px;
 }
-
 
 /* pre and code */
 pre {
-  border: 1px solid #ddd;
-  box-shadow: 5px 5px 5px #eee;
+  background: none;
+  border-left: 1px solid #ccc;
   padding: 1em;
   overflow-x: auto;
 }
+
 code {
-  background: #cccccc;
-}
-pre code {
   background: none;
   max-width: 800px;
 }
+
 
