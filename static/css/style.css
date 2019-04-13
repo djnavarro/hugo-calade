@@ -1,15 +1,14 @@
 @charset "UTF-8";
 
-html { font-size: 12px; }
+html { font-size: 15px; }
 
 body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 12.5%;
-  font-family: Palatino, "Palatino Linotype", serif;
   background-color: #f8f8f8;
   color: #111;
-  max-width: 1200px;
+  max-width: 800px;
   counter-reset: sidenote-counter;
 }
 
@@ -64,7 +63,10 @@ pre {
   padding: 1em;
   overflow-x: auto;
 }
-code { background: #f9f9f9; }
+code {
+  background: #eeeeee;
+  max-width: 800px;
+}
 pre code { background: none; }
 
 /* misc elements */
