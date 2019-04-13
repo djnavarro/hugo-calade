@@ -1,7 +1,6 @@
-<div class="article-meta">
-  <h1><span class="title">{{ .Title | markdownify }}</span></h1>
+<div>
+  <h1>{{ .Title | markdownify }}</h1>
   <h3>
-    {{ with .Params.author }}<span class="author">by {{.}}</span>{{ end }}
-    {{ if (gt .Params.date 0) }}, <span class="date">{{ .Date.Format "02 Jan 2006" }}</span>{{ end }}
+    {{ with .Params.author }}by {{.}}{{ end }}{{ if (gt .Params.date 0) }}, {{ .Date.Format "02 Jan 2006" }}{{ end }}
   </h3>
 </div>
