@@ -9,8 +9,8 @@ preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
 [permalinks]
-    post = "/post/:year/:month/:day/:slug/"
-    note = "/note/:year/:month/:day/:slug/"
+    post = "/post/:slug/"
+    project = "/project/:slug/"
 
 [[menu.main]]
     name = "Home"
