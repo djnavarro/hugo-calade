@@ -10,6 +10,7 @@ blockquote {
 /* pre and code */
 pre {
   background: none;
+  margin-left: 5%;
   border-left: 1px solid #ccc;
   padding: 1em;
   overflow-x: auto;
