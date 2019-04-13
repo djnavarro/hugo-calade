@@ -4,22 +4,25 @@
   {{ partial "header.html" . }}
 
   <body>
+    <div class="main-content">
 
-    <h1>{{ .Title }}</h1>
+      {{ partial "menu_strip.html" . }}
 
-    <ul class="terms">
-      {{ range $key, $value := .Data.Terms }}
-      <li>
-        <a href="{{ (print "/" $.Data.Plural "/" $key | urlize) | relURL }}">
-          {{ $key }}
-        </a>
-        ({{ len $value }})
-      </li>
-      {{ end }}
-    </ul>
+      <h1>{{ .Title }}</h1>
 
-    {{ partial "footer.html" . }}
+      <ul class="terms">
+        {{ range $key, $value := .Data.Terms }}
+        <li>
+          <a href="{{ (print "/" $.Data.Plural "/" $key | urlize) | relURL }}">
+            {{ $key }}
+          </a>
+          ({{ len $value }})
+        </li>
+        {{ end }}
+      </ul>
 
+      {{ partial "footer.html" . }}
+
+    </div>
   </body>
 </html>
-
