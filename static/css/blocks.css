@@ -1,0 +1,21 @@
+/* blockquotes and code blocks */
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 1px solid #ccc;
+  padding: 3px 1em 3px;
+}
+
+pre {
+  background: none;
+  border-left: 1px solid #ddd;
+  /*box-shadow: 5px 5px 5px #eee;*/
+  padding: 1em;
+  padding-left: 7%;
+  overflow-x: auto;
+}
+
+code {
+  background: #ddd;
+  max-width: 800px;
+}
