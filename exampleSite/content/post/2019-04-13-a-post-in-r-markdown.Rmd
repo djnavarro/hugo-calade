@@ -6,7 +6,7 @@ slug: a-post-in-r-markdown
 tags: ["R Markdown", "plot", "regression"]
 header:
   caption: "A blank ggplot"
-  image: 'header/theme_grey.png'
+  image: 'header/theme_dark.png'
 ---
 
 ```{r setup, include=FALSE}
