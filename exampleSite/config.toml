@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "A minimal Hugo website"
-theme = "hugo-slurm"
+theme = "hugo-slum"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -28,7 +28,6 @@ footnotereturnlinkcontents = "↩"
     name = "Tags"
     url = "/tags/"
     weight = 3
-
 
 [params]
     description = "A website built through Hugo and blogdown."

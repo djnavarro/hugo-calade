@@ -1,21 +1,22 @@
-SLURM
+SLUM
 ================
 
-**SLURM** is a Hugo theme that adapts the **Xmin** theme. The original
-theme is intended to be e**X**tremely **MIN**imal. This extension is an
-attempt to be **S**lightly **L**ess **U**n**R**ealistically **M**inimal.
-My main goal though was to make sure I understand the basics of how Hugo
-works.
+The *slum* theme for Hugo is an adaptation Yihue Xie’s *Xmin* theme that
+borrows stylistic elements from the Tufte R Markdown theme and from the
+*academic* Hugo theme. I’m not really convinced it’s useful for much,
+hence the name; this is a *somewhat-light unhelpfully-minimal* Hugo
+theme. In truth, my main goal in putting this theme together was to make
+sure I understand the basics of how Hugo works.
 
 ## Getting started
 
-To create the example site using the SLURM template into a fresh
+To create the example site using the slum template into a fresh
 directory:
 
 ``` r
 blogdown::new_site(
-  dir = "~/../Desktop/slurm", 
-  theme = "djnavarro/hugo-slurm",
+  dir = "~/../Desktop/slum", 
+  theme = "djnavarro/hugo-slum",
   theme_example = TRUE,
   sample = FALSE
 )
