@@ -13,13 +13,21 @@ To create the example site using the SLURM template into a fresh
 directory:
 
 ``` r
-site <- here::here("my_site")
-blogdown::new_site(dir = site, theme = "djnavarro/hugo-slurm") 
+blogdown::new_site(
+  dir = "~/../Desktop/slurm", 
+  theme = "djnavarro/hugo-slurm",
+  theme_example = TRUE,
+  sample = FALSE
+)
 ```
 
-To serve an existing site:
+By setting `theme_example = TRUE` (the default) it installs the example
+site, and by setting `sample = FALSE` it prevents Hugo from
+automatically including the default content.
+
+To serve an existing site, assuming that R the working directory is set
+to the home directory for the site:
 
 ``` r
-setwd(site)
 blogdown::serve_site()
 ```
