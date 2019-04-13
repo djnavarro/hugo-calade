@@ -5,7 +5,7 @@ html { font-size: 15px; }
 body {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12.5%;
+  padding-left: 5%;
   background-color: #f8f8f8;
   color: #111;
   max-width: 800px;
@@ -16,7 +16,7 @@ body {
 hr {
   display: block;
   height: 1px;
-  width: 55%;
+  width: 75%;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
@@ -29,7 +29,7 @@ hr {
 .article-meta, .menu a {
   text-decoration: none;
   background: #eee;
-  padding-left: 12.5%;
+  padding-left: 5%;
   padding: 5px;
 }
 .menu, .article-meta, footer { text-align: left; }
