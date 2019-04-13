@@ -7,14 +7,17 @@ attempt to be **S**lightly **L**ess **U**n**R**emittingly **M**inimal.
 My main goal though was to make sure I understand the basics of how Hugo
 works.
 
-## Note to self
+## Getting started
 
 To create the example site using the SLURM template into a fresh
 directory:
 
 ``` r
-blogdown::new_site(
-  dir = here::here("testSite"), 
-  theme = "djnavarro/hugo-slurm")
-)
+blogdown::new_site(dir = here::here("my_site"), theme = "djnavarro/hugo-slurm"))
+```
+
+To serve an existing site:
+
+``` r
+blogdown::serve_site(dir = here::here("my_site"))
 ```
