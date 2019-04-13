@@ -2,10 +2,16 @@
 title: Home
 ---
 
-# Slurm theme for Hugo
+# Slurm
+
+## A minimal theme for Hugo
 
 My goal in writing *slurm* is to provide minimal Hugo theme based on Yihui Xie's *Xmin* template. The name for the original theme reflects the fact that it is as "extremely minimal" theme; this extension is a "slightly less unremittingly minimal" theme. In truth though the main goal was to see if I understand the basics of CSS and Hugo. 
 
+> One is the loneliest number that you ever knew
+> Two can be as bad as one, it's the loneliest number since the number one
+
+## Examples
 
 ```{r, warning=FALSE, message=FALSE}
 library(tidyverse)

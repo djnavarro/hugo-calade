@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-html { font-size: 15px; }
+/*html { font-size: 15px; }*/
 
 body {
   margin-left: auto;
@@ -46,7 +46,7 @@ pre {
   overflow-x: auto;
 }
 code {
-  background: #eeeeee;
+  background: #ddd;
   max-width: 800px;
 }
 pre code { background: none; }
