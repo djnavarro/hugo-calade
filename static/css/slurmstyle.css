@@ -51,15 +51,19 @@ html {font-size: 15px;}
 body {font-family: et-book, Palatino, "Palatino Linotype", serif;}
 code {font-family: Monaco, monospace;}
 
+
+
 /* main text elements */
+body {
+  background-color: var(--behind);
+  color: var(--primary);
+  counter-reset: sidenote-counter;
+}
 .main-content {
   margin-left: auto;
   margin-right: auto;
   padding-left: 5%;
-  background-color: var(--behind);
-  color: var(--primary);
   max-width: 800px;
-  counter-reset: sidenote-counter;
 }
 p, ol, ul {
   font-size: 1.4rem;
