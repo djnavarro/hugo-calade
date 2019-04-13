@@ -1,18 +1,28 @@
-{{ partial "header.html" . }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
 
-{{if not .IsHome }}
-<h1>{{ .Title | markdownify }}</h1>
-{{ end }}
+  {{ partial "header.html" . }}
 
-{{ .Content }}
+  <body>
 
-<ul>
-  {{ range (where .Data.Pages "Section" "!=" "") }}
-  <li>
-    <a href="{{ .URL }}">{{ .Title | markdownify }}</a>    
-    <span class="date">{{ .Date.Format "02 Jan 2006" }}</span>
-  </li>
-  {{ end }}
-</ul>
+    {{if not .IsHome }}
+      <h1>{{ .Title | markdownify }}</h1>
+    {{ end }}
 
-{{ partial "footer.html" . }}
+    {{ .Content }}
+
+    <ul>
+      {{ range (where .Data.Pages "Section" "!=" "") }}
+      <li>
+        <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
+        <span class="date">{{ .Date.Format "02 Jan 2006" }}</span>
+      </li>
+      {{ end }}
+    </ul>
+
+
+    {{ partial "footer.html" . }}
+
+  </body>
+</html>
+

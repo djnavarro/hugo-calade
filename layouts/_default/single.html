@@ -1,8 +1,21 @@
-{{ partial "header.html" . }}
-{{ partial "post_title.html" .}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
 
-<main>
-{{ .Content }}
-</main>
+  {{ partial "header.html" . }}
 
-{{ partial "footer.html" . }}
+  <body>
+    {{ partial "header_image.html" . }}
+
+    <div class="main-content">
+      {{ partial "post_title.html" .}}
+      {{ partial "menu_strip.html" . }}
+
+      <main>
+        {{ .Content }}
+      </main>
+
+      {{ partial "footer.html" . }}
+
+    </div>
+  </body>
+</html>

@@ -1,11 +1,9 @@
-  <footer>
+<footer>
   {{ partial "foot_custom.html" . }}
   {{ with .Site.Params.footer }}
   <br/><br/>
   {{ . | markdownify }}
   <br/><br/>
   {{ end }}
-  </footer>
-  </div> <!-- main container -->
-  </body>
-</html>
+</footer>
+
