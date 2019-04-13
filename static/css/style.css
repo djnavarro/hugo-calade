@@ -32,8 +32,12 @@ hr {
   padding-left: 5%;
   padding: 5px;
 }
-.menu, .article-meta, footer { text-align: left; }
+.menu, .article-meta { text-align: left; }
 .title { font-size: 1.1em; }
+footer {
+  text-align: center;
+  color: #ddd;
+}
 footer a { text-decoration: none; }
 
 
