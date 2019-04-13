@@ -12,6 +12,7 @@
   --primary: #ddd;
   --subtle: #888;
   --behind: #333;
+  --highlight: hotpink;
 }
 
 /* Import ET Book styles
@@ -121,7 +122,9 @@ code {
 
 /* links */
 a:link, a:visited {
-  color: inherit;
+  color: var(--highlight);
+  font-style: italic;
+  text-decoration: none;
 }
 
 /* horizontal rule styling */
@@ -158,7 +161,16 @@ footer {
   text-align: center;
   color: var(--subtle);
 }
-footer a { text-decoration: none; }
+footer a:visited, footer a:link {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--subtle)
+}
+.menu a:visited, .menu a:link {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--subtle)
+}
 
 /* miscellaneous elements */
 img, iframe, video { max-width: 100%; }
