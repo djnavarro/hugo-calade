@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+:root {
+  --primary: #111;
+  --subtle: #ccc;
+  --behind: #fcfcfc;
+}
+
 /* font size and family */
 html {font-size: 15px;}
 body {font-family: Palatino, "Palatino Linotype", serif;}
@@ -10,8 +16,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 5%;
-  background-color: #f8f8f8;
-  color: #111;
+  background-color: var(--behind);
+  color: var(--primary);
   max-width: 800px;
   counter-reset: sidenote-counter;
 }
@@ -54,14 +60,18 @@ h3 {
 /* blockquotes and code blocks */
 blockquote {
   background: none;
-  border-left: 1px solid #ccc;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--subtle);
   padding: 3px 1em 3px;
   max-width: 800px;
 }
 pre {
   background: none;
   margin-left: 5%;
-  border-left: 1px solid #ccc;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--subtle);
   padding: 1em;
   overflow-x: auto;
 }
@@ -81,17 +91,25 @@ hr {
   height: 1px;
   width: 75%;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--subtle);
   margin: 1em 0;
   padding: 0;
 }
 
 /* header and footer areas */
-.menu { padding: 0; }
+.menu {
+  padding-left: 0px;
+  padding-bottom: 5px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--subtle);
+}
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
-  background: #eee;
+  background: none;
   padding-left: 5%;
   padding: 5px;
 }
@@ -99,7 +117,7 @@ hr {
 .title { font-size: 1.1em; }
 footer {
   text-align: center;
-  color: #ddd;
+  color: var(--subtle);
 }
 footer a { text-decoration: none; }
 
