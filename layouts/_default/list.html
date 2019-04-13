@@ -9,8 +9,8 @@
 <ul>
   {{ range (where .Data.Pages "Section" "!=" "") }}
   <li>
+    <a href="{{ .URL }}">{{ .Title | markdownify }}</a>    
     <span class="date">{{ .Date.Format "02 Jan 2006" }}</span>
-    <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
   </li>
   {{ end }}
 </ul>
