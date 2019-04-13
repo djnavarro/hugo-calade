@@ -13,11 +13,13 @@ To create the example site using the SLURM template into a fresh
 directory:
 
 ``` r
-blogdown::new_site(dir = here::here("my_site"), theme = "djnavarro/hugo-slurm")
+site <- here::here("my_site")
+blogdown::new_site(dir = site, theme = "djnavarro/hugo-slurm") 
 ```
 
 To serve an existing site:
 
 ``` r
-blogdown::serve_site(dir = here::here("my_site"))
+setwd(site)
+blogdown::serve_site()
 ```
