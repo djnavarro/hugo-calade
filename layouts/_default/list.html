@@ -4,25 +4,28 @@
   {{ partial "header.html" . }}
 
   <body>
+    <div class="main-content">
 
-    {{if not .IsHome }}
-      <h1>{{ .Title | markdownify }}</h1>
-    {{ end }}
+      {{ partial "menu_strip.html" . }}
 
-    {{ .Content }}
-
-    <ul>
-      {{ range (where .Data.Pages "Section" "!=" "") }}
-      <li>
-        <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
-        <span class="date">{{ .Date.Format "02 Jan 2006" }}</span>
-      </li>
+      {{if not .IsHome }}
+        <h1>{{ .Title | markdownify }}</h1>
       {{ end }}
-    </ul>
 
+      {{ .Content }}
 
-    {{ partial "footer.html" . }}
+      <ul>
+        {{ range (where .Data.Pages "Section" "!=" "") }}
+        <li>
+          <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
+          <span class="date">{{ .Date.Format "02 Jan 2006" }}</span>
+        </li>
+        {{ end }}
+      </ul>
 
+      {{ partial "footer.html" . }}
+
+    </div>
   </body>
 </html>
 
