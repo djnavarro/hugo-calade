@@ -185,3 +185,13 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+/* formatting for header images */
+.article-header {
+  position: relative; /* Required for caption positioning */
+  clear: both;
+}
+.article-banner {
+  width: 100%;
+  height: auto;
+}
