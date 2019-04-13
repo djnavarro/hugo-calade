@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <link rel="stylesheet" href="{{ "/css/slurmstyle.css" | relURL }}" />
-    {{ partial "head_custom.html" . }}
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ "/css/slurmstyle.css" | relURL }}" />
+  {{ partial "head_custom.html" . }}
+</head>
 
-  <body>
-    {{ partial "header_image.html" . }}
-    <div class="main-content">
-      {{ partial "menu_strip.html" . }}
