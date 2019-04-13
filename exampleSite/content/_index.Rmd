@@ -7,7 +7,7 @@ title: Home
 My goal in writing *slurm* is to provide minimal Hugo theme based on Yihui Xie's *Xmin* template. The name for the original theme reflects the fact that it is as "extremely minimal" theme; this extension is a "slightly less unremittingly minimal" theme. In truth though the main goal was to see if I understand the basics of CSS and Hugo. 
 
 
-```{r, warning=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(tidyverse)
 glimpse(mpg)
 ggplot(mpg, aes(displ, hwy)) + geom_point() 
