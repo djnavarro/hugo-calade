@@ -1,10 +1,10 @@
 ---
-title: A Quick Note on Two Beautiful Websites
 author: Yihui Xie
-date: '2017-06-13'
 categories:
-  - Example
+- Example
+date: "2017-06-13"
 slug: a-quick-note
+title: A Quick Note on Two Beautiful Websites
 ---
 
 To me, the two most impressive websites based on **blogdown** are:
