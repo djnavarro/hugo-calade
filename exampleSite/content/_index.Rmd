@@ -4,21 +4,12 @@ title: Home
 
 # The slum theme for blogdown
 
-The slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. I’m not really convinced it’s useful for much, hence the name; this is a somewhat-light unhelpfully-minimal Hugo theme. In truth, my main goal in putting this theme together was to make sure I understand the basics of how Hugo works.
-
-> One is the loneliest number that you ever knew <br>
-> Two can be as bad as one, it's the loneliest number since the number one
-
-## Examples
-
 ```{r, warning=FALSE, message=FALSE}
 library(tidyverse)
 glimpse(mpg)
-ggplot(mpg, aes(displ, hwy)) + geom_point() 
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_point() + 
+  theme_dark() 
 ```
 
-Inline LaTeX expressions:
-
-`$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$`
-
-All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [notes](/note/). See the [About](/about/) page for the usage of this theme.
+All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [projects](/project/). See the [about](/about/) page for more detail.
