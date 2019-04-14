@@ -23,11 +23,11 @@ time at which the R Markdown is compiled, this is the working directory:
 getwd()
 ```
 
-To source the script, we need this:
+Rather than try to complicate matters, note that there is a .here file in the
+root directory of the example site. So:
 
 ```{r}
-script_dir <- file.path("..","..","static","scripts")
-script_dir
+here::here()
 #source("theme_slum.R")
 ```
 
