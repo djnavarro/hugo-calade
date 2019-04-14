@@ -12,6 +12,7 @@ header:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
+source("/scripts/theme_slum.R")
 ```
 
 Here is some text that I have written. This page uses the light theme. The background colour for this theme is very slightly grey rather than white, so if you want a plot to blend in with the background you need to do something like this:
@@ -20,8 +21,7 @@ Here is some text that I have written. This page uses the light theme. The backg
 library(tidyverse)
 ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + 
-  theme(plot.background = element_rect(
-    colour = "#fcfcfc", fill = "#fcfcfc"))
+  theme_slum("light")
 ```
 
 
