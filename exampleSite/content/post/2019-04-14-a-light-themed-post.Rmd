@@ -14,20 +14,19 @@ header:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-Here is some text that I have written. This page uses the light theme. To make
-life a little easier the theme includes an R scrupt that supplies ggplot2 themes.
-The theme function is bundled in a script contained in the static directory. However, if we want to source the file, it's important to realise that at the
-time at which the R Markdown is compiled, this is the working directory:
+Here is some text that I have written. This page uses the light theme. To make life a little easier the theme includes an R scrupt that supplies ggplot2 themes. The theme function is bundled in a script contained in the static directory. However, if we want to source the file, it's important to realise that at the time at which the R Markdown is compiled, this is the working directory:
 
 ```{r}
 getwd()
 ```
 
-Rather than try to complicate matters, note that there is a .here file in the
-root directory of the example site. So:
+Rather than try to complicate matters, note that there is a .here file in the root directory of the example site. So:
 
 ```{r}
-here::here()
+blogdown::dep_path()
+
+#script_dir <- file.path(getwd(), "..","..","static","scripts")
+#script_dir
 #source("theme_slum.R")
 ```
 
