@@ -12,13 +12,46 @@ header:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
+
+theme_slum <- function(palette = "dark", ...) {
+
+  if(palette == "dark") {
+    primary <- "#DDDDDD"
+    subtle <- "#888888"
+    behind <- "#333333"
+  }
+
+  if(palette == "light") {
+    primary <- "#111111"
+    subtle <- "#CCCCCC"
+    behind <- "#FCFCFC"
+  }
+
+  if(palette == "kunoichi") {
+    primary <- "#FFFFFF"
+    subtle <- "#562457"
+    behind <- "#BA68C8"
+  }
+
+  theme_grey(...) %+replace%
+    theme(
+      plot.background = element_rect(fill = behind, colour = behind),
+      panel.background = element_rect(fill = subtle, colour = subtle),
+      legend.background = element_rect(fill = behind, colour = behind),
+      plot.title = element_text(colour = primary),
+      plot.subtitle = element_text(colour = primary),
+      axis.title = element_text(colour = primary),
+      axis.text = element_text(colour = primary),
+      legend.title = element_text(colour = primary),
+      legend.text = element_text(colour = primary)
+    )
+}
 ```
 
 Here is some text that I have written. This page uses the light theme. The background colour for this theme is very slightly grey rather than white, so if you want a plot to blend in with the background you need to do something like this:
 
 ```{r scatter, fig.cap = "Here is a plot", warning=FALSE, message=FALSE}
 library(tidyverse)
-source(here::here("scripts","theme_slum.R"))
 
 ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + 
