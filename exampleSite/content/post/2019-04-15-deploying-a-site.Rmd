@@ -1,0 +1,21 @@
+---
+title: "Part 4. Deploying a site"
+author: "Danielle Navarro"
+date: "2019-04-15"
+slug: deploying-a-site
+tags: ["slum", "blogdown", "slumstyle", "github pages"]
+header:
+  caption: "A blank ggplot"
+  image: 'header/theme_dark.png'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+The usual advice with blogdown is to deploy to netlify because it makes a few things easier than doing it with GitHub pages. Naturally, I just have to do things the hard way...
+
+- The `.nojekyll` file is needed
+- The baseurl in the `config.toml` file is needed
+- Managing the tension between public and docs.
+

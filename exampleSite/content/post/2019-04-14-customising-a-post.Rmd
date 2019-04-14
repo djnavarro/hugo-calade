@@ -1,9 +1,9 @@
 ---
-title: "Changing the colour scheme"
+title: "Part 3. Customising a post"
 author: "Danielle Navarro"
 date: "2019-04-14"
-slug: changing-the-colour-scheme
-tags: ["R Markdown"]
+slug: customising-a-post
+tags: ["slum", "blogdown", "slumstyle"]
 colourscheme: "css/colour_light.css"
 header:
   caption: "A blank ggplot"
@@ -30,4 +30,20 @@ ggplot(mpg, aes(displ, hwy)) +
 ```
 
 
+## The CSS file
 
+If you ever feel the need to do so, it's not too difficult to create a new colour scheme. The `static/css/colour_dark.css` file specifies the four main colours used:
+
+```
+:root {
+  --primary: #ddd;
+  --subtle: #888;
+  --behind: #333;
+  --highlight: hotpink;
+}
+```
+
+
+## Changing the header image
+
+blah blah blahs

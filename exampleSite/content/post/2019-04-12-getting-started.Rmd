@@ -1,7 +1,7 @@
 ---
-title: "Getting started"
+title: "Part 1. Getting started"
 author: "Danielle Navarro"
-date: "2019-04-11"
+date: "2019-04-12"
 slug: getting-started
 tags: ["slum", "blogdown"]
 header:
@@ -17,15 +17,29 @@ My initial goal in writing the *slum* theme was purely selfish: I use blogdown o
 
 Having created the thing, I decided I might as well document it too...
 
-## Installation
+My assumption is that anyone intending to use the *slum* theme is using it within blogdown rather than some other kind of [Hugo](https://gohugo.io/) website, so the documentation is written with an R user in mind. Additionally, I'll assume that you've never used blogdown or Hugo before, but I do assume you've used [R Markdown](https://rmarkdown.rstudio.com/).
 
-My assumption is that anyone intending to use the slum theme is using it within blogdown rather than some other kind of [Hugo](https://gohugo.io/) website, so the documentation is written with an R user in mind. Additionally, I'll assume that you've never used blogdown or Hugo before. 
 
-To get started, make sure you have the blogdown package installed:
+## Step 1: Install slumstyle
+
+
+The *slum* theme allows some degree of flexibility in visual styling, which is really nice when blogging. One thing that causes me frustration sometimes is that when I generate a plot within blogdown, the visual style of the plot doesn't align nicely with the style of the blog. To remedy that, I wrote a small package called *slumstyle* that will let you draw plots that match the theme. So let's install that first:
+
+```{r, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("djnavarro/slumstyle")
+```
+
+
+## Step 2: Install blogdown
+
+Next, you need to make sure you have the blogdown package installed:
 
 ```{r, eval=FALSE}
 install.packages("blogdown")
 ```
+
+## Step 3: Create a slum-themed blog
 
 Once you have blogdown installed, the next step is to install the *slum* theme and download this webpage as a starter blog. I'll assume that you have somewhere sensible in mind to install it:
 
@@ -51,17 +65,15 @@ In this example, we're doing a few things:
 - By setting `theme_example = TRUE` blogdown also downloads the files for the example website (i.e., this site) in addition to the theme files themselves
 - By setting `sample = FALSE` blogdown ignores the starter posts that Hugo tries to insert. 
 
-## Installing the slumstyle package
+At any later point in time:
 
-The *slum* theme allows some degree of flexibility in visual styling, which is really nice when blogging. One thing that causes me frustration sometimes is that when I generate a plot within blogdown, the visual style of the plot doesn't align nicely with the style of the blog. To remedy that, I wrote a small package called *slumstyle* that will let you draw plots that match the theme. So let's do that too:
-
-```{r, eval=FALSE}
-# install.packages("devtools")
-devtools::install_github("djnavarro/slumstyle")
+```{r, eval = FALSE}
+setwd(bloghome)
+blogdown::serve_site()
 ```
 
 
-## Some initial configuration
+## Step 4: initial configuration
 
 Most of the settings that you'll initially want to play with are in the `config.toml` file. The file is (I hope) fairly well documented, so you can see what most of the settings do and how to configure them. For example, here's
 a snippet:
@@ -73,4 +85,4 @@ title = "A minimal Hugo website"
 theme = "hugo-slum"
 ```
 
-Take a look at the config file, change a couple of things if you like, and then you're ready for the next step...
+Take a look at the config file, change a couple of things if you like, and then you're ready to start blogging!
