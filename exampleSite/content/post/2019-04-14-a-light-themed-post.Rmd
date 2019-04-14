@@ -58,9 +58,10 @@ ggplot(mpg, aes(displ, hwy)) +
   theme_slum("light")
 ```
 
-To test something:
+The theme function is bundled in a script contained in the static directory. However, if we want to source the file, it's important to realise that at the
+time at which the R Markdown is compiled, this is the working directory:
 
 ```{r}
-here::here()
+getwd()
 ```
 
