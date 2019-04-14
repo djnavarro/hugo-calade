@@ -80,15 +80,15 @@ footnotereturnlinkcontents = "↩"
 #   every page (you can override it for specific posts). The
 #   path to the image is specified relative to the "static/"
 #   folder
+#
 # - "colourScheme" specifies a path to a css file that describes
 #   the colour scheme, again relative to the "static/" folder. As
 #   before you can override it for specific posts.
+#
+# - "description" of the site
+# - "footer" contents
 [params]
     siteHeader = "header/mpg_dark.png"
     colourScheme = "css/colour_dark.css"
-
-# Description of the site and the content to place in the site
-# footer
-[params]
     description = "A website built through Hugo and blogdown."
     footer = "&copy; [Danielle Navarro](https://djnavarro.net) 2018--2019 | [Github](https://github.com/djnavarro) | [Twitter](https://twitter.com/djnavarro)"
