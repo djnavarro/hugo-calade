@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "header.html" . }}
+
+  <body>
+    {{ partial "header_image.html" . }}
+
+    <div class="main-content">
+      {{ partial "menu_strip.html" . }}
+      {{ partial "post_title.html" .}}
+
+      <main>
+        {{ .Content }}
+      </main>
+
+      <ul>
+        {{ range (where .Data.Pages "Section" "!=" "") }}
+        <li>
+          <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
+          <span class="date">{{ .Date.Format "02 Jan 2006" }}</span>
+        </li>
+        {{ end }}
+      </ul>
+
+      {{ partial "footer.html" . }}
+
+    </div>
+  </body>
+</html>
