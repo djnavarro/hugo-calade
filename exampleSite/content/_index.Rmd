@@ -1,7 +1,5 @@
 ---
 title: Home
-header:
-  image: 'header/mpg_dark.png'
 ---
 
 # Slumming it with blogdown
