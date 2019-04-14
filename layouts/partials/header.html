@@ -4,7 +4,7 @@
   <title>{{ .Title }} | {{ .Site.Title }}</title>
 
 
-  <link rel="stylesheet" href={{ .Site.ColourCSS }} />
+  <link rel="stylesheet" href="{{ .Site.ColourCSS }}" />
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
   {{ partial "head_custom.html" . }}
 </head>
