@@ -8,6 +8,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
+colourscheme = "dark"
+
 [permalinks]
     post = "/post/:slug/"
     project = "/project/:slug/"
