@@ -20,7 +20,7 @@ Here is some text that I have written. This page uses the light theme. The backg
 library(tidyverse)
 ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + 
-  theme(panel.background = element_rect(
+  theme(plot.background = element_rect(
     colour = "#fcfcfc", fill = "#fcfcfc"))
 ```
 
