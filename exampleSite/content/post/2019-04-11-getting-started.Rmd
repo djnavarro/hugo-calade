@@ -51,3 +51,11 @@ In this example, we're doing a few things:
 - By setting `theme_example = TRUE` blogdown also downloads the files for the example website (i.e., this site) in addition to the theme files themselves
 - By setting `sample = FALSE` blogdown ignores the starter posts that Hugo tries to insert. 
 
+## Installing the R package
+
+The *slum* theme allows some degree of flexibility in visual styling, which is really nice when blogging. One thing that causes me frustration sometimes is that when I generate a plot within blogdown, the visual style of the plot doesn't align nicely with the style of the blog. To remedy that, I wrote a small package called *slumstyle* that will let you draw plots that match the theme. So let's do that too:
+
+```{r, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("djnavarro/slumstyle")
+```
