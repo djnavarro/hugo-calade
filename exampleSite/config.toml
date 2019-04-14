@@ -8,7 +8,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
-colourCSS = "/css/colour_dark.css"
+colourCSS = "dark"
 
 [permalinks]
     post = "/post/:slug/"
