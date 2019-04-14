@@ -1,19 +1,10 @@
 ---
 title: Home
+author: "Danielle Navarro"
+header:
+  image: 'header/mpg_dark.png'
 ---
 
-# The slum theme for blogdown
-
-```{r, warning=FALSE, message=FALSE, echo=FALSE}
-library(tidyverse)
-ggplot(mpg, aes(displ, hwy)) + 
-  geom_point() + 
-  theme_dark() + 
-  theme(
-    text = element_text(colour = "#dddddd"),
-    axis.text = element_text(colour = "#dddddd"),
-    plot.background = element_rect(
-      fill = "#333333", colour = "#333333"))
-```
+# Slumming it with blogdown
 
 All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [projects](/project/). See the [about](/about/) page for more detail.
