@@ -46,14 +46,12 @@ The `theme_slum()` function here is provided by the [slumstyle package](https://
 }
 ```
 
-It is possible to have different posts using different colour schemes (see *"A light themed post"). 
-
-Blockquotes look like this:
+It is possible to have different posts using different colour schemes (see *"A light themed post"*). At the moment, blockquotes look like this:
 
 > One is the loneliest number that you ever knew <br>
 > Two can be as bad as one, it's the loneliest number since the number one
 
-Inline LaTeX expressions look like this:
+It's not the prettiest output ever and I might change it. Inline LaTeX expressions look like this:
 
 `$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$`
 
