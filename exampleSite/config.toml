@@ -35,7 +35,7 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     siteHeader = "header/mpg_dark.png"
-    colourScheme = "/css/colour_dark.css"
+    colourScheme = "css/colour_dark.css"
     description = "A website built through Hugo and blogdown."
     footer = "&copy; [Danielle Navarro](https://djnavarro.net) 2018--2019 | [Github](https://github.com/djnavarro) | [Twitter](https://twitter.com/djnavarro)"
 
