@@ -13,28 +13,41 @@ header:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
+```{r mpg, warning=FALSE, message=FALSE}
+library(tidyverse)
+glimpse(mpg)
 ```
 
-# Including Plots
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:
+The theme is designed on the assumption that you're writing pages in R Markdown rather than plain markdown. I'm pretty sure it supports plain markdown (I didn't do anything to break it, anyway), but I've been writing with an assumption that eventually the colour schemes used by the Hugo template will be mirrored in some simple ggplot themes. For instance, this page uses the default "dark" colour scheme. To generate plots that integrate nicely with this scheme, currently you have to do something like Figure \@ref(fig:scatter): 
 
-```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
-par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
+```{r scatter, fig.cap = "Here is a plot" warning=FALSE, message=FALSE}
+library(tidyverse)
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_point() + 
+  theme_dark() + 
+  theme(
+    text = element_text(colour = "#dddddd"),
+    axis.text = element_text(colour = "#dddddd"),
+    plot.background = element_rect(
+      fill = "#333333", colour = "#333333"))
 ```
+
+Eventually though I'll write a custom ggplot2 theme. Maybe.
+
+
+Blockquotes look like this:
+
+> One is the loneliest number that you ever knew <br>
+> Two can be as bad as one, it's the loneliest number since the number one
+
+Inline LaTeX expressions look like this:
+
+`$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$`
+
+

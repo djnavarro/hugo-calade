@@ -6,30 +6,9 @@ title: About
 
 The slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. Originally it was intended to be extremely minimal, with the very modest goal of trying to make sure I understood the logic of how Hugo generates static sites. The more I played with it though, the more I enjoyed it. So what I've ended up with is a *"somewhat-light unhelpfully-minimal"* Hugo theme, designed with a single goal in mind: eventually I'm going to use it as the theme for [my blog](https://djnavarro.net)
 
-The theme is designed on the assumption that you're writing pages in R Markdown rather than plain markdown. I'm pretty sure it supports plain markdown (I didn't do anything to break it, anyway), but I've been writing with an assumption that eventually the colour schemes used by the Hugo template will be mirrored in some simple ggplot themes. For instance, this page uses the default "dark" colour scheme. To generate plots that integrate nicely with this scheme, currently you have to do this:
+## Notes
 
-```{r, warning=FALSE, message=FALSE}
-library(tidyverse)
-ggplot(mpg, aes(displ, hwy)) + 
-  geom_point() + 
-  theme_dark() + 
-  theme(
-    text = element_text(colour = "#dddddd"),
-    axis.text = element_text(colour = "#dddddd"),
-    plot.background = element_rect(
-      fill = "#333333", colour = "#333333"))
-```
-
-Eventually though I'll write a custom ggplot2 theme. Maybe.
-
-## Bits and pieces
-
-Blockquotes look like this:
-
-> One is the loneliest number that you ever knew <br>
-> Two can be as bad as one, it's the loneliest number since the number one
-
-Inline LaTeX expressions look like this:
-
-`$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$`
-
+- The `terms.html` layout governs the tags page
+- The `single.html` layout governs blog posts
+- The `list.html` layout governs the posts and projects pages
+- The `home.html` layout governs the home page
