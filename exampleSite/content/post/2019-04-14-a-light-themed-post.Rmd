@@ -58,5 +58,9 @@ ggplot(mpg, aes(displ, hwy)) +
   theme_slum("light")
 ```
 
+To test something:
 
+```{r}
+here::here()
+```
 
