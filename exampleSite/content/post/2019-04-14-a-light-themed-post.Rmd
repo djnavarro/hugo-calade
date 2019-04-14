@@ -23,7 +23,7 @@ getwd()
 Rather than try to complicate matters, note that there is a .here file in the root directory of the example site. So:
 
 ```{r}
-blogdown::dep_path()
+blogdown::dep_path("static")
 
 #script_dir <- file.path(getwd(), "..","..","static","scripts")
 #script_dir
