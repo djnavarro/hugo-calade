@@ -3,118 +3,118 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/a-light-themed-post/</loc>
+    <loc>/hugo-slum/post/a-light-themed-post/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/a-post-in-r-markdown/</loc>
+    <loc>/hugo-slum/post/a-post-in-r-markdown/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/a-post-in-plain-markdown/</loc>
+    <loc>/hugo-slum/post/a-post-in-plain-markdown/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/another-note/</loc>
+    <loc>/hugo-slum/project/another-note/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/a-quick-note/</loc>
+    <loc>/hugo-slum/project/a-quick-note/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>/hugo-slum/about/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/hugo-slum/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/example/</loc>
+    <loc>/hugo-slum/categories/example/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/hugo-slum/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/markdown/</loc>
+    <loc>/hugo-slum/tags/markdown/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/mathjax/</loc>
+    <loc>/hugo-slum/tags/mathjax/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/pandoc/</loc>
+    <loc>/hugo-slum/tags/pandoc/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/hugo-slum/post/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>/hugo-slum/project/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r-markdown/</loc>
+    <loc>/hugo-slum/tags/r-markdown/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/rstudio/</loc>
+    <loc>/hugo-slum/tags/rstudio/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/hugo-slum/tags/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/tutorial/</loc>
+    <loc>/hugo-slum/tags/tutorial/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/blogdown/</loc>
+    <loc>/hugo-slum/tags/blogdown/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/plot/</loc>
+    <loc>/hugo-slum/tags/plot/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/regression/</loc>
+    <loc>/hugo-slum/tags/regression/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
