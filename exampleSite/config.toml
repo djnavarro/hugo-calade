@@ -1,17 +1,58 @@
+
+# The config file is written using TOML, which stands for "Tom's Obvious,
+# Minimal Language". See: https://github.com/toml-lang/toml
+
+# The URL for your website. It should end with a trailing slash,
+# e.g. "https://example.com/". If you're planning to deploy on
+# GitHub pages the way I've done for the example site at
+# https://djnavarro.github.io/hugo-slum/, then you can do something
+# like this:
 baseurl = "/hugo-slum/"
-languageCode = "en-us"
+
+
+# These settings specify the title for your blog, and the name of
+# the Hugo theme that it uses.
 title = "A minimal Hugo website"
 theme = "hugo-slum"
+
+
+# Various other settings that I rarely ever change.
+languageCode = "en-us"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
+
+# What format should the links take? In the example site there
+# are two kinds of pages, posts and projects, listed at:
+#
+#    https://djnavarro.github.io/hugo-slum/post/
+#    https://djnavarro.github.io/hugo-slum/project/
+#
+# Each post is then followed by its own "slug", so the full path
+# might be something like this:
+#
+#     https://djnavarro.github.io/hugo-slum/post/getting-started/
+#
 [permalinks]
     post = "/post/:slug/"
     project = "/project/:slug/"
+#
+# Alternative version:
+#   post = "/post/:year/:month/:day/:slug/"
+#   project = "/project/:year/:month/:day/:slug/"
 
+
+
+
+# These settings are used to specify the links in the main
+# navigation bar. Each item has a "name" (the link text), a
+# "url" (path to the page), and a "weight" (the order).
+# Something to keep in mind for new users: you won't find
+# specific files that correspond to all of these pages. See
+# the documentation for an explanation of where they come from
 [[menu.main]]
     name = "Home"
     url = "/"
@@ -33,9 +74,21 @@ footnotereturnlinkcontents = "↩"
     url = "/tags/"
     weight = 5
 
+# Parameters that are used in various places throughout the site.
+#
+# - "siteHeader" specifies the default image used at the top of
+#   every page (you can override it for specific posts). The
+#   path to the image is specified relative to the "static/"
+#   folder
+# - "colourScheme" specifies a path to a css file that describes
+#   the colour scheme, again relative to the "static/" folder. As
+#   before you can override it for specific posts.
 [params]
     siteHeader = "header/mpg_dark.png"
     colourScheme = "css/colour_dark.css"
+
+# Description of the site and the content to place in the site
+# footer
+[params]
     description = "A website built through Hugo and blogdown."
     footer = "&copy; [Danielle Navarro](https://djnavarro.net) 2018--2019 | [Github](https://github.com/djnavarro) | [Twitter](https://twitter.com/djnavarro)"
-
