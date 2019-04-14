@@ -1,13 +1,12 @@
-{{/* Header image */}}
-{{ if .Params.header.image }}
+{{/* Site default header image */}}
+{{ if .Site.Params.SiteHeader }}
 <div class="article-header">
-  {{ $img_src := urls.Parse .Params.header.image }}
+  {{ $img_src := urls.Parse .Site.Params.SiteHeader }}
   {{ if $img_src.Scheme }}
-  <img src="{{ .Params.header.image }}" class="article-banner" itemprop="image" alt="">
+  <img src="{{ .Site.Params.SiteHeader }}" class="article-banner" itemprop="image" alt="">
   {{ else }}
-  <img src="{{ (printf "/%s" .Params.header.image) | relURL }}" class="article-banner" itemprop="image" alt="">
+  <img src="{{ (printf "/%s" .Site.Params.SiteHeader) | relURL }}" class="article-banner" itemprop="image" alt="">
   {{ end }}
 
-  {{ with .Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
 </div>
 {{end}}
