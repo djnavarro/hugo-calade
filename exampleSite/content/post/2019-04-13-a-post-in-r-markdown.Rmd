@@ -26,7 +26,7 @@ glimpse(mpg)
 
 The theme is designed on the assumption that you're writing pages in R Markdown rather than plain markdown. I'm pretty sure it supports plain markdown (I didn't do anything to break it, anyway), but I've been writing with an assumption that eventually the colour schemes used by the Hugo template will be mirrored in some simple ggplot themes. For instance, this page uses the default "dark" colour scheme. To generate plots that integrate nicely with this scheme, currently you have to do something like Figure \@ref(fig:scatter): 
 
-```{r scatter, fig.cap = "Here is a plot" warning=FALSE, message=FALSE}
+```{r scatter, fig.cap = "Here is a plot", warning=FALSE, message=FALSE}
 library(tidyverse)
 ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + 
