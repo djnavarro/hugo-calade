@@ -1,20 +1,5 @@
 @charset "UTF-8";
 
-/* light colour scheme */
-/* :root {
-  --primary: #111;
-  --subtle: #ccc;
-  --behind: #fcfcfc;
-} */
-
-/* dark colour scheme */
-:root {
-  --primary: #ddd;
-  --subtle: #888;
-  --behind: #333;
-  --highlight: hotpink;
-}
-
 /* Import ET Book styles
    adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
 @font-face {
