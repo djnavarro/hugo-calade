@@ -1,0 +1,25 @@
+---
+title: "A light themed post"
+author: "Danielle Navarro"
+date: "2019-04-14"
+slug: a-light-themed-post
+tags: ["R Markdown"]
+header:
+  caption: "A blank ggplot"
+  image: 'header/theme_grey.png'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+Here is some text that I have written. This page uses the light theme.
+
+```{r scatter, fig.cap = "Here is a plot", warning=FALSE, message=FALSE}
+library(tidyverse)
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_point()
+```
+
+
+
