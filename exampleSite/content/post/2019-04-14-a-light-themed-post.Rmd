@@ -26,9 +26,9 @@ getwd()
 To source the script, we need this:
 
 ```{r}
-source(file.path(
-  "..","..","static","scripts","theme_slum.R"
-))
+script_dir <- file.path("..","..","static","scripts")
+script_dir
+#source("theme_slum.R")
 ```
 
 The background colour for this theme is very slightly grey rather than white, so if you want a plot to blend in with the background you need to do something like this:
@@ -37,8 +37,7 @@ The background colour for this theme is very slightly grey rather than white, so
 library(tidyverse)
 
 ggplot(mpg, aes(displ, hwy)) + 
-  geom_point() + 
-  theme_slum("light")
+  geom_point() #+ theme_slum("light")
 ```
 
 
