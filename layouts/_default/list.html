@@ -8,6 +8,8 @@
 
       {{ partial "menu_strip.html" . }}
 
+      <h1>{{ .Title | markdownify }}</h1>
+
       {{ .Content }}
 
       <ul>
