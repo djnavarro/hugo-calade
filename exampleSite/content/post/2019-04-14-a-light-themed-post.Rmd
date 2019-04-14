@@ -22,12 +22,8 @@ getwd()
 
 Rather than try to complicate matters, note that there is a .here file in the root directory of the example site. So:
 
-```{r}
-blogdown::dep_path("static")
-
-#script_dir <- file.path(getwd(), "..","..","static","scripts")
-#script_dir
-#source("theme_slum.R")
+```{r, error=TRUE}
+theme_slum
 ```
 
 The background colour for this theme is very slightly grey rather than white, so if you want a plot to blend in with the background you need to do something like this:
