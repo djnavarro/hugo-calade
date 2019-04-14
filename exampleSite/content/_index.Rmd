@@ -1,6 +1,5 @@
 ---
 title: Home
-author: "Danielle Navarro"
 header:
   image: 'header/mpg_dark.png'
 ---
