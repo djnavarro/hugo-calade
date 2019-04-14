@@ -14,12 +14,14 @@ header:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-Here is some text that I have written. This page uses the light theme.
+Here is some text that I have written. This page uses the light theme. The background colour for this theme is very slightly grey rather than white, so if you want a plot to blend in with the background you need to do something like this:
 
 ```{r scatter, fig.cap = "Here is a plot", warning=FALSE, message=FALSE}
 library(tidyverse)
 ggplot(mpg, aes(displ, hwy)) + 
-  geom_point()
+  geom_point() + 
+  theme(panel.background = element_rect(
+    colour = "#fcfcfc", fill = "#fcfcfc"))
 ```
 
 
