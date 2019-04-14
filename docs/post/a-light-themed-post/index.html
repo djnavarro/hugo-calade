@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A light themed post | A minimal Hugo website</title>
+
+  <link rel="stylesheet" href=/css/colour_dark.css />
+   <link rel="stylesheet" href=/css/colour_light.css />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+</head>
+
+
+  <body>
+    
+
+<div class="article-header">
+  
+  
+  <img src="/header/theme_grey.png" class="article-banner" itemprop="image" alt="">
+  
+
+  <span class="article-header-caption">A blank ggplot</span>
+</div>
+
+
+
+    <div class="main-content">
+      <nav>
+  <ul class="menu">
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="/post/">Posts</a></li>
+    
+    <li><a href="/project/">Projects</a></li>
+    
+    <li><a href="/tags/">Tags</a></li>
+    
+  </ul>
+</nav>
+
+      <div>
+  <h1>A light themed post</h1>
+  <h3>
+    by Danielle Navarro, 14 Apr 2019
+  </h3>
+  <br><br>
+</div>
+
+
+      <main>
+        <p>Here is some text that I have written. This page uses the light theme. To make life a little easier I’ve also written a small package that supplies ggplot2 themes that are consistent with the slum styles:</p>
+<pre class="r"><code>#devtools::install_github(&quot;djnavarro/slumstyle&quot;)
+library(slumstyle)
+library(tidyverse)</code></pre>
+<p>The background colour for this theme is very slightly grey rather than white, so if you want a plot to blend in with the background you need to do something like this:</p>
+<pre class="r"><code>ggplot(mpg, aes(displ, hwy)) + 
+  geom_point() + theme_slum(&quot;light&quot;)</code></pre>
+<div class="figure"><span id="fig:scatter"></span>
+<img src="/post/2019-04-14-a-light-themed-post_files/figure-html/scatter-1.png" alt="Here is a plot" width="672" />
+<p class="caption">
+Figure 1: Here is a plot
+</p>
+</div>
+
+      </main>
+
+      <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <br/><br/>
+  &copy; <a href="https://djnavarro.net">Danielle Navarro</a> 2018&ndash;2019 | <a href="https://github.com/djnavarro">Github</a> | <a href="https://twitter.com/djnavarro">Twitter</a>
+  <br/><br/>
+  
+</footer>
+
+
+
+    </div>
+  </body>
+</html>

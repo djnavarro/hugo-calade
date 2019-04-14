@@ -32,3 +32,8 @@ to the home directory for the site:
 ``` r
 blogdown::serve_site()
 ```
+
+The example site serves as a tutorial in how to use the theme, and you
+can see it at:
+
+<https://djnavarro.github.io/hugo-slum/>

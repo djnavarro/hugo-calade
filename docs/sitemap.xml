@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/post/a-light-themed-post/</loc>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/a-post-in-r-markdown/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/a-post-in-plain-markdown/</loc>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/another-note/</loc>
+    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/a-quick-note/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/example/</loc>
+    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/markdown/</loc>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mathjax/</loc>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pandoc/</loc>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r-markdown/</loc>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rstudio/</loc>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/blogdown/</loc>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/plot/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/regression/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
