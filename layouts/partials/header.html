@@ -1,9 +1,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ .Site.Params.ColourScheme }} | {{ .Site.Title }}</title>
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
 
-  <link rel="stylesheet" href="{{ "/css/colour_dark.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "/css/colour_{{ .Site.Params.ColourScheme }}.css" | relURL }}" />
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
 
   {{ partial "head_custom.html" . }}
