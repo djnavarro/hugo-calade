@@ -8,10 +8,6 @@
 
       {{ partial "menu_strip.html" . }}
 
-      {{if not .IsHome }}
-        <h1>{{ .Title | markdownify }}</h1>
-      {{ end }}
-
       {{ .Content }}
 
       <ul>
