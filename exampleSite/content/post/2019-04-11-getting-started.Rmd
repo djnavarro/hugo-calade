@@ -1,0 +1,53 @@
+---
+title: "Getting started"
+author: "Danielle Navarro"
+date: "2019-04-11"
+slug: getting-started
+tags: ["slum", "blogdown"]
+header:
+  caption: "A blank ggplot"
+  image: 'header/theme_dark.png'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+My initial goal in writing the *slum* theme was purely selfish: I use blogdown on [my own blog](https://djnavarro.net) and I wanted to understand how it works. To help me learn, I decided to [read the documentation](https://bookdown.org/yihui/blogdown/) and tinker with the minimalistic [XMin theme](https://github.com/yihui/hugo-xmin). I... um... got a little carried away, and ended up with a fairly flexible blogging template with a few more bells and whistles than I was expecting. I wasn't entirely convinced it would be useful, so I named it *Somewhat-Light Unhelpfully-Minimal* Hugo theme. 
+
+Having created the thing, I decided I might as well document it too...
+
+## Installation
+
+My assumption is that anyone intending to use the slum theme is using it within blogdown rather than some other kind of [Hugo](https://gohugo.io/) website, so the documentation is written with an R user in mind. Additionally, I'll assume that you've never used blogdown or Hugo before. 
+
+To get started, make sure you have the blogdown package installed:
+
+```{r, eval=FALSE}
+install.packages("blogdown")
+```
+
+Once you have blogdown installed, the next step is to install the *slum* theme and download this webpage as a starter blog. I'll assume that you have somewhere sensible in mind to install it:
+
+```{r}
+bloghome <- "~/../Desktop/slum"
+```
+
+The command to create a new site is:
+
+```{r eval=FALSE}
+blogdown::new_site(
+  dir = bloghome, 
+  theme = "djnavarro/hugo-slum",
+  theme_example = TRUE,
+  sample = FALSE
+)
+```
+
+In this example, we're doing a few things:
+
+- The `dir` argument tells blogdown where to create the blog on the local machine
+- The `theme` argument tells blogdown what Hugo theme to use, and in this case it will fetch everything from the [slum github repository](https://github.com/djnavarro/hugo-slum)
+- By setting `theme_example = TRUE` blogdown also downloads the files for the example website (i.e., this site) in addition to the theme files themselves
+- By setting `sample = FALSE` blogdown ignores the starter posts that Hugo tries to insert. 
+

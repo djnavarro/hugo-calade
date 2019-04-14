@@ -1,8 +1,8 @@
 ---
-title: "A light themed post"
+title: "Changing the colour scheme"
 author: "Danielle Navarro"
 date: "2019-04-14"
-slug: a-light-themed-post
+slug: changing-the-colour-scheme
 tags: ["R Markdown"]
 colourscheme: "css/colour_light.css"
 header:
