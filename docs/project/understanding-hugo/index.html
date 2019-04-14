@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Part 5. Understanding Hugo | A minimal Hugo website</title>
+
+  <link rel="stylesheet" href=/hugo-slum/css/colour_dark.css />
+  
+  <link rel="stylesheet" href="/hugo-slum/css/style.css" />
+
+  
+</head>
+
+
+  <body>
+    
+
+<div class="article-header">
+  
+  
+  <img src="/hugo-slum/header/theme_dark.png" class="article-banner" itemprop="image" alt="">
+  
+
+  <span class="article-header-caption">A blank ggplot</span>
+</div>
+
+
+
+    <div class="main-content">
+      <nav>
+  <ul class="menu">
+    
+    <li><a href="/hugo-slum">Home</a></li>
+    
+    <li><a href="/hugo-slum/about/">About</a></li>
+    
+    <li><a href="/hugo-slum/post/">Posts</a></li>
+    
+    <li><a href="/hugo-slum/project/">Projects</a></li>
+    
+    <li><a href="/hugo-slum/tags/">Tags</a></li>
+    
+  </ul>
+</nav>
+
+      <div>
+  <h1>Part 5. Understanding Hugo</h1>
+  <h3>
+    by Danielle Navarro, 16 Apr 2019
+  </h3>
+  <br><br>
+</div>
+
+
+      <main>
+        <p>TODO. Talk about the templating system. Why is this page in “projects” and everything else is in “posts”. It’s actually super customisable, you can just create your own folders!</p>
+<ul>
+<li><code>_default/single.html</code>: the specific posts and project pages (in content)</li>
+<li><code>_default/lists.html</code> : the “listing pages” for posts and projects (auto)</li>
+<li><code>_default/terms.html</code> : the “listing page” for tags (auto)</li>
+<li><code>_default/home.html</code> : the home page (corresponding to _index.html)</li>
+</ul>
+<p>The exception is:</p>
+<ul>
+<li><code>generic_page/single.html</code> : used in the about.html page (note the YAML)</li>
+</ul>
+<p>Each of these uses various “partial” templates to avoid code reuse.</p>
+<p>If you ever want to customise layouts, you can use the layouts folder rather than try to edit the themes folder.</p>
+
+      </main>
+
+      <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <br/><br/>
+  &copy; <a href="https://djnavarro.net">Danielle Navarro</a> 2018&ndash;2019 | <a href="https://github.com/djnavarro">Github</a> | <a href="https://twitter.com/djnavarro">Twitter</a>
+  <br/><br/>
+  
+</footer>
+
+
+
+    </div>
+  </body>
+</html>

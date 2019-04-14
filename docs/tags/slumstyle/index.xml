@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blogdown on A minimal Hugo website</title>
-    <link>/hugo-slum/tags/blogdown/</link>
-    <description>Recent content in blogdown on A minimal Hugo website</description>
+    <title>slumstyle on A minimal Hugo website</title>
+    <link>/hugo-slum/tags/slumstyle/</link>
+    <description>Recent content in slumstyle on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/hugo-slum/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/hugo-slum/tags/slumstyle/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Part 5. Understanding Hugo</title>
-      <link>/hugo-slum/project/understanding-hugo/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/project/understanding-hugo/</guid>
-      <description>TODO. Talk about the templating system. Why is this page in “projects” and everything else is in “posts”. It’s actually super customisable, you can just create your own folders!
-_default/single.html: the specific posts and project pages (in content)_default/lists.html : the “listing pages” for posts and projects (auto)_default/terms.html : the “listing page” for tags (auto)_default/home.html : the home page (corresponding to _index.html)The exception is:
-generic_page/single.</description>
-    </item>
     
     <item>
       <title>Part 4. Deploying a site</title>
@@ -50,15 +39,6 @@
       <guid>/hugo-slum/post/writing-a-post/</guid>
       <description>The slum provides a simple Hugo theme intended primarily to be used in conjunction with the blogdown package, so posts take the form of R Markdown documents rather than plain markdown. I’m fairly certain that the theme supports plain markdown, but given that the appeal of blogdown lies in integrating R Markdown with the Hugo blogging system I’ll jump straight to it.
 1. The YAML headerLike any R Markdown document, a post begins with the YAML header.</description>
-    </item>
-    
-    <item>
-      <title>Part 1. Getting started</title>
-      <link>/hugo-slum/post/getting-started/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/post/getting-started/</guid>
-      <description>My initial goal in writing the slum theme was purely selfish: I use blogdown on my own blog and I wanted to understand how it works. To help me learn, I decided to read the documentation and tinker with the minimalistic XMin theme. I… um… got a little carried away, and ended up with a fairly flexible blogging template with a few more bells and whistles than I was expecting. I wasn’t entirely convinced it would be useful, so I named it Somewhat-Light Unhelpfully-Minimal Hugo theme.</description>
     </item>
     
   </channel>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Part 1. Getting started | A minimal Hugo website</title>
+
+  <link rel="stylesheet" href=/hugo-slum/css/colour_dark.css />
+  
+  <link rel="stylesheet" href="/hugo-slum/css/style.css" />
+
+  
+</head>
+
+
+  <body>
+    
+
+<div class="article-header">
+  
+  
+  <img src="/hugo-slum/header/theme_dark.png" class="article-banner" itemprop="image" alt="">
+  
+
+  <span class="article-header-caption">A blank ggplot</span>
+</div>
+
+
+
+    <div class="main-content">
+      <nav>
+  <ul class="menu">
+    
+    <li><a href="/hugo-slum">Home</a></li>
+    
+    <li><a href="/hugo-slum/about/">About</a></li>
+    
+    <li><a href="/hugo-slum/post/">Posts</a></li>
+    
+    <li><a href="/hugo-slum/project/">Projects</a></li>
+    
+    <li><a href="/hugo-slum/tags/">Tags</a></li>
+    
+  </ul>
+</nav>
+
+      <div>
+  <h1>Part 1. Getting started</h1>
+  <h3>
+    by Danielle Navarro, 12 Apr 2019
+  </h3>
+  <br><br>
+</div>
+
+
+      <main>
+        <p>My initial goal in writing the <em>slum</em> theme was purely selfish: I use blogdown on <a href="https://djnavarro.net">my own blog</a> and I wanted to understand how it works. To help me learn, I decided to <a href="https://bookdown.org/yihui/blogdown/">read the documentation</a> and tinker with the minimalistic <a href="https://github.com/yihui/hugo-xmin">XMin theme</a>. I… um… got a little carried away, and ended up with a fairly flexible blogging template with a few more bells and whistles than I was expecting. I wasn’t entirely convinced it would be useful, so I named it <em>Somewhat-Light Unhelpfully-Minimal</em> Hugo theme.</p>
+<p>Having created the thing, I decided I might as well document it too…</p>
+<p>My assumption is that anyone intending to use the <em>slum</em> theme is using it within blogdown rather than some other kind of <a href="https://gohugo.io/">Hugo</a> website, so the documentation is written with an R user in mind. Additionally, I’ll assume that you’ve never used blogdown or Hugo before, but I do assume you’ve used <a href="https://rmarkdown.rstudio.com/">R Markdown</a>.</p>
+<div id="step-1-install-slumstyle" class="section level2">
+<h2>Step 1: Install slumstyle</h2>
+<p>The <em>slum</em> theme allows some degree of flexibility in visual styling, which is really nice when blogging. One thing that causes me frustration sometimes is that when I generate a plot within blogdown, the visual style of the plot doesn’t align nicely with the style of the blog. To remedy that, I wrote a small package called <em>slumstyle</em> that will let you draw plots that match the theme. So let’s install that first:</p>
+<pre class="r"><code># install.packages(&quot;devtools&quot;)
+devtools::install_github(&quot;djnavarro/slumstyle&quot;)</code></pre>
+</div>
+<div id="step-2-install-blogdown" class="section level2">
+<h2>Step 2: Install blogdown</h2>
+<p>Next, you need to make sure you have the blogdown package installed:</p>
+<pre class="r"><code>install.packages(&quot;blogdown&quot;)</code></pre>
+</div>
+<div id="step-3-create-a-slum-themed-blog" class="section level2">
+<h2>Step 3: Create a slum-themed blog</h2>
+<p>Once you have blogdown installed, the next step is to install the <em>slum</em> theme and download this webpage as a starter blog. I’ll assume that you have somewhere sensible in mind to install it:</p>
+<pre class="r"><code>bloghome &lt;- &quot;~/../Desktop/slum&quot;</code></pre>
+<p>The command to create a new site is:</p>
+<pre class="r"><code>blogdown::new_site(
+  dir = bloghome, 
+  theme = &quot;djnavarro/hugo-slum&quot;,
+  theme_example = TRUE,
+  sample = FALSE
+)</code></pre>
+<p>In this example, we’re doing a few things:</p>
+<ul>
+<li>The <code>dir</code> argument tells blogdown where to create the blog on the local machine</li>
+<li>The <code>theme</code> argument tells blogdown what Hugo theme to use, and in this case it will fetch everything from the <a href="https://github.com/djnavarro/hugo-slum">slum github repository</a></li>
+<li>By setting <code>theme_example = TRUE</code> blogdown also downloads the files for the example website (i.e., this site) in addition to the theme files themselves</li>
+<li>By setting <code>sample = FALSE</code> blogdown ignores the starter posts that Hugo tries to insert.</li>
+</ul>
+<p>At any later point in time:</p>
+<pre class="r"><code>setwd(bloghome)
+blogdown::serve_site()</code></pre>
+</div>
+<div id="step-4-initial-configuration" class="section level2">
+<h2>Step 4: initial configuration</h2>
+<p>Most of the settings that you’ll initially want to play with are in the <code>config.toml</code> file. The file is (I hope) fairly well documented, so you can see what most of the settings do and how to configure them. For example, here’s
+a snippet:</p>
+<pre><code># These settings specify the title for your blog, 
+# and the name of the Hugo theme that it uses.
+title = &quot;A minimal Hugo website&quot;
+theme = &quot;hugo-slum&quot;</code></pre>
+<p>Take a look at the config file, change a couple of things if you like, and then you’re ready to start blogging!</p>
+</div>
+
+      </main>
+
+      <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <br/><br/>
+  &copy; <a href="https://djnavarro.net">Danielle Navarro</a> 2018&ndash;2019 | <a href="https://github.com/djnavarro">Github</a> | <a href="https://twitter.com/djnavarro">Twitter</a>
+  <br/><br/>
+  
+</footer>
+
+
+
+    </div>
+  </body>
+</html>

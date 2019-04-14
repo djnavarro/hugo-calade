@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>A post in R Markdown | A minimal Hugo website</title>
+    <title>Part 2. Writing a post | A minimal Hugo website</title>
 
   <link rel="stylesheet" href=/hugo-slum/css/colour_dark.css />
   
@@ -46,7 +46,7 @@
 </nav>
 
       <div>
-  <h1>A post in R Markdown</h1>
+  <h1>Part 2. Writing a post</h1>
   <h3>
     by Danielle Navarro, 13 Apr 2019
   </h3>
@@ -55,7 +55,24 @@
 
 
       <main>
-        <p><em>Slum</em> provides a simple Hugo theme intended primarily to be used in conjunction with the <em>blogdown</em> package. Posts take the form of R Markdown documents. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>. You can embed code chunks like this:</p>
+        <p>The <em>slum</em> provides a simple Hugo theme intended primarily to be used in conjunction with the <em>blogdown</em> package, so posts take the form of R Markdown documents rather than plain markdown. I’m fairly certain that the theme supports plain markdown, but given that the appeal of <em>blogdown</em> lies in integrating R Markdown with the Hugo blogging system I’ll jump straight to it.</p>
+<div id="the-yaml-header" class="section level2">
+<h2>1. The YAML header</h2>
+<p>Like any R Markdown document, a post begins with the YAML header. For this post, the header looks like this:</p>
+<pre><code>---
+title: &quot;Part 2. Writing a post&quot;
+author: &quot;Danielle Navarro&quot;
+date: &quot;2019-04-13&quot;
+slug: writing-a-post
+tags: [&quot;slum&quot;, &quot;blogdown&quot;, &quot;slumstyle&quot;]
+header:
+  caption: &quot;A blank ggplot&quot;
+  image: &#39;header/theme_dark.png&#39;
+---</code></pre>
+</div>
+<div id="r-chunks" class="section level2">
+<h2>2. R chunks</h2>
+<p>As usual, R chunks can be inserted:</p>
 <pre class="r"><code>library(tidyverse)
 library(slumstyle)</code></pre>
 <p>Code that produces console output renders like this:</p>
@@ -73,29 +90,36 @@ library(slumstyle)</code></pre>
 ## $ hwy          &lt;int&gt; 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 2...
 ## $ fl           &lt;chr&gt; &quot;p&quot;, &quot;p&quot;, &quot;p&quot;, &quot;p&quot;, &quot;p&quot;, &quot;p&quot;, &quot;p&quot;, &quot;p&quot;, &quot;p&quot;, &quot;p&quot;,...
 ## $ class        &lt;chr&gt; &quot;compact&quot;, &quot;compact&quot;, &quot;compact&quot;, &quot;compact&quot;, &quot;comp...</code></pre>
-<p>The theme is designed on the assumption that you’re writing pages in R Markdown rather than plain markdown. I’m pretty sure it supports plain markdown (I didn’t do anything to break it, anyway), but I’ve been writing with an assumption that eventually the colour schemes used by the Hugo template will be mirrored in some simple ggplot themes. For instance, this page uses the default “dark” colour scheme. To generate plots that integrate nicely with this scheme, currently you have to do something like Figure <a href="#fig:scatter">1</a>:</p>
+</div>
+<div id="theme-consistent-plots" class="section level2">
+<h2>3. Theme-consistent plots</h2>
+<p>Because <em>slum</em> was written with the <em>blogdown</em> user in mind, the accompanying <em>slumstyle</em> package allows a modest amount of integration between the R side to the blog and the Hugo side. At the moment this is limited to providing a <code>theme_slum()</code> function for styling ggplot2 output. For instance, this site uses the “dark” colour theme, as specified by the following line in the <code>config.toml</code> file:</p>
+<pre><code>colourScheme = &quot;css/colour_dark.css&quot;</code></pre>
+<p>To create ggplot output that mirrors this theme, make sure that the <a href="https://github.com/djnavarro/slumstyle">slumstyle package</a> is loaded and then it is as simple as specifying <code>theme_slum(dark)</code>, as shown in Figure <a href="#fig:scatter">1</a> below:</p>
 <pre class="r"><code>ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum(&quot;dark&quot;)</code></pre>
 <div class="figure"><span id="fig:scatter"></span>
-<img src="/hugo-slum/post/2019-04-13-a-post-in-r-markdown_files/figure-html/scatter-1.png" alt="Here is a plot" width="672" />
+<img src="/hugo-slum/post/2019-04-13-writing-a-post_files/figure-html/scatter-1.png" alt="Here is a plot" width="672" />
 <p class="caption">
 Figure 1: Here is a plot
 </p>
 </div>
-<p>The <code>theme_slum()</code> function here is provided by the <a href="https://github.com/djnavarro/slumstyle">slumstyle package</a>, and is useful for styling plots in a fashion that is consistent with the slum style(s). By default the <em>slum</em> theme provides this “dark” colour scheme, but there is also a “light” scheme and a “kunoichi” scheme. The default colour scheme is set in the <code>config.toml</code> file and specifies the path to a css file. It’s not too difficult to create a new colour scheme. The <code>static/css/colour_dark.css</code> file specifies the four main colours used:</p>
-<pre><code>:root {
-  --primary: #ddd;
-  --subtle: #888;
-  --behind: #333;
-  --highlight: hotpink;
-}</code></pre>
-<p>It is possible to have different posts using different colour schemes (see <em>“A light themed post”</em>). At the moment, blockquotes look like this:</p>
+<p>By default the <em>slum</em> theme provides this “dark” colour scheme, but there is also a “light” scheme and a “kunoichi” scheme. I’ll talk more about colour schemes in the next post.</p>
+</div>
+<div id="latex" class="section level2">
+<h2>4. LaTeX</h2>
+<p>Inline LaTeX expressions look like this:</p>
+<p><code>$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$</code></p>
+</div>
+<div id="other-markdown" class="section level2">
+<h2>5. Other markdown</h2>
+<p>At the moment, blockquotes look like this:</p>
 <blockquote>
 <p>One is the loneliest number that you ever knew <br>
 Two can be as bad as one, it’s the loneliest number since the number one</p>
 </blockquote>
-<p>It’s not the prettiest output ever and I might change it. Inline LaTeX expressions look like this:</p>
-<p><code>$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$</code></p>
+<p>It’s not the prettiest output ever and I might change it.</p>
+</div>
 
       </main>
 

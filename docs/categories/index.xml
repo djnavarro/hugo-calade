@@ -10,14 +10,5 @@
 	<atom:link href="/hugo-slum/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Example</title>
-      <link>/hugo-slum/categories/example/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/categories/example/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

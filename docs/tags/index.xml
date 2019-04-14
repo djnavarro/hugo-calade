@@ -6,89 +6,52 @@
     <description>Recent content in Tags on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/hugo-slum/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Markdown</title>
-      <link>/hugo-slum/tags/markdown/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MathJax</title>
-      <link>/hugo-slum/tags/mathjax/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/mathjax/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pandoc</title>
-      <link>/hugo-slum/tags/pandoc/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/pandoc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>/hugo-slum/tags/r-markdown/</link>
-      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RStudio</title>
-      <link>/hugo-slum/tags/rstudio/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/rstudio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial</title>
-      <link>/hugo-slum/tags/tutorial/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>blogdown</title>
       <link>/hugo-slum/tags/blogdown/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/hugo-slum/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>plot</title>
-      <link>/hugo-slum/tags/plot/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      <title>github pages</title>
+      <link>/hugo-slum/tags/github-pages/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/tags/plot/</guid>
+      <guid>/hugo-slum/tags/github-pages/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>regression</title>
-      <link>/hugo-slum/tags/regression/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      <title>hugo</title>
+      <link>/hugo-slum/tags/hugo/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/tags/regression/</guid>
+      <guid>/hugo-slum/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slum</title>
+      <link>/hugo-slum/tags/slum/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/tags/slum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slumstyle</title>
+      <link>/hugo-slum/tags/slumstyle/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/tags/slumstyle/</guid>
       <description></description>
     </item>
     

@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tutorial | A minimal Hugo website</title>
+    <title>Part 4. Deploying a site | A minimal Hugo website</title>
 
   <link rel="stylesheet" href=/hugo-slum/css/colour_dark.css />
   
@@ -20,15 +20,15 @@
 <div class="article-header">
   
   
-  <img src="/hugo-slum/header/mpg_dark.png" class="article-banner" itemprop="image" alt="">
+  <img src="/hugo-slum/header/theme_dark.png" class="article-banner" itemprop="image" alt="">
   
 
+  <span class="article-header-caption">A blank ggplot</span>
 </div>
 
 
 
     <div class="main-content">
-
       <nav>
   <ul class="menu">
     
@@ -45,19 +45,24 @@
   </ul>
 </nav>
 
+      <div>
+  <h1>Part 4. Deploying a site</h1>
+  <h3>
+    by Danielle Navarro, 15 Apr 2019
+  </h3>
+  <br><br>
+</div>
 
-      <h1>Tutorial</h1>
 
-      
+      <main>
+        <p>The usual advice with blogdown is to deploy to netlify because it makes a few things easier than doing it with GitHub pages. Naturally, I just have to do things the hard way…</p>
+<ul>
+<li>The <code>.nojekyll</code> file is needed</li>
+<li>The baseurl in the <code>config.toml</code> file is needed</li>
+<li>Managing the tension between public and docs.</li>
+</ul>
 
-      <ul>
-        
-        <li>
-          <a href="/hugo-slum/project/another-note/">Another note on a blogdown tutorial</a>
-          <span class="date">14 Jun 2017</span>
-        </li>
-        
-      </ul>
+      </main>
 
       <footer>
   <script src="//yihui.name/js/math-code.js"></script>
@@ -77,4 +82,3 @@
     </div>
   </body>
 </html>
-

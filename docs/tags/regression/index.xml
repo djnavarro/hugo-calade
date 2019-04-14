@@ -1,26 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>regression on A minimal Hugo website</title>
-    <link>/hugo-slum/tags/regression/</link>
-    <description>Recent content in regression on A minimal Hugo website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/hugo-slum/tags/regression/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>A post in R Markdown</title>
-      <link>/hugo-slum/post/a-post-in-r-markdown/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/post/a-post-in-r-markdown/</guid>
-      <description>Slum provides a simple Hugo theme intended primarily to be used in conjunction with the blogdown package. Posts take the form of R Markdown documents. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com. You can embed code chunks like this:
-library(tidyverse)library(slumstyle)Code that produces console output renders like this:
-glimpse(mpg)## Observations: 234## Variables: 11## $ manufacturer &amp;lt;chr&amp;gt; &amp;quot;audi&amp;quot;, &amp;quot;audi&amp;quot;, &amp;quot;audi&amp;quot;, &amp;quot;audi&amp;quot;, &amp;quot;audi&amp;quot;, &amp;quot;audi&amp;quot;, &amp;quot;.</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -3,28 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/hugo-slum/post/a-light-themed-post/</loc>
+    <loc>/hugo-slum/project/understanding-hugo/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/hugo-slum/post/deploying-a-site/</loc>
+    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/hugo-slum/post/customising-a-post/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/post/a-post-in-r-markdown/</loc>
+    <loc>/hugo-slum/post/writing-a-post/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/post/a-post-in-plain-markdown/</loc>
+    <loc>/hugo-slum/post/getting-started/</loc>
     <lastmod>2019-04-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/hugo-slum/project/another-note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/hugo-slum/project/a-quick-note/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -37,85 +37,54 @@
   </url>
   
   <url>
-    <loc>/hugo-slum/categories/example/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/hugo-slum/</loc>
-    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/hugo-slum/tags/markdown/</loc>
-    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/hugo-slum/tags/mathjax/</loc>
-    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/hugo-slum/tags/pandoc/</loc>
-    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/hugo-slum/post/</loc>
-    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/hugo-slum/project/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/hugo-slum/tags/r-markdown/</loc>
-    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/hugo-slum/tags/rstudio/</loc>
-    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/hugo-slum/tags/</loc>
-    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/hugo-slum/tags/tutorial/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/hugo-slum/tags/blogdown/</loc>
-    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/hugo-slum/tags/plot/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <loc>/hugo-slum/tags/github-pages/</loc>
+    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/hugo-slum/tags/regression/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <loc>/hugo-slum/tags/hugo/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/hugo-slum/tags/slum/</loc>
+    <lastmod>2019-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/hugo-slum/tags/slumstyle/</loc>
+    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
