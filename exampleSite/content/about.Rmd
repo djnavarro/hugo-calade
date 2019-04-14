@@ -2,23 +2,34 @@
 title: About
 ---
 
-# About the slum theme
+# The slum theme for blogdown
 
-The slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. I’m not really convinced it’s useful for much, hence the name; this is a somewhat-light unhelpfully-minimal Hugo theme. In truth, my main goal in putting this theme together was to make sure I understand the basics of how Hugo works.
+The slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. Originally it was intended to be extremely minimal, with the very modest goal of trying to make sure I understood the logic of how Hugo generates static sites. The more I played with it though, the more I enjoyed it. So what I've ended up with is a *"somewhat-light unhelpfully-minimal"* Hugo theme, designed with a single goal in mind: eventually I'm going to use it as the theme for [my blog](https://djnavarro.net)
+
+The theme is designed on the assumption that you're writing pages in R Markdown rather than plain markdown. I'm pretty sure it supports plain markdown (I didn't do anything to break it, anyway), but I've been writing with an assumption that eventually the colour schemes used by the Hugo template will be mirrored in some simple ggplot themes. For instance, this page uses the default "dark" colour scheme. To generate plots that integrate nicely with this scheme, currently you have to do this:
+
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse)
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_point() + 
+  theme_dark() + 
+  theme(
+    text = element_text(colour = "#dddddd"),
+    axis.text = element_text(colour = "#dddddd"),
+    plot.background = element_rect(
+      fill = "#333333", colour = "#333333"))
+```
+
+Eventually though I'll write a custom ggplot2 theme. Maybe.
+
+## Bits and pieces
+
+Blockquotes look like this:
 
 > One is the loneliest number that you ever knew <br>
 > Two can be as bad as one, it's the loneliest number since the number one
 
-## Examples
-
-```{r, warning=FALSE, message=FALSE}
-library(tidyverse)
-glimpse(mpg)
-ggplot(mpg, aes(displ, hwy)) + geom_point() 
-```
-
-Inline LaTeX expressions:
+Inline LaTeX expressions look like this:
 
 `$${\sqrt {n}}\left(\left({\frac {1}{n}}\sum _{i=1}^{n}X_{i}\right)-\mu \right)\ {\xrightarrow {d}}\ N\left(0,\sigma ^{2}\right)$$`
 
-All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [notes](/note/). See the [About](/about/) page for the usage of this theme.

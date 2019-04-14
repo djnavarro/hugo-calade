@@ -4,7 +4,7 @@ title: Home
 
 # The slum theme for blogdown
 
-```{r, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)
 ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + 
