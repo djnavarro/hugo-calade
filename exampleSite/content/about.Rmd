@@ -1,5 +1,6 @@
 ---
 title: About
+kind: page
 ---
 
 # The slum theme for blogdown
