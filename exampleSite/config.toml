@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "/hugo-slum/"
 languageCode = "en-us"
 title = "A minimal Hugo website"
 theme = "hugo-slum"
