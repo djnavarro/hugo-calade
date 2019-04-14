@@ -2,7 +2,6 @@ baseurl = "/"
 languageCode = "en-us"
 title = "A minimal Hugo website"
 theme = "hugo-slum"
-colourScheme = "dark"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -35,5 +34,6 @@ footnotereturnlinkcontents = "↩"
     weight = 5
 
 [params]
+    colourScheme = "dark"
     description = "A website built through Hugo and blogdown."
     footer = "&copy; [Danielle Navarro](https://djnavarro.net) 2018--2019 | [Github](https://github.com/djnavarro) | [Twitter](https://twitter.com/djnavarro)"
