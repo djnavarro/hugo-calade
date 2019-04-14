@@ -13,33 +13,38 @@ header:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
+*Slum* provides a simple Hugo theme intended primarily to be used in conjunction with the *blogdown* package. Posts take the form of R Markdown documents. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. You can embed code chunks like this:
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-You can embed an R code chunk like this:
-
-```{r mpg, warning=FALSE, message=FALSE}
+```{r packageload, warning=FALSE, message=FALSE}
 library(tidyverse)
-glimpse(mpg)
+library(slumstyle)
 ```
 
+Code that produces console output renders like this:
+
+```{r}
+glimpse(mpg)
+```
 
 The theme is designed on the assumption that you're writing pages in R Markdown rather than plain markdown. I'm pretty sure it supports plain markdown (I didn't do anything to break it, anyway), but I've been writing with an assumption that eventually the colour schemes used by the Hugo template will be mirrored in some simple ggplot themes. For instance, this page uses the default "dark" colour scheme. To generate plots that integrate nicely with this scheme, currently you have to do something like Figure \@ref(fig:scatter): 
 
 ```{r scatter, fig.cap = "Here is a plot", warning=FALSE, message=FALSE}
-library(tidyverse)
 ggplot(mpg, aes(displ, hwy)) + 
-  geom_point() + 
-  theme_dark() + 
-  theme(
-    text = element_text(colour = "#dddddd"),
-    axis.text = element_text(colour = "#dddddd"),
-    plot.background = element_rect(
-      fill = "#333333", colour = "#333333"))
+  geom_point() + theme_slum("dark")
 ```
 
-Eventually though I'll write a custom ggplot2 theme. Maybe.
+The `theme_slum()` function here is provided by the [slumstyle package](https://github.com/djnavarro/slumstyle), and is useful for styling plots in a fashion that is consistent with the slum style(s). By default the *slum* theme provides this "dark" colour scheme, but there is also a "light" scheme and a "kunoichi" scheme. The default colour scheme is set in the `config.toml` file and specifies the path to a css file. It's not too difficult to create a new colour scheme. The `static/css/colour_dark.css` file specifies the four main colours used:
 
+```
+:root {
+  --primary: #ddd;
+  --subtle: #888;
+  --behind: #333;
+  --highlight: hotpink;
+}
+```
+
+It is possible to have different posts using different colour schemes (see *"A light themed post"). 
 
 Blockquotes look like this:
 
