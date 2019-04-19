@@ -1,3 +1,6 @@
+/* import solarized-light */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css");
+
 /* light colour scheme */
 :root {
   --primary: #111;
