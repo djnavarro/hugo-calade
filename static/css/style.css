@@ -39,6 +39,8 @@ h1 {
 h2 {
   font-style: italic;
   font-weight: 400;
+  border-bottom-style: solid;
+  border-bottom-color: var(--subtle);
   margin-top: 2.1rem;
   margin-bottom: 1.4rem;
   font-size: 1.8rem;
