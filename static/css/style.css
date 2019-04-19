@@ -17,7 +17,7 @@ body {
   padding-left: 5%;
   max-width: 800px;
 }
-p, ol, ul {
+p, ol, ul, code {
   font-size: 1.4rem;
   line-height: 2rem;
 }
@@ -71,6 +71,8 @@ pre {
   overflow-x: auto;
 }
 code {
+  font-size: 1.2rem;
+  color: var(--subtle);
   background: none;
   max-width: 800px;
 }
