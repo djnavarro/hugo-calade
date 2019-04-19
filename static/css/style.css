@@ -177,6 +177,6 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 .hljs-string,
 .hljs-number,
 .hljs-literal {
-  color: var(--subtle");
+  color: var(--subtle);
   font-style: bold;
 }
