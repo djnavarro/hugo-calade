@@ -15,6 +15,10 @@ baseurl = "/hugo-slum/"
 title = "A minimal Hugo website"
 theme = "hugo-slum"
 
+# Syntax highlighting?
+pygmentsCodefences = true
+pygmentsStyle = "pygments"
+
 
 # Various other settings that I rarely ever change.
 languageCode = "en-us"
