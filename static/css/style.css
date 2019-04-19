@@ -190,3 +190,20 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
   width: 100%;
   height: auto;
 }
+
+
+/* syntax highlighting */
+.hljs,.hljs-subst {
+  color: var(--primary);
+}
+
+.hljs-keyword,
+.hljs-built_in,
+.hljs-function{
+  color: var(--highlight);
+}
+
+.hljs-comment {
+  color: var(--subtle);
+  font-style: italic;
+}
