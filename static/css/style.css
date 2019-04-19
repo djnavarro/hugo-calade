@@ -58,9 +58,9 @@ h3 {
 /* blockquotes and code blocks */
 blockquote {
   background: none;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--subtle);
+  color: var(--subtle);
+  font-style: italic;
+  font-weight: bold;
   padding: 3px 1em 3px;
   max-width: 800px;
 }
@@ -75,12 +75,18 @@ code {
   max-width: 800px;
 }
 
+
+
+
 /* links */
 a:link, a:visited {
   color: var(--highlight);
   font-style: italic;
   text-decoration: none;
 }
+
+
+
 
 /* horizontal rule styling */
 hr {
@@ -94,6 +100,9 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
+
+
 
 /* header and footer areas */
 .menu {
@@ -127,9 +136,13 @@ footer a:visited, footer a:link {
   color: var(--subtle)
 }
 
+
+
 /* miscellaneous elements */
 img, iframe, video { max-width: 100%; }
 main { hyphens: auto; }
+
+
 
 /* table formatting */
 table {
@@ -140,6 +153,8 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+
 
 /* formatting for header images */
 .article-header {
