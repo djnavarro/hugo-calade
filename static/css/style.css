@@ -67,9 +67,6 @@ blockquote {
 pre {
   background: none;
   margin-left: 5%;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--subtle);
   padding: 1em;
   overflow-x: auto;
 }
