@@ -1,3 +1,6 @@
+/* import solarized-dark */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css");
+
 /* dark colour scheme */
 :root {
   --primary: #ddd;
@@ -5,3 +8,4 @@
   --behind: #333;
   --highlight: hotpink;
 }
+
