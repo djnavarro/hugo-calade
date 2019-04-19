@@ -15,11 +15,6 @@ baseurl = "/hugo-slum/"
 title = "A minimal Hugo website"
 theme = "hugo-slum"
 
-# Syntax highlighting?
-pygmentsCodefences = true
-pygmentsStyle = "pygments"
-
-
 # Various other settings that I rarely ever change.
 languageCode = "en-us"
 googleAnalytics = ""
@@ -27,7 +22,6 @@ disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
-
 
 # What format should the links take? In the example site there
 # are two kinds of pages, posts and projects, listed at:
