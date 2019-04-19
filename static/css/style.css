@@ -39,9 +39,9 @@ h1 {
 h2 {
   font-style: italic;
   font-weight: 400;
-  border-bottom-style: solid;
+  border-bottom-style: dotted;
   border-bottom-color: var(--subtle);
-  margin-top: 2.1rem;
+  margin-top: 4rem;
   margin-bottom: 1.4rem;
   font-size: 1.8rem;
   line-height: 1;
@@ -50,7 +50,7 @@ h3 {
   font-style: italic;
   font-weight: 400;
   font-size: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.4rem;
   line-height: 1;
 }
