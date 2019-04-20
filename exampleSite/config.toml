@@ -9,6 +9,9 @@
 # like this:
 baseurl = "/hugo-slum/"
 
+# Default is "public", but if you're using github pages you
+# need to point this to "docs".
+publishDir = "docs"
 
 # These settings specify the title for your blog, and the name of
 # the Hugo theme that it uses.
