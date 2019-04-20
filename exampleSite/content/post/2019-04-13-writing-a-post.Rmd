@@ -38,7 +38,7 @@ As usual, R chunks can be inserted:
 
 ```{r packageload, warning=FALSE, message=FALSE}
 library(tidyverse)
-library(slumstyle)
+library(slumdown)
 ```
 
 Code that produces console output renders like this:

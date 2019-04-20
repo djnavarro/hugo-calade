@@ -18,7 +18,7 @@ Here is some text that I have written. This page uses the light theme. To make l
 
 ```{r, warning=FALSE, message=FALSE}
 #devtools::install_github("djnavarro/slumstyle")
-library(slumstyle)
+library(slumdown)
 library(tidyverse)
 ```
 
