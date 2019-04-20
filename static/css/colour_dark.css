@@ -1,8 +1,8 @@
-
 /* dark colour scheme */
 :root {
-  --primary: #ddd;
-  --subtle: #888;
-  --behind: #333;
-  --highlight: hotpink;
+  --pagecolour: #333;     /* dark grey */
+  --maintext: #ddd;       /* almost white */
+  --faded: #888;          /* light grey */
+  --highlight: #562457;   /* bright pink */
+  --lowlight: #ba68c8;    /* purple */
 }

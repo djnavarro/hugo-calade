@@ -6,8 +6,8 @@ code {font-family: Monaco, monospace;}
 
 /* main text elements */
 body {
-  background-color: var(--behind);
-  color: var(--primary);
+  background-color: var(--pagecolour);
+  color: var(--maintext);
   counter-reset: sidenote-counter;
   margin: 0;
 }
@@ -40,7 +40,7 @@ h2 {
   font-style: italic;
   font-weight: 400;
   border-bottom-style: dotted;
-  border-bottom-color: var(--subtle);
+  border-bottom-color: var(--faded);
   margin-top: 4rem;
   margin-bottom: 1.4rem;
   font-size: 1.8rem;
@@ -58,7 +58,7 @@ h3 {
 /* blockquotes and code blocks */
 blockquote {
   background: none;
-  color: var(--subtle);
+  color: var(--faded);
   font-style: italic;
   font-weight: bold;
   padding: 3px 1em 3px;
@@ -72,7 +72,7 @@ pre {
 }
 code {
   font-size: 1.2rem;
-  color: var(--subtle);
+  color: var(--lowlight);
   background: none;
   max-width: 800px;
 }
@@ -98,7 +98,7 @@ hr {
   border: 0;
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: var(--subtle);
+  border-top-color: var(--faded);
   margin: 1em 0;
   padding: 0;
 }
@@ -112,7 +112,7 @@ hr {
   padding-bottom: 5px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--subtle);
+  border-bottom-color: var(--faded);
 }
 .menu li { display: inline-block; }
 .article-meta, .menu a {
@@ -125,17 +125,17 @@ hr {
 .title { font-size: 1.1em; }
 footer {
   text-align: center;
-  color: var(--subtle);
+  color: var(--faded);
 }
 footer a:visited, footer a:link {
   text-decoration: none;
   font-style: normal;
-  color: var(--subtle)
+  color: var(--faded)
 }
 .menu a:visited, .menu a:link {
   text-decoration: none;
   font-style: normal;
-  color: var(--subtle)
+  color: var(--faded)
 }
 
 
@@ -176,7 +176,7 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 
 /* syntax highlighting */
 .hljs,.hljs-subst {
-  color: var(--primary);
+  color: var(--maintext);
 }
 
 .hljs-keyword,
@@ -186,13 +186,13 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 }
 
 .hljs-comment {
-  color: var(--subtle);
+  color: var(--faded);
   font-style: italic;
 }
 
 .hljs-string,
 .hljs-number,
 .hljs-literal {
-  color: var(--subtle);
+  color: var(--faded);
   font-style: bold;
 }
