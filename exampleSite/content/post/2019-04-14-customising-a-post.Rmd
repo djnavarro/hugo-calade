@@ -4,7 +4,7 @@ author: "Danielle Navarro"
 date: "2019-04-14"
 slug: customising-a-post
 tags: ["slum", "blogdown", "slumstyle"]
-colourscheme: "css/colour_light.css"
+colourscheme: "css/palette_light.css"
 header:
   caption: "A blank ggplot"
   image: 'header/theme_grey.png'
