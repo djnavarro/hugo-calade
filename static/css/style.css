@@ -55,7 +55,7 @@ h3 {
   line-height: 1;
 }
 
-/* blockquotes and code blocks */
+/* blockquotes */
 blockquote {
   background: none;
   color: var(--faded);
@@ -64,11 +64,17 @@ blockquote {
   padding: 3px 1em 3px;
   max-width: 800px;
 }
+
+
+/* code formatting */
 pre {
   background: none;
   margin-left: 5%;
   padding: 1em;
   overflow-x: auto;
+  border-width: 1px;
+  border-color: var(--lowlight);
+  border-style: dotted;
 }
 code {
   font-size: 1.2rem;
@@ -76,6 +82,30 @@ code {
   background: none;
   max-width: 800px;
 }
+
+/* syntax highlighting */
+.hljs,.hljs-subst {
+  color: var(--maintext);
+}
+
+.hljs-keyword,
+.hljs-built_in,
+.hljs-function{
+  color: var(--lowlight);
+}
+
+.hljs-comment {
+  color: var(--faded);
+  font-style: italic;
+}
+
+.hljs-string,
+.hljs-number,
+.hljs-literal {
+  color: var(--faded);
+  font-style: bold;
+}
+
 
 
 
@@ -171,28 +201,4 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
   max-width: 100%;
   width: 100%;
   height: auto;
-}
-
-
-/* syntax highlighting */
-.hljs,.hljs-subst {
-  color: var(--maintext);
-}
-
-.hljs-keyword,
-.hljs-built_in,
-.hljs-function{
-  color: var(--highlight);
-}
-
-.hljs-comment {
-  color: var(--faded);
-  font-style: italic;
-}
-
-.hljs-string,
-.hljs-number,
-.hljs-literal {
-  color: var(--faded);
-  font-style: bold;
 }
