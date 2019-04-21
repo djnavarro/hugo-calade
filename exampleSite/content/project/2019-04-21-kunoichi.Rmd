@@ -6,7 +6,7 @@ slug: kunoichi
 tags: ["slumdown", "kunoichi"]
 colourscheme: "css/palette_kunoichi.css"
 header:
-  image: 'header/theme_grey.png'
+  image: 'header/theme_kunoichi.png'
 ---
 
 ```{r setup, include=FALSE}
