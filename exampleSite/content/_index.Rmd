@@ -1,7 +1,5 @@
 ---
 title: Home
-header:
-  profile: 'header/my_profile.png'
 ---
 
 # Slumming it with blogdown

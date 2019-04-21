@@ -14,7 +14,7 @@
   {{ if $img_src2.Scheme }}
   <img src="{{ .Params.header.profile }}" class = "article-header-profile">
   {{ else }}
-  <img src="{{ (printf "/%s" .Params.header.profile) | relURL }}" class="article-header-caption" itemprop="image" alt="">
+  <img src="{{ (printf "/%s" .Params.header.profile) | relURL }}" class="article-header-profile" itemprop="image" alt="">
   {{ end }}
 
 
