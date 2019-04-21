@@ -196,9 +196,12 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
   position: relative; /* Required for caption positioning */
   clear: both;
 }
-.article-banner {
-  padding: 0;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
+.article-header-caption {
+  background-color: var(--pagecolour);
+  color: var(--faded);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
 }
+
