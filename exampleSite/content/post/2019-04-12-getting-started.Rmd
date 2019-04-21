@@ -4,6 +4,7 @@ author: "Danielle Navarro"
 date: "2019-04-12"
 slug: getting-started
 tags: ["slum", "blogdown"]
+summary: "A sort summary of how to get started using the slumdown package. It discusses how to install the package, set up a new site, and where to look for initial configuration."
 header:
   caption: "A blank ggplot"
   image: 'header/theme_dark.png'

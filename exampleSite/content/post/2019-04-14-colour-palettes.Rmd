@@ -5,6 +5,7 @@ date: "2019-04-14"
 slug: colour-palettes
 tags: ["slum", "blogdown", "slumstyle"]
 colourscheme: "css/palette_light.css"
+summary: "The main reason I wrote slumdown (besides boredom) was to make it easy to  include user-defined colours palettes in blogdown, and expose those palettes to R so that (for instance) plots can be drawn in a style that matches the blog style. This tutorial introduces this palette system."
 header:
   caption: "A blank ggplot"
   image: 'header/theme_grey.png'

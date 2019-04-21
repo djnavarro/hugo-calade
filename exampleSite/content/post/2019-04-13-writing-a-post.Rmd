@@ -4,6 +4,7 @@ author: "Danielle Navarro"
 date: "2019-04-13"
 slug: writing-a-post
 tags: ["slum", "blogdown", "slumstyle"]
+summary: "Like any blogdown post, a slumdown post is written in R Markdown, and uses a few custom fields in the YAML field. This tutorial provides an illustration of how different kinds of content are displated."
 header:
   caption: "A blank ggplot"
   image: 'header/theme_dark.png'

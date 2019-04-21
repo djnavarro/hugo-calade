@@ -5,7 +5,7 @@ date: "2019-04-21"
 slug: kunoichi
 tags: ["slumdown", "kunoichi"]
 colourscheme: "css/palette_kunoichi.css"
-summary: "A simple project page illustrating how user-defined themes in slumdwon can be used as the basis of individual pages and ggplot2 figures. It doesn't do very much."
+summary: "A simple project page illustrating how user-defined themes in *slumdown* can be used as the basis of individual pages and ggplot2 figures. It doesn't do very much."
 header:
   image: 'header/theme_kunoichi.png'
 ---
