@@ -14,7 +14,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 ```
 
 
-TODO. Talk about the templating system. Why is this page in "projects" and everything else is in "posts". It's actually super customisable, you can just create your own folders!
+**TODO**. Talk about the templating system. Why is this page in "projects" and everything else is in "posts". It's actually super customisable, you can just create your own folders!
 
 - `_default/single.html`: the specific posts and project pages (in content)
 - `_default/lists.html` : the "listing pages" for posts and projects (auto)
