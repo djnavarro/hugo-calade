@@ -8,5 +8,13 @@
   <img src="{{ (printf "/%s" .Site.Params.SiteHeader) | relURL }}" class="article-banner" itemprop="image" alt="">
   {{ end }}
 
+  {{ $img_src2 := urls.Parse .Site.Params.SiteProfile }}
+  {{ if $img_src2.Scheme }}
+  <img src="{{ .Site.Params.SiteProfile }}" class = "article-header-profile">
+  {{ else }}
+  <img src="{{ (printf "/%s" .Site.Params.SiteProfile) | relURL }}" class="article-header-profile" itemprop="image" alt="">
+  {{ end }}
+
+
 </div>
 {{end}}
