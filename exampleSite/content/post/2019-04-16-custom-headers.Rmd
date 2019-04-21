@@ -1,0 +1,32 @@
+---
+title: "Part 4. Custom headers "
+author: "Danielle Navarro"
+date: "2019-04-16"
+slug: customising-headers
+tags: ["slum", "blogdown", "slumstyle"]
+colourscheme: "css/palette_kunoichi.css"
+header:
+  caption: "A blank ggplot"
+  image: 'header/theme_dark.png'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+library(slumdown)
+library(tidyverse)
+```
+
+
+The `slumdown` theme allows you to specify an image header, and a caption to be displayed over the top of the header image. The required lines for the YAML header are as follows:
+
+```
+header:
+  caption: "A blank ggplot"
+  image: 'header/theme_dark.png'
+```
+
+The image is scaled to fit but otherwise left as-is. I have been using images that are 1600x400 pixels in size as the headers. If no header image is specified in the YAML, then no header is used in the post.
+
+For automatically generated pages (lists, the home page, the header is set using the relevant parameter in the `config.toml` file)
+
+
