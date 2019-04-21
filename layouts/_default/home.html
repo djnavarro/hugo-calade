@@ -13,9 +13,9 @@
         {{ .Content }}
       </main>
 
-      <ul>
+      <ul class="prettylist">
         {{ range (where .Data.Pages "Section" "!=" "") }}
-        <li>
+        <li class="prettylist">
           <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
           <span class="date">{{ .Date.Format "02 Jan 2006" }}</span>
         </li>
