@@ -210,6 +210,6 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 200px;
+  max-height: 80%;
 }
 

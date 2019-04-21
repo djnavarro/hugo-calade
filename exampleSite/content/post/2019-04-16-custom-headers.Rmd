@@ -7,8 +7,8 @@ tags: ["slum", "blogdown", "slumstyle"]
 colourscheme: "css/palette_kunoichi.css"
 header:
   caption: "A blank ggplot"
-  image: 'header/theme_dark.png'
-  profile: 'header/custom_profile.jpg'
+  image: 'header/mpg_dark.png'
+  profile: 'header/custom_profile.png'
 ---
 
 ```{r setup, include=FALSE}
