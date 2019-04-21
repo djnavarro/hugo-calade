@@ -18,10 +18,10 @@
         {{ range (where .Data.Pages "Section" "!=" "") }}
         <li class="prettylist">
           <p class="prettylist">
-          <a href="{{ .URL }}">{{ .Title | markdownify }}</a>&nbsp;&nbsp;
-          <span class="prettylistdate">{{ .Date.Format "02 Jan 2006" }}</span>
-          <br>
-          <span class="prettylistsummary">{{ .Summary | markdownify }}</span>
+            <a href="{{ .URL }}">{{ .Title | markdownify }}</a>&nbsp;&nbsp;
+            <span class="prettylistdate">{{ .Date.Format "02 Jan 2006" }}</span>
+            <br>
+            <span class="prettylistsummary">{{ .Summary | markdownify }}</span>
           </p>
         </li>
         {{ end }}
