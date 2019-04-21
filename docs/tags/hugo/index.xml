@@ -6,20 +6,19 @@
     <description>Recent content in hugo on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/hugo-slum/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Part 5. Understanding Hugo</title>
-      <link>/hugo-slum/project/understanding-hugo/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Tutorial part 6: Some notes on Hugo</title>
+      <link>/hugo-slum/post/notes-on-hugo/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/project/understanding-hugo/</guid>
+      <guid>/hugo-slum/post/notes-on-hugo/</guid>
       <description>TODO. Talk about the templating system. Why is this page in “projects” and everything else is in “posts”. It’s actually super customisable, you can just create your own folders!
-_default/single.html: the specific posts and project pages (in content)_default/lists.html : the “listing pages” for posts and projects (auto)_default/terms.html : the “listing page” for tags (auto)_default/home.html : the home page (corresponding to _index.html)The exception is:
-generic_page/single.</description>
+_default/single.html: the specific posts and project pages (in content)_default/lists.html : the “listing pages” for posts and projects (auto)_default/terms.html : the “listing page” for tags (auto)_default/home.html : the home page (corresponding to _index.html)The exception is:</description>
     </item>
     
   </channel>

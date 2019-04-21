@@ -4,10 +4,11 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Part 4. Deploying a site | A minimal Hugo website</title>
+    <title>kunoichi | A minimal Hugo website</title>
 
-  <link rel="stylesheet" href=/hugo-slum/css/colour_dark.css />
+  <link rel="stylesheet" href=/hugo-slum/css/palette_dark.css />
   
+  <link rel="stylesheet" href="/hugo-slum/css/et_book.css" />
   <link rel="stylesheet" href="/hugo-slum/css/style.css" />
 
   
@@ -20,15 +21,21 @@
 <div class="article-header">
   
   
-  <img src="/hugo-slum/header/theme_dark.png" class="article-banner" itemprop="image" alt="">
+  <img src="/hugo-slum/header/mpg_dark.png" class="article-banner" itemprop="image" alt="">
   
 
-  <span class="article-header-caption">A blank ggplot</span>
+  
+  
+  <img src="/hugo-slum/header/my_profile.png" class="article-header-profile" itemprop="image" alt="">
+  
+
+
 </div>
 
 
 
     <div class="main-content">
+
       <nav>
   <ul class="menu">
     
@@ -45,26 +52,30 @@
   </ul>
 </nav>
 
-      <div>
-  <h1>Part 4. Deploying a site</h1>
-  <h3>
-    by Danielle Navarro, 15 Apr 2019
-  </h3>
-  <br><br>
-</div>
 
+      <h1>kunoichi</h1>
 
-      <main>
-        <p>The usual advice with blogdown is to deploy to netlify because it makes a few things easier than doing it with GitHub pages. Naturally, I just have to do things the hard way…</p>
-<ul>
-<li>The <code>.nojekyll</code> file is needed</li>
-<li>The baseurl in the <code>config.toml</code> file is needed</li>
-<li>Managing the tension between public and docs.</li>
-</ul>
+      
 
-      </main>
+      <ul>
+        
+        <li>
+          <a href="/hugo-slum/project/kunoichi/">A kunoichi page</a>
+          <span class="date">21 Apr 2019</span>
+        </li>
+        
+      </ul>
 
       <footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+
+  <script>
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  </script>
+
   <script src="//yihui.name/js/math-code.js"></script>
 <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
@@ -78,7 +89,7 @@
 </footer>
 
 
-
     </div>
   </body>
 </html>
+

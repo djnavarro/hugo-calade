@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>blogdown | A minimal Hugo website</title>
 
-  <link rel="stylesheet" href=/hugo-slum/css/colour_dark.css />
+  <link rel="stylesheet" href=/hugo-slum/css/palette_dark.css />
   
+  <link rel="stylesheet" href="/hugo-slum/css/et_book.css" />
   <link rel="stylesheet" href="/hugo-slum/css/style.css" />
 
   
@@ -22,6 +23,12 @@
   
   <img src="/hugo-slum/header/mpg_dark.png" class="article-banner" itemprop="image" alt="">
   
+
+  
+  
+  <img src="/hugo-slum/header/my_profile.png" class="article-header-profile" itemprop="image" alt="">
+  
+
 
 </div>
 
@@ -53,33 +60,47 @@
       <ul>
         
         <li>
-          <a href="/hugo-slum/project/understanding-hugo/">Part 5. Understanding Hugo</a>
+          <a href="/hugo-slum/post/notes-on-hugo/">Tutorial part 6: Some notes on Hugo</a>
+          <span class="date">17 Apr 2019</span>
+        </li>
+        
+        <li>
+          <a href="/hugo-slum/post/deploying-to-github/">Tutorial part 5: Deploying to GitHub</a>
           <span class="date">16 Apr 2019</span>
         </li>
         
         <li>
-          <a href="/hugo-slum/post/deploying-a-site/">Part 4. Deploying a site</a>
+          <a href="/hugo-slum/post/customising-headers/">Tutorial part 4: Customising the header</a>
           <span class="date">15 Apr 2019</span>
         </li>
         
         <li>
-          <a href="/hugo-slum/post/customising-a-post/">Part 3. Customising a post</a>
+          <a href="/hugo-slum/post/colour-palettes/">Tutorial part 3: Colour palettes in slumdown</a>
           <span class="date">14 Apr 2019</span>
         </li>
         
         <li>
-          <a href="/hugo-slum/post/writing-a-post/">Part 2. Writing a post</a>
+          <a href="/hugo-slum/post/writing-a-post/">Tutorial part 2: Writing a post</a>
           <span class="date">13 Apr 2019</span>
         </li>
         
         <li>
-          <a href="/hugo-slum/post/getting-started/">Part 1. Getting started</a>
+          <a href="/hugo-slum/post/getting-started/">Tutorial part 1: Getting started</a>
           <span class="date">12 Apr 2019</span>
         </li>
         
       </ul>
 
       <footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+
+  <script>
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  </script>
+
   <script src="//yihui.name/js/math-code.js"></script>
 <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
@@ -91,7 +112,6 @@
   <br/><br/>
   
 </footer>
-
 
 
     </div>

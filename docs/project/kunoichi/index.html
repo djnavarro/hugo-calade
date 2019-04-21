@@ -4,10 +4,10 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tags | A minimal Hugo website</title>
+    <title>A kunoichi page | A minimal Hugo website</title>
 
   <link rel="stylesheet" href=/hugo-slum/css/palette_dark.css />
-  
+   <link rel="stylesheet" href=/hugo-slum/css/palette_kunoichi.css />
   <link rel="stylesheet" href="/hugo-slum/css/et_book.css" />
   <link rel="stylesheet" href="/hugo-slum/css/style.css" />
 
@@ -21,12 +21,14 @@
 <div class="article-header">
   
   
-  <img src="/hugo-slum/header/mpg_dark.png" class="article-banner" itemprop="image" alt="">
+  <img src="/hugo-slum/header/theme_kunoichi.png" class="article-banner" itemprop="image" alt="">
+  
+
   
 
   
   
-  <img src="/hugo-slum/header/my_profile.png" class="article-header-profile" itemprop="image" alt="">
+  <img src="/hugo-slum/%25!s%28%3cnil%3e%29" class="article-header-profile" itemprop="image" alt="">
   
 
 
@@ -35,7 +37,6 @@
 
 
     <div class="main-content">
-
       <nav>
   <ul class="menu">
     
@@ -52,61 +53,31 @@
   </ul>
 </nav>
 
+      <div>
+  <h1>A kunoichi page</h1>
+  <h3>
+    by Danielle Navarro, 21 Apr 2019
+  </h3>
+  <br><br>
+</div>
 
-      <h1>Tags</h1>
 
-      <ul class="terms">
+      <main>
         
-        <li>
-          <a href="/hugo-slum/tags/blogdown">
-            blogdown
-          </a>
-          (6)
-        </li>
-        
-        <li>
-          <a href="/hugo-slum/tags/github-pages">
-            github-pages
-          </a>
-          (1)
-        </li>
-        
-        <li>
-          <a href="/hugo-slum/tags/hugo">
-            hugo
-          </a>
-          (1)
-        </li>
-        
-        <li>
-          <a href="/hugo-slum/tags/kunoichi">
-            kunoichi
-          </a>
-          (1)
-        </li>
-        
-        <li>
-          <a href="/hugo-slum/tags/slum">
-            slum
-          </a>
-          (6)
-        </li>
-        
-        <li>
-          <a href="/hugo-slum/tags/slumdown">
-            slumdown
-          </a>
-          (1)
-        </li>
-        
-        <li>
-          <a href="/hugo-slum/tags/slumstyle">
-            slumstyle
-          </a>
-          (4)
-        </li>
-        
-      </ul>
+
+
+<div id="the-kunoichi-palette" class="section level2">
+<h2>The kunoichi palette</h2>
+<p>In an <a href="/post/colour-palettes/">earlier post</a> I created the <em>kunoichi</em> palette. This is an example of a project page that uses this user-generated palette.</p>
+<pre class="r"><code>library(ggplot2)
+library(slumdown)
+
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_point() + theme_slum(&quot;kunoichi&quot;)</code></pre>
+<p><img src="/hugo-slum/project/2019-04-21-kunoichi_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+
+      </main>
 
       <footer>
   

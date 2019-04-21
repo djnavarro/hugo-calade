@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About | A minimal Hugo website</title>
 
-  <link rel="stylesheet" href=/hugo-slum/css/colour_dark.css />
+  <link rel="stylesheet" href=/hugo-slum/css/palette_dark.css />
   
+  <link rel="stylesheet" href="/hugo-slum/css/et_book.css" />
   <link rel="stylesheet" href="/hugo-slum/css/style.css" />
 
   
@@ -22,6 +23,12 @@
   
   <img src="/hugo-slum/header/mpg_dark.png" class="article-banner" itemprop="image" alt="">
   
+
+  
+  
+  <img src="/hugo-slum/header/my_profile.png" class="article-header-profile" itemprop="image" alt="">
+  
+
 
 </div>
 
@@ -46,7 +53,10 @@
 
 
       <main>
-        <div id="the-slum-theme-for-blogdown" class="section level1">
+        
+
+
+<div id="the-slum-theme-for-blogdown" class="section level1">
 <h1>The slum theme for blogdown</h1>
 <p>The slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. Originally it was intended to be extremely minimal, with the very modest goal of trying to make sure I understood the logic of how Hugo generates static sites. The more I played with it though, the more I enjoyed it. So what I’ve ended up with is a <em>“somewhat-light unhelpfully-minimal”</em> Hugo theme, designed with a single goal in mind: eventually I’m going to use it as the theme for <a href="https://djnavarro.net">my blog</a></p>
 <div id="notes" class="section level2">
@@ -63,6 +73,15 @@
       </main>
 
       <footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+
+  <script>
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  </script>
+
   <script src="//yihui.name/js/math-code.js"></script>
 <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
@@ -74,7 +93,6 @@
   <br/><br/>
   
 </footer>
-
 
 
     </div>
