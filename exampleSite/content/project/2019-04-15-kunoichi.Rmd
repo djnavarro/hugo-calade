@@ -17,7 +17,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 ## The kunoichi palette
 
-In an [earlier post](/post/colour-palettes/) I created the *kunoichi* palette. This is an example of a project page that uses this user-generated palette. 
+In an [earlier post](post/colour-palettes/) I created the *kunoichi* palette. This is an example of a project page that uses this user-generated palette. 
 
 ```{r, warning=FALSE, message=FALSE}
 library(ggplot2)
