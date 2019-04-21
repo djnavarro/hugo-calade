@@ -28,6 +28,27 @@ p {
   vertical-align: baseline;
 }
 
+/* styling for blog post list */
+ul.prettylist {
+  list-style-type: none;
+  list-style-image: none;
+  list-style-postion: none;
+  width: 100%;
+}
+li.prettylist {
+  padding: 10px;
+  width: 100%;
+}
+p.prettylist {
+  padding: 5px;
+  float: left;
+  width: 100%;
+}
+span.prettylistdate{
+  color: var(--faded);
+  font-size: 1rem;
+}
+
 /* headings */
 h1 {
   font-weight: 400;
@@ -124,7 +145,6 @@ a:link, a:visited {
 hr {
   display: block;
   height: 1px;
-  width: 75%;
   border: 0;
   border-top-width: 1px;
   border-top-style: solid;
