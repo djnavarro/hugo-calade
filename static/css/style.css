@@ -50,6 +50,12 @@ span.prettylistdate{
   font-size: 1rem;
 }
 
+/* styling for the other post lists */
+span.flatlistdate{
+  color: var(--faded);
+  font-size: 1rem;
+}
+
 /* headings */
 h1 {
   font-weight: 400;
