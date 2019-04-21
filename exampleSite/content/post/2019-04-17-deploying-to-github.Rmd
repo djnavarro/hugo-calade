@@ -1,7 +1,7 @@
 ---
 title: "Tutorial part 5: Deploying to GitHub"
 author: "Danielle Navarro"
-date: "2019-04-16"
+date: "2019-04-17"
 slug: deploying-to-github
 tags: ["slum", "blogdown", "slumstyle", "github pages"]
 summary: "This tutorial describes how to deploy a site. Blogdown sites are very often deployed to Netlify, but I have a personal bias to use GitHub Pages, so *slumdown* is configured by default to use GitHub." 
