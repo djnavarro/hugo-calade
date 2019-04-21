@@ -12,9 +12,54 @@
     
     
     <item>
+      <title>blogdown</title>
+      <link>/hugo-slum/tags/blogdown/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slum</title>
+      <link>/hugo-slum/tags/slum/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/tags/slum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slumstyle</title>
+      <link>/hugo-slum/tags/slumstyle/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/tags/slumstyle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github pages</title>
+      <link>/hugo-slum/tags/github-pages/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>/hugo-slum/tags/hugo/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>kunoichi</title>
       <link>/hugo-slum/tags/kunoichi/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/hugo-slum/tags/kunoichi/</guid>
       <description></description>
@@ -23,54 +68,9 @@
     <item>
       <title>slumdown</title>
       <link>/hugo-slum/tags/slumdown/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/hugo-slum/tags/slumdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blogdown</title>
-      <link>/hugo-slum/tags/blogdown/</link>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/blogdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>/hugo-slum/tags/hugo/</link>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>slum</title>
-      <link>/hugo-slum/tags/slum/</link>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/slum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github pages</title>
-      <link>/hugo-slum/tags/github-pages/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/github-pages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>slumstyle</title>
-      <link>/hugo-slum/tags/slumstyle/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/tags/slumstyle/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,7 @@
     <description>Recent content in github pages on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/hugo-slum/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,12 +14,10 @@
     <item>
       <title>Tutorial part 5: Deploying to GitHub</title>
       <link>/hugo-slum/post/deploying-to-github/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/hugo-slum/post/deploying-to-github/</guid>
-      <description>The usual advice for deploying a blogdown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities with GitHub Pages that make this difficult. However, I have an ingrained habit of using GitHub Pages, with each repository hosted at
-https://username.github.io/reponame/To make that happen for a blogdown site there are three things you need to change from the usual defaults:
-First, the site needs to be generated in the docs folder (which is what GitHub Pages expects) rather than the Hugo default which is to generate the site in the public folder.</description>
+      <description>This tutorial describes how to deploy a site. Blogdown sites are very often deployed to Netlify, but I have a personal bias to use GitHub Pages, so &lt;em&gt;slumdown&lt;/em&gt; is configured by default to use GitHub.</description>
     </item>
     
   </channel>

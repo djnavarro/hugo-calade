@@ -56,7 +56,7 @@
       <div>
   <h1>Tutorial part 3: Colour palettes in slumdown</h1>
   <h3>
-    by Danielle Navarro, 14 Apr 2019
+    by Danielle Navarro, 19 Apr 2019
   </h3>
   <br><br>
 </div>
@@ -95,12 +95,12 @@
 <p>The nice thing about the palettes in the <em>slum</em> theme is that the functions in the <em>slumdown</em> package are aware of them, and make them available to other R functions. To give an example of how this can be done, the <code>slumdown</code> package provides the function <code>theme_slum()</code> which allows you to create a plot like this:</p>
 <pre class="r"><code>ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum(&quot;light&quot;)</code></pre>
-<p><img src="/hugo-slum/post/2019-04-14-colour-palettes_files/figure-html/scatter-1.png" width="672" /></p>
+<p><img src="/hugo-slum/post/2019-04-19-colour-palettes_files/figure-html/scatter-1.png" width="672" /></p>
 <p>The <code>theme_slum()</code> function will only work if it can find the relevant palette file (not surprisingly), and it relies on <code>here::here()</code> to find them, so it is important that a slumdown blog correspond to an RStudio project, or else contain a blank text file called <code>.here</code> at the project root.</p>
 <p>This is slightly tedious, but the advantage is that you can generate plots that match your own themes with very little effort. For example, the <em>kunoichi</em> palette that I created above is now immediately available for plotting:</p>
 <pre class="r"><code>ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum(&quot;kunoichi&quot;)</code></pre>
-<p><img src="/hugo-slum/post/2019-04-14-colour-palettes_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/hugo-slum/post/2019-04-19-colour-palettes_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>So if you wanted to do a single post in the <em>kunoichi</em> style, you could now specify the colour scheme in the YAML header, and create ggplot2 figures that adopt this style.</p>
 
       </main>

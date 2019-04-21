@@ -12,71 +12,66 @@
     
     
     <item>
-      <title>A kunoichi page</title>
-      <link>/hugo-slum/project/kunoichi/</link>
+      <title>Tutorial part 1: Getting started</title>
+      <link>/hugo-slum/post/getting-started/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/project/kunoichi/</guid>
-      <description>The kunoichi paletteIn an earlier post I created the kunoichi palette. This is an example of a project page that uses this user-generated palette.
-library(ggplot2)library(slumdown)ggplot(mpg, aes(displ, hwy)) + geom_point() + theme_slum(&amp;quot;kunoichi&amp;quot;)</description>
-    </item>
-    
-    <item>
-      <title>Tutorial part 6: Some notes on Hugo</title>
-      <link>/hugo-slum/post/notes-on-hugo/</link>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/post/notes-on-hugo/</guid>
-      <description>TODO. Talk about the templating system. Why is this page in “projects” and everything else is in “posts”. It’s actually super customisable, you can just create your own folders!
-_default/single.html: the specific posts and project pages (in content)_default/lists.html : the “listing pages” for posts and projects (auto)_default/terms.html : the “listing page” for tags (auto)_default/home.html : the home page (corresponding to _index.html)The exception is:</description>
-    </item>
-    
-    <item>
-      <title>Tutorial part 5: Deploying to GitHub</title>
-      <link>/hugo-slum/post/deploying-to-github/</link>
-      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/post/deploying-to-github/</guid>
-      <description>The usual advice for deploying a blogdown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities with GitHub Pages that make this difficult. However, I have an ingrained habit of using GitHub Pages, with each repository hosted at
-https://username.github.io/reponame/To make that happen for a blogdown site there are three things you need to change from the usual defaults:
-First, the site needs to be generated in the docs folder (which is what GitHub Pages expects) rather than the Hugo default which is to generate the site in the public folder.</description>
-    </item>
-    
-    <item>
-      <title>Tutorial part 4: Customising the header</title>
-      <link>/hugo-slum/post/customising-headers/</link>
-      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/post/customising-headers/</guid>
-      <description>Within slumdown you can exercise quite a bit of control over the header at the top of each page within the YAML at the top of the post. There are three fields you can customise: image provides the path to the header image (relative to the static/ folder), caption is the caption text shown floating over the bottom right of the header image, and the profile picture that appears in the middle of the header.</description>
-    </item>
-    
-    <item>
-      <title>Tutorial part 3: Colour palettes in slumdown</title>
-      <link>/hugo-slum/post/colour-palettes/</link>
-      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/hugo-slum/post/colour-palettes/</guid>
-      <description>The slum theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don’t want to have to fiddle with low level settings to do that. Relatedly, one thing that has caused me frustration with blogdown is that the content generated on the R site doesn’t use the same visual style as the Hugo theme.</description>
+      <guid>/hugo-slum/post/getting-started/</guid>
+      <description>A sort summary of how to get started using the slumdown package. It discusses how to install the package, set up a new site, and where to look for initial configuration.</description>
     </item>
     
     <item>
       <title>Tutorial part 2: Writing a post</title>
       <link>/hugo-slum/post/writing-a-post/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/hugo-slum/post/writing-a-post/</guid>
-      <description>The slum provides a simple Hugo theme intended primarily to be used in conjunction with the blogdown package, so posts take the form of R Markdown documents rather than plain markdown. I’m fairly certain that the theme supports plain markdown, but given that the appeal of blogdown lies in integrating R Markdown with the Hugo blogging system I’ll jump straight to it.
-1. The YAML headerLike any R Markdown document, a post begins with the YAML header.</description>
+      <description>Like any blogdown post, a slumdown post is written in R Markdown, and uses a few custom fields in the YAML field. This tutorial provides an illustration of how different kinds of content are displayed.</description>
     </item>
     
     <item>
-      <title>Tutorial part 1: Getting started</title>
-      <link>/hugo-slum/post/getting-started/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Tutorial part 3: Colour palettes in slumdown</title>
+      <link>/hugo-slum/post/colour-palettes/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/post/getting-started/</guid>
-      <description>My initial goal in writing the slum theme was purely selfish: I use blogdown on my own blog and I wanted to understand how it works. To help me learn, I decided to read the documentation and tinker with the minimalistic XMin theme. I… um… got a little carried away, and ended up with a fairly flexible blogging template with a few more bells and whistles than I was expecting.</description>
+      <guid>/hugo-slum/post/colour-palettes/</guid>
+      <description>The main reason I wrote slumdown (besides boredom) was to make it easy to  include user-defined colours palettes in blogdown, and expose those palettes to R so that (for instance) plots can be drawn in a style that matches the blog style. This tutorial introduces this palette system.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial part 4: Customising the header</title>
+      <link>/hugo-slum/post/customising-headers/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/post/customising-headers/</guid>
+      <description>Slumdown allows the user to control the background image at the top of each post, the profile image overlaid in the middle of that image, and the caption attached to the header image. This post describes how this is done.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial part 5: Deploying to GitHub</title>
+      <link>/hugo-slum/post/deploying-to-github/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/post/deploying-to-github/</guid>
+      <description>This tutorial describes how to deploy a site. Blogdown sites are very often deployed to Netlify, but I have a personal bias to use GitHub Pages, so &lt;em&gt;slumdown&lt;/em&gt; is configured by default to use GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial part 6: Some notes on Hugo</title>
+      <link>/hugo-slum/post/notes-on-hugo/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/post/notes-on-hugo/</guid>
+      <description>Eventually, this will be an explanation of how the Hugo slum theme is designed, possibly accompanied by a brief tutorial on Hugo.</description>
+    </item>
+    
+    <item>
+      <title>A kunoichi page</title>
+      <link>/hugo-slum/project/kunoichi/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/hugo-slum/project/kunoichi/</guid>
+      <description>A simple project page illustrating how user-defined themes in &lt;em&gt;slumdown&lt;/em&gt; can be used as the basis of individual pages and ggplot2 figures. It doesn&amp;rsquo;t do very much.</description>
     </item>
     
     <item>
@@ -85,7 +80,7 @@ First, the site needs to be generated in the docs folder (which is what GitHub P
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hugo-slum/about/</guid>
-      <description>The slum theme for blogdownThe slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. Originally it was intended to be extremely minimal, with the very modest goal of trying to make sure I understood the logic of how Hugo generates static sites. The more I played with it though, the more I enjoyed it.</description>
+      <description>The idea behind slumdownThe slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. Originally it was intended to be extremely minimal, with the very modest goal of trying to make sure I understood the logic of how Hugo generates static sites. The more I played with it though, the more I enjoyed it.</description>
     </item>
     
   </channel>

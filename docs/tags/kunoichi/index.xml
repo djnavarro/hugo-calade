@@ -6,7 +6,7 @@
     <description>Recent content in kunoichi on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/hugo-slum/tags/kunoichi/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,10 @@
     <item>
       <title>A kunoichi page</title>
       <link>/hugo-slum/project/kunoichi/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/hugo-slum/project/kunoichi/</guid>
-      <description>The kunoichi paletteIn an earlier post I created the kunoichi palette. This is an example of a project page that uses this user-generated palette.
-library(ggplot2)library(slumdown)ggplot(mpg, aes(displ, hwy)) + geom_point() + theme_slum(&amp;quot;kunoichi&amp;quot;)</description>
+      <description>A simple project page illustrating how user-defined themes in &lt;em&gt;slumdown&lt;/em&gt; can be used as the basis of individual pages and ggplot2 figures. It doesn&amp;rsquo;t do very much.</description>
     </item>
     
   </channel>

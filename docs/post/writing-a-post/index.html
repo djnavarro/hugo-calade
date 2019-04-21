@@ -56,7 +56,7 @@
       <div>
   <h1>Tutorial part 2: Writing a post</h1>
   <h3>
-    by Danielle Navarro, 13 Apr 2019
+    by Danielle Navarro, 20 Apr 2019
   </h3>
   <br><br>
 </div>
@@ -71,15 +71,17 @@
 <h2>1. The YAML header</h2>
 <p>Like any R Markdown document, a post begins with the YAML header. For this post, the header looks like this:</p>
 <pre><code>---
-title: &quot;Part 2. Writing a post&quot;
+title: &quot;Tutorial part 2: Writing a post&quot;
 author: &quot;Danielle Navarro&quot;
 date: &quot;2019-04-13&quot;
 slug: writing-a-post
 tags: [&quot;slum&quot;, &quot;blogdown&quot;, &quot;slumstyle&quot;]
+summary: &quot;Like any blogdown post, a slumdown post is written in R Markdown, and uses a few custom fields in the YAML field. This tutorial provides an illustration of how different kinds of content are displayed.&quot;
 header:
   caption: &quot;A blank ggplot&quot;
   image: &#39;header/theme_dark.png&#39;
 ---</code></pre>
+<p>Note that I specified the post summary manually. If you don’t do it yourself, the template will set one for you but it won’t look very nice.</p>
 </div>
 <div id="r-chunks" class="section level2">
 <h2>2. R chunks</h2>
@@ -110,7 +112,7 @@ library(slumdown)</code></pre>
 <pre class="r"><code>ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum(&quot;dark&quot;)</code></pre>
 <div class="figure"><span id="fig:scatter"></span>
-<img src="/hugo-slum/post/2019-04-13-writing-a-post_files/figure-html/scatter-1.png" alt="Here is a plot" width="672" />
+<img src="/hugo-slum/post/2019-04-20-writing-a-post_files/figure-html/scatter-1.png" alt="Here is a plot" width="672" />
 <p class="caption">
 Figure 1: Here is a plot
 </p>
