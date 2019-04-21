@@ -1,5 +1,5 @@
 ---
-title: "Part 4. Custom headers "
+title: "Tutorial part 4: Customising the header"
 author: "Danielle Navarro"
 date: "2019-04-16"
 slug: customising-headers

@@ -1,8 +1,8 @@
 ---
-title: "Part 3. Customising a post"
+title: "Tutorial part 3: Colour palettes in slumdown"
 author: "Danielle Navarro"
 date: "2019-04-14"
-slug: customising-a-post
+slug: colour-palettes
 tags: ["slum", "blogdown", "slumstyle"]
 colourscheme: "css/palette_light.css"
 header:
@@ -40,7 +40,7 @@ By doing so we end up with a post that uses the *light* palette. Links are style
 It is also possible to make the palette available as a `ggplot2` theme. This can be particularly useful for posts where the background colour is something non-standard. The `slumdown` package provides the function `theme_slum()` which allows you to create a plot like this: 
 
 
-```{r scatter, fig.cap = "Here is a plot", warning=FALSE, message=FALSE}
+```{r scatter}
 ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum("light")
 ```
@@ -80,6 +80,4 @@ ggplot(mpg, aes(displ, hwy)) +
   geom_point() + theme_slum("kunoichi")
 ```
 
-## Changing the header image
 
-blah blah blahs

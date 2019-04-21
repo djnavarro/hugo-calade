@@ -1,8 +1,8 @@
 ---
-title: "Part 4. Deploying a site"
+title: "Tutorial part 5: Deploying to GitHub"
 author: "Danielle Navarro"
 date: "2019-04-15"
-slug: deploying-a-site
+slug: deploying-to-github
 tags: ["slum", "blogdown", "slumstyle", "github pages"]
 header:
   caption: "A blank ggplot"

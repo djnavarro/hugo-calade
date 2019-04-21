@@ -1,5 +1,5 @@
 ---
-title: "Part 2. Writing a post"
+title: "Tutorial part 2: Writing a post"
 author: "Danielle Navarro"
 date: "2019-04-13"
 slug: writing-a-post

@@ -2,6 +2,8 @@
 # The config file is written using TOML, which stands for "Tom's Obvious,
 # Minimal Language". See: https://github.com/toml-lang/toml
 
+
+
 # The URL for your website. It should end with a trailing slash,
 # e.g. "https://example.com/". If you're planning to deploy on
 # GitHub pages the way I've done for the example site at
@@ -9,16 +11,23 @@
 # like this:
 baseurl = "/hugo-slum/"
 
+
+
 # Default is "public", but if you're using github pages you
 # need to point this to "docs".
 publishDir = "docs"
+
+
 
 # These settings specify the title for your blog, and the name of
 # the Hugo theme that it uses.
 title = "A minimal Hugo website"
 theme = "hugo-slum"
 
-# Various other settings that I rarely ever change.
+
+
+# Settings inherited from XMin theme that I haven't bothered to
+# to edit in any way
 languageCode = "en-us"
 googleAnalytics = ""
 disqusShortname = ""
@@ -26,7 +35,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
-# What format should the links take? In the example site there
+
+
+# What format should the permalinks take? In the example site there
 # are two kinds of pages, posts and projects, listed at:
 #
 #    https://djnavarro.github.io/hugo-slum/post/
@@ -44,7 +55,6 @@ footnotereturnlinkcontents = "↩"
 # Alternative version:
 #   post = "/post/:year/:month/:day/:slug/"
 #   project = "/project/:year/:month/:day/:slug/"
-
 
 
 
@@ -75,12 +85,16 @@ footnotereturnlinkcontents = "↩"
     url = "/tags/"
     weight = 5
 
-# Parameters that are used in various places throughout the site.
+
+
+# Parameters used in various places throughout the site.
 #
 # - "siteHeader" specifies the default image used at the top of
 #   every page (you can override it for specific posts). The
 #   path to the image is specified relative to the "static/"
 #   folder
+#
+# - "siteProfile" as above, but for the inset profile image.
 #
 # - "colourScheme" specifies a path to a css file that describes
 #   the colour scheme, again relative to the "static/" folder. As
@@ -90,7 +104,7 @@ footnotereturnlinkcontents = "↩"
 # - "footer" contents
 [params]
     siteHeader = "header/mpg_dark.png"
-    colourScheme = "css/palette_dark.css"
-    description = "A website built through Hugo and blogdown."
-    footer = "&copy; [Danielle Navarro](https://djnavarro.net) 2018--2019 | [Github](https://github.com/djnavarro) | [Twitter](https://twitter.com/djnavarro)"
     siteProfile = "header/my_profile.png"
+    colourScheme = "css/palette_dark.css"
+    description = "A website built using slumdown."
+    footer = "&copy; [Danielle Navarro](https://djnavarro.net) 2018--2019 | [Github](https://github.com/djnavarro) | [Twitter](https://twitter.com/djnavarro)"

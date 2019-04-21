@@ -1,5 +1,5 @@
 ---
-title: "Part 1. Getting started"
+title: "Tutorial part 1: Getting started"
 author: "Danielle Navarro"
 date: "2019-04-12"
 slug: getting-started

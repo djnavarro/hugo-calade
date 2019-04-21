@@ -1,8 +1,8 @@
 ---
-title: "Part 5. Understanding Hugo"
+title: "Tutorial part 6: Some notes on Hugo"
 author: "Danielle Navarro"
-date: "2019-04-16"
-slug: understanding-hugo
+date: "2019-04-17"
+slug: notes-on-hugo
 tags: ["slum", "blogdown", "hugo"]
 header:
   caption: "A blank ggplot"
