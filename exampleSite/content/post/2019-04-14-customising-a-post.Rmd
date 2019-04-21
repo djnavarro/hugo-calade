@@ -35,7 +35,7 @@ To use a different palette for a specific post, insert the following line into t
 colourscheme: "css/palette_light.css"
 ```
 
-By doing so we end up with a post that uses the *light* palette.
+By doing so we end up with a post that uses the *light* palette. Links are styled using the [highlight colour](https://example.com), code is styled with the lowlight colour, and so on. 
 
 It is also possible to make the palette available as a `ggplot2` theme. This can be particularly useful for posts where the background colour is something non-standard. The `slumdown` package provides the function `theme_slum()` which allows you to create a plot like this: 
 
