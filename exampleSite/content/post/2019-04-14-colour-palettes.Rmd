@@ -16,52 +16,41 @@ library(slumdown)
 library(tidyverse)
 ```
 
-The `slumdown` templates make it easy to customise the colour scheme for an individual post or page. For this blog, the default colour scheme is based on the *dark* palette. To see what palettes are available by default:
+
+
+The *slum* theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don't want to have to fiddle with low level settings to do that. Relatedly, one thing that has caused me frustration with blogdown is that the content generated on the R site doesn't use the same visual style as the Hugo theme. The `slumdown` package tries to make this a little easier. For this blog, the default colour scheme is based on the *dark* palette. The following palettes are available by default:
 
 
 ```{r, warning=FALSE, message=FALSE}
 slum_listpalettes()
 ```
 
-An palette is defined by a set of five colours:
+A palette is not especially complicated, and is defined by a set of five named colours:
 
 ```{r}
 slum_getpalette("dark")
 ```
 
-To use a different palette for a specific post, insert the following line into the YAML header for the post:
+When creating a new post or project page, the *slum* theme for Hugo will automatically use the default palette (which is specified in the `config.toml` file). However, you can override that default for a specific post. For example, the current post uses the *light* palette, and it does this by including the following line in the YAML header:
 
 ```
 colourscheme: "css/palette_light.css"
 ```
 
-By doing so we end up with a post that uses the *light* palette. Links are styled using the [highlight colour](https://example.com), code is styled with the lowlight colour, and so on. 
-
-It is also possible to make the palette available as a `ggplot2` theme. This can be particularly useful for posts where the background colour is something non-standard. The `slumdown` package provides the function `theme_slum()` which allows you to create a plot like this: 
-
-
-```{r scatter}
-ggplot(mpg, aes(displ, hwy)) + 
-  geom_point() + theme_slum("light")
-```
-
-
-## The CSS file
-
-Under the hood, the palette is stored in a small CSS file. If you felt the need to do so, you could edit it manually. For example, the `static/css/colour_dark.css` file specifies the colour scheme like so:
+The palette file is quite small and if you felt the need to do so, you could create one manually. For example, here is the entirety of the `static/css/palette_light.css` file:
 
 ```
-/* dark colour scheme */
+/* light colour scheme */
 :root {
-  --pagecolour: #333333;  /* dark grey */
-  --maintext: #dddddd;    /* almost white */
-  --faded: #888888;       /* light grey */
-  --highlight: #ff69b4;   /* bright pink */
-  --lowlight: #ba68c8;    /* purple */
+  --pagecolour: #eeeeee;
+  --maintext: #111111;
+  --faded: #999999;
+  --highlight: #0000dd;
+  --lowlight: #8a2be2;
 }
 ```
 
-However the `slumdown` package attempts to make your life a little easier by providing a helper function that will write this file for you. For example:
+However the `slumdown` package attempts to make your life a little easier by providing a helper function that will generate a palette file for you. For example, suppose I wanted to create a new palette based on Emi Tanaka's [kunoichi template for xaringan](https://yihui.name/en/2018/07/emi-tanaka/). I could to that as follows:
 
 ```{r}
 slum_addpalette(
@@ -73,11 +62,21 @@ slum_addpalette(
 
 Note that this function isn't flexible. It does no preprocessing or conversion of the colour input, and as such expects something that is understood by both R and CSS. Hex codes work fine, other things not so much.
 
-One created we can use it in a plot, or even as the colour scheme in a new post.
+The nice thing about the palettes in the *slum* theme is that the functions in the *slumdown* package are aware of them, and make them available to other R functions. To give an example of how this can be done, the `slumdown` package provides the function `theme_slum()` which allows you to create a plot like this: 
+
+```{r scatter}
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_point() + theme_slum("light")
+```
+
+The `theme_slum()` function will only work if it can find the relevant palette file (not surprisingly), and it relies on `here::here()` to find them, so it is important that a slumdown blog correspond to an RStudio project, or else contain a blank text file called `.here` at the project root. 
+
+This is slightly tedious, but the advantage is that you can generate plots that match your own themes with very little effort. For example, the *kunoichi* palette that I created above is now immediately available for plotting: 
 
 ```{r}
 ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum("kunoichi")
 ```
 
+So if you wanted to do a single post in the *kunoichi* style, you could now specify the colour scheme in the YAML header, and create ggplot2 figures that adopt this style. 
 
