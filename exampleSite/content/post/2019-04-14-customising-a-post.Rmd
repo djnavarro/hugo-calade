@@ -61,8 +61,24 @@ Under the hood, the palette is stored in a small CSS file. If you felt the need 
 }
 ```
 
-However the `slumdown` package attempts to make your life a little easier by providing a helper function that will write this file for you. 
+However the `slumdown` package attempts to make your life a little easier by providing a helper function that will write this file for you. For example:
 
+```{r}
+slum_addpalette(
+  name = "kunoichi", pagecolour = "#562457", 
+  maintext = "#ffffff", faded = "#ba68c8", 
+  highlight = "#ffa500", lowlight = "#bbbbbb",
+  overwrite = TRUE)
+```
+
+Note that this function isn't flexible. It does no preprocessing or conversion of the colour input, and as such expects something that is understood by both R and CSS. Hex codes work fine, other things not so much.
+
+One created we can use it in a plot, or even as the colour scheme in a new post.
+
+```{r}
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_point() + theme_slum("kunoichi")
+```
 
 ## Changing the header image
 
