@@ -1,0 +1,28 @@
+---
+title: "A kunoichi page"
+author: "Danielle Navarro"
+date: "2019-04-21"
+slug: kunoichi
+tags: ["slumdown", "kunoichi"]
+colourscheme: "css/palette_kunoichi.css"
+header:
+  image: 'header/theme_grey.png'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+## The kunoichi palette
+
+In an [earlier post](/post/colour-palettes/) I created the *kunoichi* palette. This is an example of a project page that uses this user-generated palette. 
+
+```{r, warning=FALSE, message=FALSE}
+library(ggplot2)
+library(slumdown)
+
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_point() + theme_slum("kunoichi")
+```
+
