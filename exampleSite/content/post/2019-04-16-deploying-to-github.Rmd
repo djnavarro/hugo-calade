@@ -34,6 +34,5 @@ baseurl = "/hugo-slum/"
 ```
 Edit this to replace `hugo-slum` with `reponame` (or whatever you called your repository)
 
-From there, set up your GitHub Pages site the way you normally would. (TODO: Describe this process!)
-
+From there, set up your [GitHub Pages](https://pages.github.com/) site the way you normally would. **TODO**: Add a quick primer on GitHub Pages. 
 
