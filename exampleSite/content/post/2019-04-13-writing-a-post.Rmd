@@ -4,7 +4,7 @@ author: "Danielle Navarro"
 date: "2019-04-13"
 slug: writing-a-post
 tags: ["slum", "blogdown", "slumstyle"]
-summary: "Like any blogdown post, a slumdown post is written in R Markdown, and uses a few custom fields in the YAML field. This tutorial provides an illustration of how different kinds of content are displated."
+summary: "Like any blogdown post, a slumdown post is written in R Markdown, and uses a few custom fields in the YAML field. This tutorial provides an illustration of how different kinds of content are displayed."
 header:
   caption: "A blank ggplot"
   image: 'header/theme_dark.png'
@@ -22,16 +22,19 @@ Like any R Markdown document, a post begins with the YAML header. For this post,
 
 ```
 ---
-title: "Part 2. Writing a post"
+title: "Tutorial part 2: Writing a post"
 author: "Danielle Navarro"
 date: "2019-04-13"
 slug: writing-a-post
 tags: ["slum", "blogdown", "slumstyle"]
+summary: "Like any blogdown post, a slumdown post is written in R Markdown, and uses a few custom fields in the YAML field. This tutorial provides an illustration of how different kinds of content are displayed."
 header:
   caption: "A blank ggplot"
   image: 'header/theme_dark.png'
 ---
 ```
+Note that I specified the post summary manually. If you don't do it yourself, the template will set one for you but it won't look very nice.
+
 
 ## 2. R chunks
 
