@@ -12,17 +12,33 @@ header:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
-```
-
-Here is some text that I have written. This page uses the light theme. To make life a little easier I've also written a small package that supplies ggplot2 themes that are consistent with the slum styles:
-
-```{r, warning=FALSE, message=FALSE}
-#devtools::install_github("djnavarro/slumstyle")
 library(slumdown)
 library(tidyverse)
 ```
 
-The background colour for this theme is very slightly grey rather than white, so if you want a plot to blend in with the background you need to do something like this:
+The `slumdown` templates make it easy to customise the colour scheme for an individual post or page. For this blog, the default colour scheme is based on the *dark* palette. To see what palettes are available by default:
+
+
+```{r, warning=FALSE, message=FALSE}
+slum_listpalettes()
+```
+
+An palette is defined by a set of five colours:
+
+```{r}
+slum_getpalette("dark")
+```
+
+To use a different palette for a specific post, insert the following line into the YAML header for the post:
+
+```{yaml}
+colourscheme: "css/palette_light.css"
+```
+
+By doing so we end up with a post that uses the *light* palette.
+
+It is also possible to make the palette available as a `ggplot2` theme. This can be particularly useful for posts where the background colour is something non-standard. The `slumdown` package provides the function `theme_slum()` which allows you to create a plot like this: 
+
 
 ```{r scatter, fig.cap = "Here is a plot", warning=FALSE, message=FALSE}
 ggplot(mpg, aes(displ, hwy)) + 
@@ -32,16 +48,20 @@ ggplot(mpg, aes(displ, hwy)) +
 
 ## The CSS file
 
-If you ever feel the need to do so, it's not too difficult to create a new colour scheme. The `static/css/colour_dark.css` file specifies the four main colours used:
+Under the hood, the palette is stored in a small CSS file. If you felt the need to do so, you could edit it manually. For example, the `static/css/colour_dark.css` file specifies the colour scheme like so:
 
 ```
+/* dark colour scheme */
 :root {
-  --primary: #ddd;
-  --subtle: #888;
-  --behind: #333;
-  --highlight: hotpink;
+  --pagecolour: #333333;  /* dark grey */
+  --maintext: #dddddd;    /* almost white */
+  --faded: #888888;       /* light grey */
+  --highlight: #ff69b4;   /* bright pink */
+  --lowlight: #ba68c8;    /* purple */
 }
 ```
+
+However the `slumdown` package attempts to make your life a little easier by providing a helper function that will write this file for you. 
 
 
 ## Changing the header image
