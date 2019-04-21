@@ -31,7 +31,7 @@ slum_getpalette("dark")
 
 To use a different palette for a specific post, insert the following line into the YAML header for the post:
 
-```{yaml}
+```
 colourscheme: "css/palette_light.css"
 ```
 
