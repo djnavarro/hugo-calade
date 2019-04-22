@@ -13,6 +13,11 @@ baseurl = "/hugo-slum/"
 
 
 
+# Rewrite relative URLs to be relative to the current content.
+relativeurls = true
+
+
+
 # Default is "public", but if you're using github pages you
 # need to point this to "docs".
 publishDir = "docs"
