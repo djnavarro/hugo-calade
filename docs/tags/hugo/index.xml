@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on A minimal Hugo website</title>
-    <link>/hugo-slum/tags/hugo/</link>
+    <link>/tags/hugo/</link>
     <description>Recent content in hugo on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/hugo-slum/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tutorial part 6: Some notes on Hugo</title>
-      <link>/hugo-slum/post/notes-on-hugo/</link>
+      <link>/post/notes-on-hugo/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/post/notes-on-hugo/</guid>
+      <guid>/post/notes-on-hugo/</guid>
       <description>Eventually, this will be an explanation of how the Hugo slum theme is designed, possibly accompanied by a brief tutorial on Hugo.</description>
     </item>
     

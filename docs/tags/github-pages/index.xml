@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>github pages on A minimal Hugo website</title>
-    <link>/hugo-slum/tags/github-pages/</link>
+    <link>/tags/github-pages/</link>
     <description>Recent content in github pages on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/hugo-slum/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tutorial part 5: Deploying to GitHub</title>
-      <link>/hugo-slum/post/deploying-to-github/</link>
+      <link>/post/deploying-to-github/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/post/deploying-to-github/</guid>
+      <guid>/post/deploying-to-github/</guid>
       <description>This tutorial describes how to deploy a site. Blogdown sites are very often deployed to Netlify, but I have a personal bias to use GitHub Pages, so &lt;em&gt;slumdown&lt;/em&gt; is configured by default to use GitHub.</description>
     </item>
     

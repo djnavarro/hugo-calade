@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tutorial part 3: Colour palettes in slumdown | A minimal Hugo website</title>
 
-  <link rel="stylesheet" href=/hugo-slum/css/palette_dark.css />
-   <link rel="stylesheet" href=/hugo-slum/css/palette_light.css />
-  <link rel="stylesheet" href="/hugo-slum/css/et_book.css" />
-  <link rel="stylesheet" href="/hugo-slum/css/style.css" />
+  <link rel="stylesheet" href=../../css/palette_dark.css />
+   <link rel="stylesheet" href=../../css/palette_light.css />
+  <link rel="stylesheet" href="../../css/et_book.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
 
   
 <meta name="twitter:card" content="summary">
@@ -28,14 +28,14 @@
 <div class="article-header">
   
   
-  <img src="/hugo-slum/header/theme_grey.png" class="article-banner" itemprop="image" alt="">
+  <img src="../../header/theme_grey.png" class="article-banner" itemprop="image" alt="">
   
 
   <span class="article-header-caption">A blank ggplot</span>
 
   
   
-  <img src="/hugo-slum/%25!s%28%3cnil%3e%29" class="article-header-profile" itemprop="image" alt="">
+  <img src="../../%25!s%28%3cnil%3e%29" class="article-header-profile" itemprop="image" alt="">
   
 
 
@@ -47,15 +47,15 @@
       <nav>
   <ul class="menu">
     
-    <li><a href="/hugo-slum">Home</a></li>
+    <li><a href="../../">Home</a></li>
     
-    <li><a href="/hugo-slum/about/">About</a></li>
+    <li><a href="../../about/">About</a></li>
     
-    <li><a href="/hugo-slum/post/">Posts</a></li>
+    <li><a href="../../post/">Posts</a></li>
     
-    <li><a href="/hugo-slum/project/">Projects</a></li>
+    <li><a href="../../project/">Projects</a></li>
     
-    <li><a href="/hugo-slum/tags/">Tags</a></li>
+    <li><a href="../../tags/">Tags</a></li>
     
   </ul>
 </nav>
@@ -102,12 +102,12 @@
 <p>The nice thing about the palettes in the <em>slum</em> theme is that the functions in the <em>slumdown</em> package are aware of them, and make them available to other R functions. To give an example of how this can be done, the <code>slumdown</code> package provides the function <code>theme_slum()</code> which allows you to create a plot like this:</p>
 <pre class="r"><code>ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum(&quot;light&quot;)</code></pre>
-<p><img src="/hugo-slum/post/2019-04-19-colour-palettes_files/figure-html/scatter-1.png" width="672" /></p>
+<p><img src="../../post/2019-04-19-colour-palettes_files/figure-html/scatter-1.png" width="672" /></p>
 <p>The <code>theme_slum()</code> function will only work if it can find the relevant palette file (not surprisingly), and it relies on <code>here::here()</code> to find them, so it is important that a slumdown blog correspond to an RStudio project, or else contain a blank text file called <code>.here</code> at the project root.</p>
 <p>This is slightly tedious, but the advantage is that you can generate plots that match your own themes with very little effort. For example, the <em>kunoichi</em> palette that I created above is now immediately available for plotting:</p>
 <pre class="r"><code>ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum(&quot;kunoichi&quot;)</code></pre>
-<p><img src="/hugo-slum/post/2019-04-19-colour-palettes_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="../../post/2019-04-19-colour-palettes_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>So if you wanted to do a single post in the <em>kunoichi</em> style, you could now specify the colour scheme in the YAML header, and create ggplot2 figures that adopt this style.</p>
 
       </main>
