@@ -20,10 +20,33 @@ knitr::opts_chunk$set(collapse = TRUE)
 In an [earlier post](/post/colour-palettes/) I created the *kunoichi* palette. This is an example of a project page that uses this user-generated palette. 
 
 ```{r, warning=FALSE, message=FALSE}
-library(ggplot2)
+library(tidyverse)
 library(slumdown)
 
 ggplot(mpg, aes(displ, hwy)) + 
   geom_point() + theme_slum("kunoichi")
 ```
 
+A gganimate version:
+
+```{r, warning=FALSE, message=FALSE}
+library(gganimate)
+bridges <- read_csv("/data/brownian_bridges.csv")
+
+b <- ggplot(
+  data = bridges,
+  mapping = aes(
+    x = Horizontal,
+    y = Vertical,
+    colour = factor(Series))
+) +
+  geom_point(
+    show.legend = FALSE,
+    size = 4) +
+  coord_equal() +
+  xlim(-1.5, 1) +
+  ylim(-1.25, 1.25) + 
+  theme_slum("kunoichi")
+
+b + facet_wrap(vars(Time))
+```
