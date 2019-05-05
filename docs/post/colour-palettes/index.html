@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tutorial part 3: Colour palettes in slumdown | A minimal Hugo website</title>
+    <title>Tutorial part 3: Colour palettes in slumdown | Slumdown</title>
 
   <link rel="stylesheet" href=../../css/palette_dark.css />
    <link rel="stylesheet" href=../../css/palette_light.css />
@@ -13,11 +13,9 @@
 
   
 <meta name="twitter:card" content="summary">
-<meta name="twitter:creator" content="@djnavarro">
-<meta property="og:url" content="https://djnavarro.github.io/hugo-slum/">
 <meta property="og:title" content="Slumdown">
-<meta property="og:description" content="A Hugo theme and R package designed for blogdown.">
-<meta property="og:image" content="http://djnavarro.github.io/hugo-slum/header/slumdown.png">
+<meta property="og:description" content="Tutorial part 3: Colour palettes in slumdown">
+<meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
 
 </head>
 
@@ -75,8 +73,8 @@
 
 <p>The <em>slum</em> theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don’t want to have to fiddle with low level settings to do that. Relatedly, one thing that has caused me frustration with blogdown is that the content generated on the R site doesn’t use the same visual style as the Hugo theme. The <code>slumdown</code> package tries to make this a little easier. For this blog, the default colour scheme is based on the <em>dark</em> palette. The following palettes are available by default:</p>
 <pre class="r"><code>slum_listpalettes()
-## [1] &quot;C:/Users/Dan/Desktop/newslum/themes/hugo-slum/static/css/palette_dark.css&quot; 
-## [2] &quot;C:/Users/Dan/Desktop/newslum/themes/hugo-slum/static/css/palette_light.css&quot;</code></pre>
+## [1] &quot;C:/Users/Dan/Desktop/ns/themes/hugo-slum/static/css/palette_dark.css&quot; 
+## [2] &quot;C:/Users/Dan/Desktop/ns/themes/hugo-slum/static/css/palette_light.css&quot;</code></pre>
 <p>A palette is not especially complicated, and is defined by a set of five named colours:</p>
 <pre class="r"><code>slum_getpalette(&quot;dark&quot;)
 ## pagecolour   maintext      faded  highlight   lowlight 

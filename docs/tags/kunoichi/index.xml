@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kunoichi on A minimal Hugo website</title>
+    <title>kunoichi on Slumdown</title>
     <link>/tags/kunoichi/</link>
-    <description>Recent content in kunoichi on A minimal Hugo website</description>
+    <description>Recent content in kunoichi on Slumdown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Apr 2019 00:00:00 +0000</lastBuildDate>
