@@ -3,7 +3,7 @@ title: "Tutorial part 4: Customising the header"
 author: "Danielle Navarro"
 date: "2019-04-18"
 slug: customising-headers
-tags: ["slum", "blogdown", "slumstyle"]
+tags: ["tutorial"]
 summary: "Slumdown allows the user to control the background image at the top of each post, the profile image overlaid in the middle of that image, and the caption attached to the header image. This post describes how this is done."
 header:
   caption: "A customised header"

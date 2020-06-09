@@ -3,7 +3,7 @@ title: "Tutorial part 3: Colour palettes in slumdown"
 author: "Danielle Navarro"
 date: "2019-04-19"
 slug: colour-palettes
-tags: ["slum", "blogdown", "slumstyle"]
+tags: ["tutorial"]
 colorPage: "#eeeeee"
 colorText: "#111111"
 colorFade: "#999999"

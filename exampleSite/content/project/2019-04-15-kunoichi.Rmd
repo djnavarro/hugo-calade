@@ -3,7 +3,7 @@ title: "A project of one's own"
 author: "Danielle Navarro"
 date: "2019-04-15"
 slug: of-ones-own
-tags: ["slumdown", "kunoichi"]
+tags: "tutorial"
 summary: "A simple project page."
 header:
   image: 'header/theme_kunoichi.png'

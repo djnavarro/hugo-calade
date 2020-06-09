@@ -3,7 +3,7 @@ title: "Tutorial part 1: Getting started"
 author: "Danielle Navarro"
 date: "2019-04-21"
 slug: getting-started
-tags: ["slum", "blogdown"]
+tags: ["tutorial"]
 summary: "A sort summary of how to get started using the slumdown package. It discusses how to install the package, set up a new site, and where to look for initial configuration."
 header:
   caption: "A blank ggplot"
@@ -20,12 +20,25 @@ Having created the thing, I decided I might as well document it too...
 
 My assumption is that anyone intending to use the *slum* theme is using it within blogdown rather than some other kind of [Hugo](https://gohugo.io/) website, so the documentation is written with an R user in mind. Additionally, I'll assume that you've never used blogdown or Hugo before, but I do assume you've used [R Markdown](https://rmarkdown.rstudio.com/).
 
-## Creating a slum blog using R
+## Create a slum blog using blogdown
 
-EXAMPLES WITH BLOGDOWN AND HUGODOWN
+```{r, eval=FALSE}
+blogdown::new_site(
+  dir = "path/to/desired/blog", 
+  theme = "djnavarro/hugo-slum", 
+  theme_example = TRUE,
+  sample = FALSE)
+```
 
 Blogdown will then generate the [example site](https://djnavarro.github.io/hugo-slum/) in the `docs` folder, which provides a short tutorial on how to get started using the package and what it is capable of. 
 
+## Create a slum blog using hugodown
+
+Something like this, presumably? 
+
+```{r, eval=FALSE}
+hugodown::create_site_slum()
+```
 
 
 ## Initial configuration
@@ -37,7 +50,9 @@ a snippet:
 # These settings specify the title for your blog, 
 # and the name of the Hugo theme that it uses.
 title = "A minimal Hugo website"
-theme = "hugo-slum"
+theme = "slum"
 ```
 
-Take a look at the config file, change a couple of things if you like, and then you're ready to start blogging!
+Note that if you are using blogdown rather than hugodown, the theme folder will have been automatically renamed from `"slum"` to `"hugo-slum"`, and this will be reflected in the `config.toml` file.
+
+In any case, take a look at the config file, change a couple of things if you like, and then you're ready to start blogging!

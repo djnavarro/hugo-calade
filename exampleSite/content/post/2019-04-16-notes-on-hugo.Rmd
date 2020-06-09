@@ -3,7 +3,7 @@ title: "Tutorial part 6: Some notes on Hugo"
 author: "Danielle Navarro"
 date: "2019-04-16"
 slug: notes-on-hugo
-tags: ["slum", "blogdown", "hugo"]
+tags: "tutorial"
 summary: "Eventually, this will be an explanation of how the Hugo slum theme is designed, possibly accompanied by a brief tutorial on Hugo."
 header:
   caption: "A blank ggplot"
