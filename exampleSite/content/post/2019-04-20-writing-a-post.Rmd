@@ -18,13 +18,13 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 In blogdown:
 
-```{r}
+```{r, eval=FALSE}
 blogdown::new_post(title = "My new post")
 ```
 
 In hugodown:
 
-```{r}
+```{r, eval=FALSE}
 hugodown::use_post(path = "post/my-new-post")
 ```
 
