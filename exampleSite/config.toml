@@ -21,7 +21,7 @@ publishDir = "docs"
 # These settings specify the title for your blog, and the name of
 # the Hugo theme that it uses.
 title = "A slum blog"
-theme = "hugo-slum"
+theme = "slum"
 
 
 # What format should the permalinks take?
