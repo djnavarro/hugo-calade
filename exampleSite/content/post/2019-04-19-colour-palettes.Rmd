@@ -21,6 +21,16 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 
 
-The *slum* theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don't want to have to fiddle with low level settings to do that. Relatedly, one thing that has caused me frustration with blogdown is that the content generated on the R site doesn't use the same visual style as the Hugo theme. The `slumdown` package tries to make this a little easier. 
+The *slum* theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don't want to have to fiddle with low level settings to do that. Relatedly, one thing that has caused me frustration with blogdown is that the content generated on the R site doesn't use the same visual style as the Hugo theme. 
 
-REWRITE THIS USING THEMATIC
+```{r}
+library(ggplot2)
+ggplot(mpg, aes(displ, hwy)) + geom_point() 
+```
+
+```{r}
+library(thematic)
+thematic_on(bg = "red")
+ggplot(mpg, aes(displ, hwy)) + geom_point() 
+```
+
