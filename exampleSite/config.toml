@@ -16,13 +16,10 @@ relativeurls = true
 # need to point this to "docs".
 publishDir = "docs"
 
-
-
 # These settings specify the title for your blog, and the name of
 # the Hugo theme that it uses.
 title = "A slum blog"
 theme = "slum"
-
 
 # What format should the permalinks take?
 [permalinks]
@@ -32,7 +29,6 @@ theme = "slum"
 # Alternative version:
 #   post = "/post/:year/:month/:day/:slug/"
 #   project = "/project/:year/:month/:day/:slug/"
-
 
 
 # These settings are used to specify the links in the main
