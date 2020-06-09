@@ -42,7 +42,7 @@ As usual, R chunks can be inserted:
 
 ```{r packageload, warning=FALSE, message=FALSE}
 library(tidyverse)
-library(slumdown)
+#library(slumdown)
 ```
 
 Code that produces console output renders like this:
@@ -64,7 +64,7 @@ To create ggplot output that mirrors this theme, make sure that the [slumstyle p
 
 ```{r scatter, fig.cap = "Here is a plot", warning=FALSE, message=FALSE}
 ggplot(mpg, aes(displ, hwy)) + 
-  geom_point() + theme_slum("dark")
+  geom_point() #+ theme_slum("dark")
 ```
 
 By default the *slum* theme provides this "dark" colour scheme, but there is also a "light" scheme and a "kunoichi" scheme. I'll talk more about colour schemes in the next post.
