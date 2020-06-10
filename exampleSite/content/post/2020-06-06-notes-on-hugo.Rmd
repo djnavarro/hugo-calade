@@ -1,0 +1,16 @@
+---
+title: "Tutorial part 6: Some notes on Hugo"
+author: "Danielle Navarro"
+date: "2020-06-06"
+slug: notes-on-hugo
+tags: "tutorial"
+header:
+  caption: "A blank ggplot"
+  image: 'header/theme_dark.png'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+This page needs work!

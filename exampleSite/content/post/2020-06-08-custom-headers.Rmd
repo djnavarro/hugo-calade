@@ -1,10 +1,9 @@
 ---
-title: "Tutorial part 4: Customising the header"
+title: "Tutorial part 3: Custom headers"
 author: "Danielle Navarro"
-date: "2019-04-18"
-slug: customising-headers
+date: "2020-06-08"
+slug: custom-headers
 tags: ["tutorial"]
-summary: "Slumdown allows the user to control the background image at the top of each post, the profile image overlaid in the middle of that image, and the caption attached to the header image. This post describes how this is done."
 header:
   caption: "A customised header"
   image: 'header/mpg_dark.png'
@@ -17,8 +16,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 library(tidyverse)
 ```
 
-
-Within `slumdown` you can exercise quite a bit of control over the header at the top of each page within the YAML at the top of the post. There are three fields you can customise: `image` provides the path to the header image (relative to the `static/` folder), `caption` is the caption text shown floating over the bottom right of the header image, and the `profile` picture that appears in the middle of the header. All three are optional, and if those fields are not included, then no image (or text) will appear. The relevant lines in the YAML for this post are:
+The slum theme allows you to exercise quite a bit of control over the header at the top of each page within the YAML at the top of the post. There are three fields you can customise: `image` provides the path to the header image (relative to the `static/` folder), `caption` is the caption text shown floating over the bottom right of the header image, and the `profile` picture that appears in the middle of the header. All three are optional, and if those fields are not included, then no image (or text) will appear. The relevant lines in the YAML for this post are:
 
 ```
 header:

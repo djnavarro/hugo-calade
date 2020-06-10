@@ -1,10 +1,9 @@
 ---
-title: "Tutorial part 5: Deploying to GitHub"
+title: "Tutorial part 4: Deploying to GitHub"
 author: "Danielle Navarro"
-date: "2019-04-17"
+date: "2020-06-07"
 slug: deploying-to-github
 tags: "tutorial"
-summary: "This tutorial describes how to deploy a site. Blogdown sites are very often deployed to Netlify, but I have a personal bias to use GitHub Pages, so *slumdown* is configured by default to use GitHub." 
 header:
   caption: "A blank ggplot"
   image: 'header/theme_dark.png'
@@ -13,6 +12,8 @@ header:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 ```
+
+This page needs work!
 
 The usual advice for deploying a blogdown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities with GitHub Pages that make this difficult. However, I have an ingrained habit of using GitHub Pages, with each repository hosted at 
 ```

@@ -1,0 +1,58 @@
+---
+title: "Tutorial part 2: Colour themes"
+author: "Danielle Navarro"
+date: "2020-06-09"
+slug: colour-themes
+tags: ["tutorial"]
+colorPage: "#eeeeee"
+colorText: "#111111"
+colorFade: "#999999"
+colorAccent1: "#0000dd"
+colorAccent2: "#8a2be2"
+header:
+  caption: "A blank ggplot"
+  image: 'header/theme_grey.png'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+The slum theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don't want to have to fiddle with low level settings to do that. A slum page is defined by five colours that you can specify across the whole site within the `config.toml` file. For this site, the dark theme I have used is defined by the following lines:
+
+```
+colorPage = "#333333"    # background colour
+colorText = "#dddddd"    # main text colour
+colorFade = "#888888"    # faded text colour
+colorAccent1 = "#ff69b4" # first accent colour ("highlight")
+colorAccent2 = "#ba68c8" # second accent colour ("lowlight")
+```
+
+However, you can override the site defaults for an individual page by including the same parameters in the YAML header for your R markdown post. For example, in this post, the YAML header includes the following lines, which produces the lighter theme you see on the current page:
+
+```
+colorPage: "#eeeeee"
+colorText: "#111111"
+colorFade: "#999999"
+colorAccent1: "#0000dd"
+colorAccent2: "#8a2be2"
+```
+
+## Theme-consistent plots
+
+One thing that has caused me frustration with blogdown is that the content generated on the R site doesn't use the same visual style as the Hugo theme. For example, let's suppose I wanted to generate a plot using ggplot2 like so:
+
+```{r}
+library(ggplot2)
+ggplot(mpg, aes(displ, hwy)) + geom_point() 
+```
+
+Okay, this doesn't look *too* terrible but the white background is jarring. When I originally wrote the slum theme I also wrote a separate package ("slumdown") that supplied ggplot themes that would fix this issue. However, there is now a more general solution available and my preferred solution is fix this by using the [thematic](https://github.com/rstudio/thematic/) package:
+
+```{r, warning=FALSE, message=FALSE}
+library(thematic)
+thematic_on(bg = "#eeeeee")
+ggplot(mpg, aes(displ, hwy)) + geom_point() 
+```
+
