@@ -37,13 +37,15 @@ If you want to use hugodown, you can create a new site using the following comma
 hugodown::create_site_slum("path_to_blog_folder")
 ```
 
-When you do this, hugodown will download the slum template and build the example site. However, consistent with the hugodown principle of separating R from Hugo, what it will do is take the `.Rmd` files that comprise my site, and build them to `.md` files. If you want to use Hugo to build those `.md` files into the final webpage, use the following command:
+When you do this, hugodown will download the slum template and configure the site appropriately. To build the site:
 
 ```{r, eval=FALSE}
-hugodown::hugo_build("path_to_blog_folder")
+lapply(hugodown::site_outdated(), rmarkdown::render)
+hugodown::hugo_build()
+hugodown::hugo_start()
 ```
 
-At this point you should have the website in the `docs` folder. 
+I suspect this is not the optimal way to do things, but it works and at this point you should have the website in the `docs` folder.
 
 ## Initial configuration
 
