@@ -7,7 +7,10 @@
 # GitHub pages the way I've done for the example site at
 # https://djnavarro.github.io/hugo-slum/, then you can do something
 # like this:
-baseurl = "/hugo-slum/"
+#
+#    baseurl = "/hugo-slum/"
+#
+baseurl = "/"
 
 # Rewrite URLs to be relative to the current content.
 relativeurls = true
