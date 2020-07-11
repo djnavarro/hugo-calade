@@ -3,10 +3,12 @@ title: "A project of one's own"
 author: "Danielle Navarro"
 date: "1929-09-01"
 slug: of-ones-own
-tags: "tutorial"
+tags: "art"
 summary: "A simple project page."
 header:
-  image: 'header/theme_kunoichi.png'
+  caption: "A caption"
+  image: 'header/banner.png'
+  profile: 'header/profile.png'
 ---
 
 ```{r setup, include=FALSE}
