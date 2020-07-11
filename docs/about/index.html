@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="">
 
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About | Slumdown</title>
+    <title>About | A slum blog</title>
 
-  <link rel="stylesheet" href=../css/palette_dark.css />
-  
+  <style>
+  	:root {
+  		--pagecolour: #333333;
+  		--maintext: #dddddd;
+  		--faded: #888888;
+  		--highlight: #ff69b4;
+  		--lowlight: #ba68c8;
+	}
+  </style>
+
   <link rel="stylesheet" href="../css/et_book.css" />
   <link rel="stylesheet" href="../css/style.css" />
 
   
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="About">
-<meta property="og:description" content="The idea behind slumdownThe slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. Originally it was intended to be extremely minimal, with the very modest goal of trying to make sure I understood the logic of how Hugo generates static sites. The more I played with it though, the more I enjoyed it.">
+<meta property="og:description" content="About the author Danielle Navarro is a computational cognitive scientist and Associate Professor at the University of New South Wales. Her research focuses on human reasoning and statistical methods in the behavioural sciences. On occasions she has been known to masquerade as a part-time statistician, data scientist and an unskilled software developer. She is also a devoted R-Lady, an aspiring generative artist, and at times a general purpose nuisance. She is prone to describing herself in the third person in biographies, but is willing to admit that it&rsquo;s super weird.">
 <meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
+
+<link rel='stylesheet' href='../css/highlight.css' title='hl-light'>
+
 
 </head>
 
@@ -26,12 +37,12 @@
 <div class="article-header">
   
   
-  <img src="../header/mpg_dark.png" class="article-banner" itemprop="image" alt="">
+  <img src="../header/banner.png" class="article-banner" itemprop="image" alt="">
   
 
   
   
-  <img src="../header/my_profile.png" class="article-header-profile" itemprop="image" alt="">
+  <img src="../header/profile.png" class="article-header-profile" itemprop="image" alt="">
   
 
 
@@ -58,15 +69,8 @@
 
 
       <main>
-        
-
-
-<div id="the-idea-behind-slumdown" class="section level1">
-<h1>The idea behind <em>slumdown</em></h1>
-<p>The <a href="https://github.com/djnavarro/hugo-slum">slum theme for Hugo</a> and blogdown is an adaptation Yihue Xie’s <em>Xmin</em> theme that borrows stylistic elements from the <em>Tufte</em> R Markdown theme and from the <em>academic</em> Hugo theme. Originally it was intended to be extremely minimal, with the very modest goal of trying to make sure I understood the logic of how Hugo generates static sites. The more I played with it though, the more I enjoyed it. So what I ended up with is a <em>“Somewhat-Light Unhelpfully-Minimal”</em> Hugo theme that I’m intending to use on <a href="https://djnavarro.net">my blog</a>.</p>
-<p>As it developed, I started getting annoyed at the fact that Hugo themes don’t make their colour schemes easily accessible, which means it’s hard to generate plots in R that match the visual style of the blog. So I decided to adapt the <em>slum</em> theme so that the colour templates were easily accessible, and wrote the <a href="https://github.com/djnavarro/slumdown">slumdown package</a> so that I’d have a convenient user interface.</p>
-<p>All in all, this has been a fun excercise, and I’ve learned quite a bit about Hugo, blogdown, and CSS in the process. I’m definitely keen on the idea of developing “blogdown aware” Hugo themes like <em>slum</em> alongside R packages like <em>slumdown</em> that take advantage of this.</p>
-</div>
+        <h1 id="about-the-author">About the author</h1>
+<p><a href="https://djnavarro.net">Danielle Navarro</a> is a computational cognitive scientist and Associate Professor at the University of New South Wales. Her research focuses on human reasoning and statistical methods in the behavioural sciences. On occasions she has been known to masquerade as a part-time <a href="https://learningstatisticswithr.com">statistician</a>, <a href="https://robust-tools.djnavarro.net">data scientist</a> and an unskilled <a href="https://github.com/djnavarro">software developer</a>. She is also a <a href="https://rladiessydney.org">devoted R-Lady</a>, an <a href="https://art.djnavarro.net">aspiring generative artist</a>, and at times a <a href="https://twitter.com/djnavarro">general purpose nuisance</a>. She is prone to describing herself in the third person in biographies, but is willing to admit that it&rsquo;s super weird.</p>
 
       </main>
 
@@ -87,7 +91,7 @@
 
   
   <br/><br/>
-  &copy; <a href="https://djnavarro.net">Danielle Navarro</a> 2018&ndash;2019 | <a href="https://github.com/djnavarro">Github</a> | <a href="https://twitter.com/djnavarro">Twitter</a>
+  A footer of one&rsquo;s own
   <br/><br/>
   
 </footer>

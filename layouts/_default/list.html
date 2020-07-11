@@ -14,14 +14,20 @@
 
       {{ .Content }}
 
-      <ul>
+      <div class="prettylistcontainer">
+      <ul class="prettylist">
         {{ range (where .Data.Pages "Section" "!=" "") }}
-        <li>
-          <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
-          <span class="flatlistdate">{{ .Date.Format "02 Jan 2006" }}</span>
+        <li class="prettylist">
+          <p class="prettylist">
+            <a href="{{ .URL }}">{{ .Title | markdownify }}</a>&nbsp;&nbsp;
+            <span class="prettylistdate">{{ .Date.Format "02 Jan 2006" }}</span>
+            <br>
+            <span class="prettylistsummary">{{ .Summary | markdownify }}</span>
+          </p>
         </li>
         {{ end }}
       </ul>
+      </div>
 
       {{ partial "footer.html" . }}
 

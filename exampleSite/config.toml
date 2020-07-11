@@ -2,57 +2,29 @@
 # The config file is written using TOML, which stands for "Tom's Obvious,
 # Minimal Language". See: https://github.com/toml-lang/toml
 
-
-
 # The URL for your website. It should end with a trailing slash,
 # e.g. "https://example.com/". If you're planning to deploy on
 # GitHub pages the way I've done for the example site at
 # https://djnavarro.github.io/hugo-slum/, then you can do something
 # like this:
-baseurl = "/hugo-slum/"
+#
+#    baseurl = "/hugo-slum/"
+#
+baseurl = "/"
 
-
-
-# Rewrite relative URLs to be relative to the current content.
+# Rewrite URLs to be relative to the current content.
 relativeurls = true
 
-
-
-# Default is "public", but if you're using github pages you
+# Default is "public", but if you're using GitHub pages you
 # need to point this to "docs".
 publishDir = "docs"
 
-
-
 # These settings specify the title for your blog, and the name of
 # the Hugo theme that it uses.
-title = "Slumdown"
-theme = "hugo-slum"
+title = "A slum blog"
+theme = "slum"
 
-
-
-# Settings inherited from XMin theme that I haven't bothered to
-# to edit in any way
-languageCode = "en-us"
-googleAnalytics = ""
-disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-preserveTaxonomyNames = true
-footnotereturnlinkcontents = "↩"
-
-
-
-# What format should the permalinks take? In the example site there
-# are two kinds of pages, posts and projects, listed at:
-#
-#    https://djnavarro.github.io/hugo-slum/post/
-#    https://djnavarro.github.io/hugo-slum/project/
-#
-# Each post is then followed by its own "slug", so the full path
-# might be something like this:
-#
-#     https://djnavarro.github.io/hugo-slum/post/getting-started/
-#
+# What format should the permalinks take?
 [permalinks]
     post = "/post/:slug/"
     project = "/project/:slug/"
@@ -60,7 +32,6 @@ footnotereturnlinkcontents = "↩"
 # Alternative version:
 #   post = "/post/:year/:month/:day/:slug/"
 #   project = "/project/:year/:month/:day/:slug/"
-
 
 
 # These settings are used to specify the links in the main
@@ -92,25 +63,36 @@ footnotereturnlinkcontents = "↩"
 
 
 
-# Parameters used in various places throughout the site.
+# Parameters used throughout the site.
 #
-# - "siteHeader" specifies the default image used at the top of
-#   every page (you can override it for specific posts). The
-#   path to the image is specified relative to the "static/"
-#   folder
-#
-# - "siteProfile" as above, but for the inset profile image.
-#
-# - "colourScheme" specifies a path to a css file that describes
-#   the colour scheme, again relative to the "static/" folder. As
-#   before you can override it for specific posts.
-#
-# - "description" of the site
-# - "footer" contents
+# - "siteHeader":   banner image at the top of the page
+# - "siteProfile":  profile image centered within the banner
+# - "description":  description of the site
+# - "footer":       content of the page footer
+# - "twitterImage": image to include within a twitter card
+# - "colorPage":    default page background color
+# - "colorText":    default text color for the page
+# - "colorFade":    default color to use when 'faded' text is needed
+# - "colorAccent1": default value for the first accent color (the "highlight")
+# - "colorAccent2": default value for the second accent color (the "lowlight")
+
 [params]
-    siteHeader = "header/mpg_dark.png"
-    siteProfile = "header/my_profile.png"
+    siteHeader = "header/banner.png"
+    siteProfile = "header/profile.png"
+    description = "A website of one's own"
+    footer = "A footer of one's own"
     twitterImage = "https://djnavarro.github.io/hugo-slum/header/slumdown.png"
-    colourScheme = "css/palette_dark.css"
-    description = "A website built using slumdown."
-    footer = "&copy; [Danielle Navarro](https://djnavarro.net) 2018--2019 | [Github](https://github.com/djnavarro) | [Twitter](https://twitter.com/djnavarro)"
+    colorPage = "#333333"    # background colour
+    colorText = "#dddddd"    # main text colour
+    colorFade = "#888888"    # faded text colour
+    colorAccent1 = "#ff69b4" # first accent colour ("highlight")
+    colorAccent2 = "#ba68c8" # second accent colour ("lowlight")
+
+
+# additional settings
+languageCode = "en-us"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"

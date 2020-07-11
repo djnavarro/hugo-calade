@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="">
 
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tutorial part 1: Getting started | Slumdown</title>
+    <title>Tutorial part 1: Getting started | A slum blog</title>
 
-  <link rel="stylesheet" href=../../css/palette_dark.css />
-  
+  <style>
+  	:root {
+  		--pagecolour: #333333;
+  		--maintext: #dddddd;
+  		--faded: #888888;
+  		--highlight: #ff69b4;
+  		--lowlight: #ba68c8;
+	}
+  </style>
+
   <link rel="stylesheet" href="../../css/et_book.css" />
   <link rel="stylesheet" href="../../css/style.css" />
 
   
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Tutorial part 1: Getting started">
-<meta property="og:description" content="A sort summary of how to get started using the slumdown package. It discusses how to install the package, set up a new site, and where to look for initial configuration.">
+<meta property="og:description" content="The aim of slumdown is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both blogdown and hugodown. In this tutorial, I&rsquo;ll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with R Markdown, but is unfamiliar with blogdown, hugodown, or Hugo itself.">
 <meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
+
+<link rel='stylesheet' href='../../css/highlight.css' title='hl-light'>
+
 
 </head>
 
@@ -26,14 +37,18 @@
 <div class="article-header">
   
   
-  <img src="../../header/theme_dark.png" class="article-banner" itemprop="image" alt="">
+    
+  <img src="../../header/banner.png" class="article-banner" itemprop="image" alt="">
+    
   
 
-  <span class="article-header-caption">A blank ggplot</span>
+  <span class="article-header-caption">A caption</span>
 
   
   
-  <img src="../../%25!s%28%3cnil%3e%29" class="article-header-profile" itemprop="image" alt="">
+    
+  <img src="../../header/profile.png" class="article-header-profile" itemprop="image" alt="">
+    
   
 
 
@@ -61,40 +76,53 @@
       <div>
   <h1>Tutorial part 1: Getting started</h1>
   <h3>
-    by Danielle Navarro, 21 Apr 2019
+    by Danielle Navarro, 10 Jun 2020
   </h3>
   <br><br>
 </div>
 
 
       <main>
-        
-
-
-<p>My initial goal in writing the <em>slum</em> theme was purely selfish: I use blogdown on <a href="https://djnavarro.net">my own blog</a> and I wanted to understand how it works. To help me learn, I decided to <a href="https://bookdown.org/yihui/blogdown/">read the documentation</a> and tinker with the minimalistic <a href="https://github.com/yihui/hugo-xmin">XMin theme</a>. I… um… got a little carried away, and ended up with a fairly flexible blogging template with a few more bells and whistles than I was expecting. I wasn’t entirely convinced it would be useful, so I named it <em>Somewhat-Light Unhelpfully-Minimal</em> Hugo theme.</p>
-<p>Having created the thing, I decided I might as well document it too…</p>
-<p>My assumption is that anyone intending to use the <em>slum</em> theme is using it within blogdown rather than some other kind of <a href="https://gohugo.io/">Hugo</a> website, so the documentation is written with an R user in mind. Additionally, I’ll assume that you’ve never used blogdown or Hugo before, but I do assume you’ve used <a href="https://rmarkdown.rstudio.com/">R Markdown</a>.</p>
-<div id="creating-a-slumdown-blog" class="section level2">
-<h2>Creating a slumdown blog</h2>
-<p>The <em>slumdown</em> package is an experiment in creating a simple “blogdown native” Hugo theme, one that assumes that posts are written using R Markdown. It extends the <a href="https://github.com/djnavarro/hugo-slum">slum theme for Hugo</a> by providing an interface for customising the blog within R and a system for generating plots that use the same colour scheme as the blog post. The <em>slumdown</em> package is not on CRAN and so needs to be installed from GitHub:</p>
-<pre class="r"><code># devtools::install_github(&quot;djnavarro/slumdown&quot;)
-library(&quot;slumdown&quot;)</code></pre>
-<p>By default, the <em>slumdown</em> package assumes the source code for the site takes the form of an RStudio project, and will be deployed to GitHub pages, though neither is strictly necessary. To get started:</p>
-<pre class="r"><code>slum_new(dir = &quot;path/to/my/slumblog&quot;) </code></pre>
-<p>This will create a new RStudio project called <code>slumblog</code> (or whatever), download the slum theme and the example site. From within the project, initialise the blog using <code>blogdown</code>:</p>
-<pre class="r"><code>blogdown::serve_site()</code></pre>
-<p>Blogdown will then generate the <a href="https://djnavarro.github.io/hugo-slum/">example site</a> in the <code>docs</code> folder, which provides a short tutorial on how to get started using the package and what it is capable of.</p>
+        <p>The aim of slumdown is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both <a href="https://github.com/rstudio/blogdown">blogdown</a> and <a href="https://github.com/r-lib/hugodown">hugodown</a>. In this tutorial, I&rsquo;ll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with <a href="https://rmarkdown.rstudio.com/">R Markdown</a>, but is unfamiliar with blogdown, hugodown, or Hugo itself.</p>
+<h2 id="blogdown-or-hugodown">Blogdown or Hugodown?</h2>
+<p>The first decision you need to make is which R package to use, blogdown or hugodown? Both allow you to design and manage static websites within R, and both allow you to write pages/posts as R markdown documents. However, there are differences: blogdown blurs the roles played by Hugo and R, which can lead to some degree of messiness. In contrast, hugodown tries to maintain a clean separation: the role of hugodown is to translate your R markdown files into a &ldquo;plain&rdquo; markdown format that Hugo knows how to read, and then leaves the rest of the process to Hugo. To me, the cleaner separation in hugodown is highly desirable: but it is currently an experimental package, so some caution is warranted!</p>
+<p>To make things as easy as possible, the slumdown package contains installer functions for both hugodown and blogdown. If you want to use blogdown, you can create a new site with the following command. Just change <code>&quot;path_to_blog_folder&quot;</code> to something suitable:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>slumdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/slumdown/man/create_blogdown_slum.html'>create_blogdown_slum</a></span>(<span class='s'>"path_to_blog_folder"</span>)</code></pre>
 </div>
-<div id="initial-configuration" class="section level2">
-<h2>Initial configuration</h2>
-<p>Most of the settings that you’ll initially want to play with are in the <code>config.toml</code> file. The file is (I hope) fairly well documented, so you can see what most of the settings do and how to configure them. For example, here’s
-a snippet:</p>
+<p>Blogdown will download the slum template and generate the example site (i.e., this one!), and you are ready to get started. If you want to use hugodown, the installation command is this:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>slumdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/slumdown/man/create_hugodown_slum.html'>create_hugodown_slum</a></span>(<span class='s'>"path_to_blog_folder"</span>)</code></pre>
+</div>
+<p>When you do this, hugodown will download the slum template, configure the site appropriately and build the site.</p>
+<p>Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='c'># for blogdown...</span>
+<span class='k'>blogdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/blogdown/man/serve_site.html'>serve_site</a></span>()
+
+<span class='c'># for hugodown...</span>
+<span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_build.html'>hugo_build</a></span>()
+<span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_start.html'>hugo_start</a></span>()</code></pre>
+</div>
+<h2 id="initial-configuration">Initial configuration</h2>
+<p>Most of the settings that you&rsquo;ll initially want to play with are in the <code>config.toml</code> file. The file is (I hope) fairly well documented, so you can see what most of the settings do and how to configure them. For example, here&rsquo;s a snippet:</p>
 <pre><code># These settings specify the title for your blog, 
 # and the name of the Hugo theme that it uses.
 title = &quot;A minimal Hugo website&quot;
-theme = &quot;hugo-slum&quot;</code></pre>
-<p>Take a look at the config file, change a couple of things if you like, and then you’re ready to start blogging!</p>
+theme = &quot;slum&quot;
+</code></pre>
+<p>The snippet above is what you should see if you are using hugodown. If you are using blogdown it will be slightly different: the theme folder will have been automatically renamed from <code>&quot;slum&quot;</code> to <code>&quot;hugo-slum&quot;</code>, and this will be reflected in the <code>config.toml</code> file. Either way, take a look at the config file, change a couple of things if you like, and then you&rsquo;re ready to start blogging!</p>
+<h2 id="your-first-post">Your first post</h2>
+<p>Creating posts or pages is (usually) pretty straightfoward in both blogdown and hugodown. In blogdown, you can use the <code>new_post()</code> function to create a post, and all you need to do is specify the title:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>blogdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/blogdown/man/hugo_cmd.html'>new_post</a></span>(title = <span class='s'>"My new post"</span>)</code></pre>
 </div>
+<p>Given that information, blogdown can take care of low level things like constructing the path and so on.</p>
+<p>In hugodown, the <code>use_post()</code> function is similar but not quite identical. The main thing you need to do is specify the <code>path</code> that you&rsquo;d like the new page to have. So if I want my website to create a page at <code>https://myfancywebsite.com/post/my-new-post</code> or whatever, the command I would need is this:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/use_post.html'>use_post</a></span>(path = <span class='s'>"post/my-new-post"</span>)</code></pre>
+</div>
+<p>Either way, whether you are using blogdown or hugodown, you should now be looking at a new R markdown document that you can start editing!</p>
 
       </main>
 
@@ -115,7 +143,7 @@ theme = &quot;hugo-slum&quot;</code></pre>
 
   
   <br/><br/>
-  &copy; <a href="https://djnavarro.net">Danielle Navarro</a> 2018&ndash;2019 | <a href="https://github.com/djnavarro">Github</a> | <a href="https://twitter.com/djnavarro">Twitter</a>
+  A footer of one&rsquo;s own
   <br/><br/>
   
 </footer>

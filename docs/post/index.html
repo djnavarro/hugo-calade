@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="">
 
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Posts | Slumdown</title>
+    <title>Posts | A slum blog</title>
 
-  <link rel="stylesheet" href=../css/palette_dark.css />
-  
+  <style>
+  	:root {
+  		--pagecolour: #333333;
+  		--maintext: #dddddd;
+  		--faded: #888888;
+  		--highlight: #ff69b4;
+  		--lowlight: #ba68c8;
+	}
+  </style>
+
   <link rel="stylesheet" href="../css/et_book.css" />
   <link rel="stylesheet" href="../css/style.css" />
 
@@ -16,6 +24,9 @@
 <meta property="og:title" content="Posts">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
+
+<link rel='stylesheet' href='../css/highlight.css' title='hl-light'>
+
 
 </head>
 
@@ -26,12 +37,12 @@
 <div class="article-header">
   
   
-  <img src="../header/mpg_dark.png" class="article-banner" itemprop="image" alt="">
+  <img src="../header/banner.png" class="article-banner" itemprop="image" alt="">
   
 
   
   
-  <img src="../header/my_profile.png" class="article-header-profile" itemprop="image" alt="">
+  <img src="../header/profile.png" class="article-header-profile" itemprop="image" alt="">
   
 
 
@@ -62,39 +73,39 @@
 
       
 
-      <ul>
+      <div class="prettylistcontainer">
+      <ul class="prettylist">
         
-        <li>
-          <a href="../post/getting-started/">Tutorial part 1: Getting started</a>
-          <span class="flatlistdate">21 Apr 2019</span>
+        <li class="prettylist">
+          <p class="prettylist">
+            <a href="../post/getting-started/">Tutorial part 1: Getting started</a>&nbsp;&nbsp;
+            <span class="prettylistdate">10 Jun 2020</span>
+            <br>
+            <span class="prettylistsummary">The aim of slumdown is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both blogdown and hugodown. In this tutorial, I’ll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with R Markdown, but is unfamiliar with blogdown, hugodown, or Hugo itself.</span>
+          </p>
         </li>
         
-        <li>
-          <a href="../post/writing-a-post/">Tutorial part 2: Writing a post</a>
-          <span class="flatlistdate">20 Apr 2019</span>
+        <li class="prettylist">
+          <p class="prettylist">
+            <a href="../post/customising-posts/">Tutorial part 2: Customising posts</a>&nbsp;&nbsp;
+            <span class="prettylistdate">08 Jun 2020</span>
+            <br>
+            <span class="prettylistsummary">The slum theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don’t want to have to fiddle with low level settings to do that. A slum page is defined by five colours that you can specify across the whole site within the config.</span>
+          </p>
         </li>
         
-        <li>
-          <a href="../post/colour-palettes/">Tutorial part 3: Colour palettes in slumdown</a>
-          <span class="flatlistdate">19 Apr 2019</span>
-        </li>
-        
-        <li>
-          <a href="../post/customising-headers/">Tutorial part 4: Customising the header</a>
-          <span class="flatlistdate">18 Apr 2019</span>
-        </li>
-        
-        <li>
-          <a href="../post/deploying-to-github/">Tutorial part 5: Deploying to GitHub</a>
-          <span class="flatlistdate">17 Apr 2019</span>
-        </li>
-        
-        <li>
-          <a href="../post/notes-on-hugo/">Tutorial part 6: Some notes on Hugo</a>
-          <span class="flatlistdate">16 Apr 2019</span>
+        <li class="prettylist">
+          <p class="prettylist">
+            <a href="../post/deploying-the-site/">Tutorial part 3: Deploying the site</a>&nbsp;&nbsp;
+            <span class="prettylistdate">07 Jun 2020</span>
+            <br>
+            <span class="prettylistsummary">The usual advice for deploying a blogdown or hugodown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities to GitHub Pages that can make it difficult. The third part of the tutorial walks you through both versions.
+Deploying to GitHub Pages I have an ingrained habit of using GitHub Pages, so I’ll start with this. Suppose the name of your GitHub repo is my-slumdown-site and you’d like it to deploy to a GitHub Pages site located at:</span>
+          </p>
         </li>
         
       </ul>
+      </div>
 
       <footer>
   
@@ -113,7 +124,7 @@
 
   
   <br/><br/>
-  &copy; <a href="https://djnavarro.net">Danielle Navarro</a> 2018&ndash;2019 | <a href="https://github.com/djnavarro">Github</a> | <a href="https://twitter.com/djnavarro">Twitter</a>
+  A footer of one&rsquo;s own
   <br/><br/>
   
 </footer>

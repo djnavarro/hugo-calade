@@ -1,0 +1,115 @@
+---
+output: hugodown::md_document
+title: "A project of one's own"
+author: "Danielle Navarro"
+date: "1929-09-01"
+slug: of-ones-own
+tags: "art"
+summary: "A simple project page."
+header:
+  caption: "A caption"
+  image: 'header/banner.png'
+  profile: 'header/profile.png'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+```{r, message=FALSE}
+library(scico)
+library(tibble)
+library(dplyr)
+library(ggplot2)
+```
+
+The generator function
+
+```{r}
+generator <- function(seed) {
+  
+  set.seed(seed)
+  
+  n <- 100000 # number of regions to sample
+  r <- 7.5    # range parameter for the plots
+  
+  n_train <- 3
+  r_width <- 2
+  
+  cx <- runif(1, min = .2, max = 1.5)
+  cy <- runif(1, min = .2, max = 1.5)
+  
+  train <- tibble(
+    x = runif(n_train, min = -r_width/2, max = r_width/2),
+    y = runif(n_train, min = -r_width/2, max = r_width/2)
+  )
+  
+  train_with <- function(hypotheses, train) {
+    n <- nrow(train)
+    for(i in 1:n) {
+      hypotheses <- hypotheses %>% 
+        filter(
+          x_min < train$x[i], x_max > train$x[i], 
+          y_min < train$y[i], y_max > train$y[i]
+        )
+    }
+    return(hypotheses)
+  }
+  
+  hypotheses <- tibble(
+    mid_x = runif(n, min = -r, max = r), 
+    mid_y = runif(n, min = -r, max = r),
+    len_x = rgamma(n, rate = cx, shape = 1),
+    len_y = rgamma(n, rate = cy, shape = 1)
+  ) %>%
+    mutate(
+      x_min = mid_x - len_x / 2, 
+      x_max = mid_x + len_x / 2,
+      y_min = mid_y - len_y / 2,
+      y_max = mid_y + len_y / 2
+    ) %>%
+    train_with(train) %>%
+    filter( 
+      x_min > -r, x_max < r,
+      y_min > -r, y_max < r
+    )
+  
+  pal <- sample(scico_palette_names(), 1)
+  bg <- "#333333"
+  
+  picture <- ggplot(
+    data = hypotheses, 
+    mapping = aes(xmin = x_min, ymin = y_min, 
+                  xmax = x_max, ymax = y_max)
+  ) + 
+    geom_rect(aes(fill = len_x + len_y), 
+              alpha = .15, color = "white", 
+              size = .1, show.legend = FALSE) + 
+    
+    geom_rect(fill = NA, color = paste0(bg, "22"), 
+              size = .1, show.legend = FALSE) + 
+    
+    # stylistic
+    theme_void() +
+    theme(plot.background = element_rect(fill = bg, colour = bg)) + 
+    scale_x_continuous(NULL, labels = NULL, limits = c(-r, r)) + 
+    scale_y_continuous(NULL, labels = NULL, limits = c(-r, r)) + 
+    scico::scale_fill_scico(palette = pal) +
+    coord_equal() 
+  
+  return(picture)
+}
+```
+
+Some examples:
+
+```{r, message=FALSE, warning=FALSE, dev.args=list(bg="#333333"), fig.width=5, fig.height=5, fig.asp=1}
+thematic::thematic_on(bg = "#333333")
+generator(seed = 1)
+generator(seed = 2)
+generator(seed = 3)
+generator(seed = 4)
+generator(seed = 5)
+```
+
