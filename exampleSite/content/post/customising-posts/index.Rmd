@@ -2,8 +2,9 @@
 title: "Tutorial part 2: Customising posts"
 author: "Danielle Navarro"
 date: "2020-06-08"
-slug: customising posts
+slug: customising-posts
 tags: ["tutorial"]
+summary: "In general I want to use a consistent palette and header across a site, but there are occasions where I might want a single page to use a different style. I don’t want to have to edit with low level settings to do that. In the second part of the tutorial I discuss this kind of customisation."
 colorPage: "#eeeeee"
 colorText: "#111111"
 colorFade: "#999999"
