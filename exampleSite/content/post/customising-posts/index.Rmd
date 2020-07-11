@@ -17,11 +17,9 @@ header:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
-#library(slumdown)
+thematic::thematic_off()
 library(tidyverse)
 ```
-
-
 
 
 The slum theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don't want to have to fiddle with low level settings to do that. A slum page is defined by five colours that you can specify across the whole site within the `config.toml` file. For this site, the dark theme I have used is defined by the following lines:
@@ -46,14 +44,14 @@ colorAccent2: "#8a2be2"
 
 ## Theme-consistent plots
 
-One thing that has caused me frustration with blogdown is that the content generated on the R site doesn't use the same visual style as the Hugo theme. For example, let's suppose I wanted to generate a plot using ggplot2 like so:
+One thing that has sometimes been a frustration with blogdown is that the content generated on the R side doesn't use the same visual style as the Hugo theme. To illustrate, suppose I wanted to generate a plot using ggplot2 like this:
 
 ```{r}
 library(ggplot2)
 ggplot(mpg, aes(displ, hwy)) + geom_point() 
 ```
 
-Okay, this doesn't look *too* terrible but the white background is jarring. When I originally wrote the slum theme I also wrote a separate package ("slumdown") that supplied ggplot themes that would fix this issue. However, there is now a more general solution available and my preferred solution is fix this by using the [thematic](https://github.com/rstudio/thematic/) package:
+This doesn't look *too* terrible but the white background is jarring. Although there are a few different ways this could be fixed, my preferred approach is to use the [thematic](https://github.com/rstudio/thematic/) package:
 
 ```{r, warning=FALSE, message=FALSE}
 library(thematic)
@@ -63,13 +61,12 @@ ggplot(mpg, aes(displ, hwy)) + geom_point()
 
 ## Custom headers and profiles
 
-
-The slum theme allows you to exercise quite a bit of control over the header at the top of each page within the YAML at the top of the post. There are three fields you can customise: `image` provides the path to the header image (relative to the `static/` folder), `caption` is the caption text shown floating over the bottom right of the header image, and the `profile` picture that appears in the middle of the header. All three are optional, and if those fields are not included, then no image (or text) will appear. The relevant lines in the YAML for this post are:
+The slum theme allows you to customise the header at the top of each page, by modifying the yaml at the top of the post. There are three fields you can customise: `image` provides the path to the header image (relative to the `static/` folder), `caption` is the caption text shown floating over the bottom right of the header image, and the `profile` picture that appears in the middle of the header. All three are optional, and if those fields are not included, then no image (or text) will appear. The relevant lines in the yaml for this post are:
 
 ```
 header:
   caption: "A customised header"
-  image: 'header/mpg_dark.png'
+  image: 'header/custom_banner.png'
   profile: 'header/custom_profile.png'
 ```
 
@@ -78,8 +75,8 @@ The header image is scaled to fit but otherwise left as is. I have been using im
 It is important to note that the description above only pertains to posts and projects. For the home page and other automatically generated pages, no caption is included, and the image and profile are set within the `config.toml` file. Specifically, the following two lines underneath the `[params]` section are used to set the images for those pages:
 
 ```
-siteHeader = "header/mpg_dark.png"
-siteProfile = "header/my_profile.png"
+siteHeader = "header/banner.png"
+siteProfile = "header/profile.png"
 ```
 
 
