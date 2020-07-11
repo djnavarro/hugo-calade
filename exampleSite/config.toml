@@ -78,7 +78,7 @@ theme = "slum"
 
 [params]
     siteHeader = "header/banner.png"
-    siteProfile = "header/my_profile.png"
+    siteProfile = "header/profile.png"
     description = "A website of one's own"
     footer = "A footer of one's own"
     twitterImage = "https://djnavarro.github.io/hugo-slum/header/slumdown.png"
