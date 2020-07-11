@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="">
 
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects | Slumdown</title>
+    <title>Projects | A slum blog</title>
 
-  <link rel="stylesheet" href=../css/palette_dark.css />
-  
+  <style>
+  	:root {
+  		--pagecolour: #333333;
+  		--maintext: #dddddd;
+  		--faded: #888888;
+  		--highlight: #ff69b4;
+  		--lowlight: #ba68c8;
+	}
+  </style>
+
   <link rel="stylesheet" href="../css/et_book.css" />
   <link rel="stylesheet" href="../css/style.css" />
 
@@ -16,6 +24,9 @@
 <meta property="og:title" content="Projects">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
+
+<link rel='stylesheet' href='../css/highlight.css' title='hl-light'>
+
 
 </head>
 
@@ -26,12 +37,12 @@
 <div class="article-header">
   
   
-  <img src="../header/mpg_dark.png" class="article-banner" itemprop="image" alt="">
+  <img src="../header/banner.png" class="article-banner" itemprop="image" alt="">
   
 
   
   
-  <img src="../header/my_profile.png" class="article-header-profile" itemprop="image" alt="">
+  <img src="../header/profile.png" class="article-header-profile" itemprop="image" alt="">
   
 
 
@@ -62,14 +73,20 @@
 
       
 
-      <ul>
+      <div class="prettylistcontainer">
+      <ul class="prettylist">
         
-        <li>
-          <a href="../project/kunoichi/">A kunoichi page</a>
-          <span class="flatlistdate">15 Apr 2019</span>
+        <li class="prettylist">
+          <p class="prettylist">
+            <a href="../project/of-ones-own/">A project of one&rsquo;s own</a>&nbsp;&nbsp;
+            <span class="prettylistdate">01 Sep 1929</span>
+            <br>
+            <span class="prettylistsummary">A simple project page.</span>
+          </p>
         </li>
         
       </ul>
+      </div>
 
       <footer>
   
@@ -88,7 +105,7 @@
 
   
   <br/><br/>
-  &copy; <a href="https://djnavarro.net">Danielle Navarro</a> 2018&ndash;2019 | <a href="https://github.com/djnavarro">Github</a> | <a href="https://twitter.com/djnavarro">Twitter</a>
+  A footer of one&rsquo;s own
   <br/><br/>
   
 </footer>
