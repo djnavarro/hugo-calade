@@ -5,7 +5,7 @@ date: "2020-06-07"
 slug: deploying-the-site
 tags: "tutorial"
 header:
-  caption: "A blank ggplot"
+  caption: "A caption"
   image: 'header/banner.png'
   profile: 'header/profile.png'
 ---
@@ -14,11 +14,15 @@ header:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-This page needs work!
 
-The usual advice for deploying a blogdown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities with GitHub Pages that make this difficult. However, I have an ingrained habit of using GitHub Pages, with each repository hosted at 
+The usual advice for deploying a blogdown or hugodown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities to GitHub Pages that can make it difficult. The third part of the tutorial walks you through both versions.
+
+
+## Deploying to GitHub Pages
+
+I have an ingrained habit of using GitHub Pages, so I'll start with this. Suppose the name of your GitHub repo is `my-slumdown-site` and you'd like it to deploy to a GitHub Pages site located at:
 ```
-https://username.github.io/reponame/
+https://username.github.io/my-slumdown-site/
 ```
 
 To make that happen for a blogdown site there are three things you need to change from the usual defaults:
@@ -27,15 +31,21 @@ To make that happen for a blogdown site there are three things you need to chang
 ```
 publishDir = "docs"
 ```
-This line is already included in the example site for *slumdown* -- i.e., this one -- so if you've started by installing this site then this has already been done for you.
 
-**Second**, the generated `docs` folder needs to contain a blank text file called `.nojekyll`, otherwise GitHub Pages will try to treat your content as a Jekyll blog and it won't deploy correctly. The easiest way to do this is to make sure that the `.nojekyll` file is in the `static` folder, which will ensure that every time blogdown re-generates the `docs` folder the `.nojekyll` file will be copied across with it. If you installed the site using `slumdown::slum_new()` this will have been done for you automatically. 
+**Second**, the generated `docs` folder needs to contain a blank text file called `.nojekyll`, otherwise GitHub Pages will try to treat your content as a Jekyll blog and it won't deploy correctly. The easiest way to do this is to make sure that the `.nojekyll` file is in the `static` folder, which will ensure that every time blogdown re-generates the `docs` folder the `.nojekyll` file will be copied across with it. 
 
 **Third**, if you want the site to be hosted at a specific location (i.e., `https://username.github.io/reponame/` rather than `https://username.github.io/`), Hugo needs to know what `reponame` is, otherwise the paths to various files will break when the site deploys. To do this, there is a line in the `config.toml` file that (by default) reads as follows:
 ```
-baseurl = "/hugo-slum/"
+baseurl = "/"
 ```
-Edit this to replace `hugo-slum` with `reponame` (or whatever you called your repository)
+Edit this to refer to your repository name. For instance:
+```
+baseurl = "/my-slumdown-site/"
+```
 
-From there, set up your [GitHub Pages](https://pages.github.com/) site the way you normally would. **TODO**: Add a quick primer on GitHub Pages. 
+At this point you can, set up the [GitHub Pages](https://pages.github.com/) site the way you normally would. 
+
+## Deploying to Netlify
+
+To be added!
 
