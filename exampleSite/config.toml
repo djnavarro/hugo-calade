@@ -77,7 +77,7 @@ theme = "slum"
 # - "colorAccent2": default value for the second accent color (the "lowlight")
 
 [params]
-    siteHeader = "header/mpg_dark.png"
+    siteHeader = "header/banner.png"
     siteProfile = "header/my_profile.png"
     description = "A website of one's own"
     footer = "A footer of one's own"
