@@ -12,6 +12,7 @@ colorAccent2: "#8a2be2"
 header:
   caption: "A blank ggplot"
   image: 'header/banner.png'
+  profile: 'header/profile.png'
 ---
 
 ```{r setup, include=FALSE}
