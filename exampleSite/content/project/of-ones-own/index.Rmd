@@ -15,6 +15,7 @@ header:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
+
 ```{r, message=FALSE}
 library(scico)
 library(tibble)
@@ -61,33 +62,22 @@ generator <- function(seed) {
     len_x = rgamma(n, rate = cx, shape = 1),
     len_y = rgamma(n, rate = cy, shape = 1)
   ) %>%
-    mutate( # reparameterize as the edges of the regions
+    mutate(
       x_min = mid_x - len_x / 2, 
       x_max = mid_x + len_x / 2,
       y_min = mid_y - len_y / 2,
       y_max = mid_y + len_y / 2
     ) %>%
     train_with(train) %>%
-    filter( # use the Navarro et al 2012 "bounded" model
+    filter( 
       x_min > -r, x_max < r,
       y_min > -r, y_max < r
     )
   
-  return(hypotheses)
-}
-```
-
-The plotting function
-
-```{r}  
-plotter <- function(hypotheses, seed) {
-  
-  set.seed(seed)
-  
   pal <- sample(scico_palette_names(), 1)
-  bg <- sample(scico(n = 100, palette = pal), 1)
-
-  ggplot(
+  bg <- "#333333"
+  
+  picture <- ggplot(
     data = hypotheses, 
     mapping = aes(xmin = x_min, ymin = y_min, 
                   xmax = x_max, ymax = y_max)
@@ -105,15 +95,20 @@ plotter <- function(hypotheses, seed) {
     scale_x_continuous(NULL, labels = NULL, limits = c(-r, r)) + 
     scale_y_continuous(NULL, labels = NULL, limits = c(-r, r)) + 
     scico::scale_fill_scico(palette = pal) +
-    coord_cartesian(clip = "off")
+    coord_equal() 
+  
+  return(picture)
 }
 ```
 
+Some examples:
 
-Example
-
-
-```{r}
-generator(seed = 1) %>%
-  plotter(seed = 2)
+```{r, message=FALSE, warning=FALSE, dev.args=list(bg="#333333"), fig.width=5, fig.height=5, fig.asp=1}
+thematic::thematic_on(bg = "#333333")
+generator(seed = 1)
+generator(seed = 2)
+generator(seed = 3)
+generator(seed = 4)
+generator(seed = 5)
 ```
+
