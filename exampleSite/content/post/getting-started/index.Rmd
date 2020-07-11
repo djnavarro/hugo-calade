@@ -14,39 +14,39 @@ header:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-The aim of [slum](https://github.com/djnavarro/hugo-slum) is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both [blogdown](https://github.com/rstudio/blogdown) and [hugodown](https://github.com/r-lib/hugodown). In this tutorial, I'll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with [R Markdown](https://rmarkdown.rstudio.com/), but is unfamiliar with blogdown, hugodown, or Hugo itself.
+The aim of slumdown is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both [blogdown](https://github.com/rstudio/blogdown) and [hugodown](https://github.com/r-lib/hugodown). In this tutorial, I'll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with [R Markdown](https://rmarkdown.rstudio.com/), but is unfamiliar with blogdown, hugodown, or Hugo itself.
 
 
 ## Blogdown or Hugodown?
 
 The first decision you need to make is which R package to use, blogdown or hugodown? Both allow you to design and manage static websites within R, and both allow you to write pages/posts as R markdown documents. However, there are differences: blogdown blurs the roles played by Hugo  and R, which can lead to some degree of messiness. In contrast, hugodown tries to maintain a clean separation: the role of hugodown is to translate your R markdown files into a "plain" markdown format that Hugo knows how to read, and then leaves the rest of the process to Hugo. To me, the cleaner separation in hugodown is highly desirable: but it is currently an experimental package, so some caution is warranted!
 
-If you want to use blogdown, you can create a new site with the following command. Just change `"path_to_blog_folder"` to something suitable: 
+To make things as easy as possible, the slumdown package contains installer functions for both hugodown and blogdown. If you want to use blogdown, you can create a new site with the following command. Just change `"path_to_blog_folder"` to something suitable: 
 
 ```{r, eval=FALSE}
-blogdown::new_site(
-  dir = "path_to_blog_folder", 
-  theme = "djnavarro/hugo-slum", 
-  theme_example = TRUE,
-  sample = FALSE)
+slumdown::create_blogdown_slum("path_to_blog_folder")
 ```
 
-Blogdown will download the slum template and generate the example site (i.e., this one!) in the `docs` folder, and you are ready to get started. 
-If you want to use hugodown, you can create a new site using the following command: 
+Blogdown will download the slum template and generate the example site (i.e., this one!), and you are ready to get started. If you want to use hugodown, the installation command is this:
 
 ```{r, eval=FALSE}
-hugodown::create_site_slum("path_to_blog_folder")
+slumdown::create_hugodown_slum("path_to_blog_folder")
 ```
 
-When you do this, hugodown will download the slum template and configure the site appropriately. To build the site:
+When you do this, hugodown will download the slum template, configure the site appropriately and build the site. 
+
+Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:
+
 
 ```{r, eval=FALSE}
-lapply(hugodown::site_outdated(), rmarkdown::render)
+# for blogdown...
+blogdown::serve_site()
+
+# for hugodown...
 hugodown::hugo_build()
 hugodown::hugo_start()
 ```
 
-I suspect this is not the optimal way to do things, but it works and at this point you should have the website in the `docs` folder.
 
 ## Initial configuration
 
