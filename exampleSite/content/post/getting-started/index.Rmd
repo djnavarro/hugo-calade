@@ -6,7 +6,7 @@ slug: getting-started
 tags: ["tutorial"]
 header:
   caption: "A blank ggplot"
-  image: 'header/theme_dark.png'
+  image: 'header/banner.png'
 ---
 
 ```{r setup, include=FALSE}

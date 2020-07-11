@@ -6,7 +6,7 @@ slug: custom-headers
 tags: ["tutorial"]
 header:
   caption: "A customised header"
-  image: 'header/mpg_dark.png'
+  image: 'header/custom_header.png'
   profile: 'header/custom_profile.png'
 ---
 
