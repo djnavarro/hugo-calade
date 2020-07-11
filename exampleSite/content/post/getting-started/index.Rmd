@@ -5,7 +5,7 @@ date: "2020-06-10"
 slug: getting-started
 tags: ["tutorial"]
 header:
-  caption: "A blank ggplot"
+  caption: "A caption"
   image: 'header/banner.png'
   profile: 'header/profile.png'
 ---
