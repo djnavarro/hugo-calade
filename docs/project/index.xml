@@ -16,7 +16,7 @@
       <pubDate>Sun, 01 Sep 1929 00:00:00 +0000</pubDate>
       
       <guid>/project/of-ones-own/</guid>
-      <description>A simple project page.</description>
+      <description>An example of a project page, creating a simple generative art system in R. There is more code on this page than elsewhere on the example site, which may be useful if you want to see what the syntax highlighting looks like for slumdown sites.</description>
     </item>
     
   </channel>

@@ -5,6 +5,7 @@ author: "Danielle Navarro"
 date: "2020-06-07"
 slug: deploying-the-site
 tags: "tutorial"
+summary: "The usual advice for deploying a blogdown or hugodown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities to GitHub Pages that can make it difficult. The third part of the tutorial walks you through both versions."
 header:
   caption: "A caption"
   image: 'header/banner.png'
