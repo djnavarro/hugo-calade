@@ -23,7 +23,7 @@ Once the slumdown package is installed, the tutorial in the [posts](/post/) sect
 slumdown::create_hugodown_slum("my-slumdown-site")
 hugodown::hugo_build(dest = "docs")
 usethis::use_git()
-usethis::use_github() # finally, enable GH Pages with /docs folder
+usethis::use_github() # then enable GH Pages with /docs folder
 ```
 
 The underlying Hugo theme was originally adapted from Yihue Xie's "Xmin" theme, but also borrows stylistic elements from the Tufte R Markdown theme. Some aspects to the theme were inspired by the "academic" Hugo theme, but it is considerably simpler. The original goal was for the site to be extremely minimal: I wrote it with the modest goal of teaching myself about how Hugo generates static sites. Over time, however, I realised I had a useful little tool. So I decided to call it *slum*, a "somewhat light, usefully minimal" website generator.
