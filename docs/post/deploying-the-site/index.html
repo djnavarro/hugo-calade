@@ -25,7 +25,8 @@
 <meta property="og:description" content="The usual advice for deploying a blogdown or hugodown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities to GitHub Pages that can make it difficult. The third part of the tutorial walks you through both versions.">
 <meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
 
-<link rel='stylesheet' href='../../css/highlight.css' title='hl-light'>
+
+<link rel='stylesheet' href='../../css/highlight.css' title='hl'>
 
 
 </head>
@@ -83,25 +84,36 @@
 
 
       <main>
-        <p>The usual advice for deploying a blogdown or hugodown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities to GitHub Pages that can make it difficult. The third part of the tutorial walks you through both versions.</p>
+        <p>The usual advice for deploying a blogdown or hugodown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities to GitHub Pages that can make it difficult. The third part of the tutorial walks you through both versions, or to be more precise, it will walk you through both versions once I familiarise myself with Netlify and various other things. For the moment, only the GitHub Pages version is documented here.</p>
 <h2 id="deploying-to-github-pages">Deploying to GitHub Pages</h2>
-<p>I have an ingrained habit of using GitHub Pages, so I&rsquo;ll start with this. Suppose the name of your GitHub repo is <code>my-slumdown-site</code> and you&rsquo;d like it to deploy to a GitHub Pages site located at:</p>
+<p>The way I set up all my static websites is through <a href="https://pages.github.com/">GitHub Pages</a>, and I&rsquo;ve tried to arrange things so that this is as simple as possible. However, it&rsquo;s not quite a point-and-click process and there are a few things you need to consider.</p>
+<p>The first thing to think about is the URL. If the home page for the site is a domain or a subdomain, then you shouldn&rsquo;t need to edit anything. For example, if the URL will be something like the following you&rsquo;re fine:</p>
+<pre><code>https://username.github.io/
+https://my-slumdown-site.com/
+https://site.my-webpage.com/
+</code></pre>
+<p>However, it is not uncommon for people to deploy a site to a folder within a domain. This happens a lot on GitHub Pages. Suppose the name of your GitHub repo is <code>my-slumdown-site</code> and you&rsquo;d like it to deploy to its own GitHub Pages site. By default the URL for it will be something like this:</p>
 <pre><code>https://username.github.io/my-slumdown-site/
 </code></pre>
-<p>To make that happen for a blogdown site there are three things you need to change from the usual defaults:</p>
-<p><strong>First</strong>, the site needs to be generated in the <code>docs</code> folder (which is what GitHub Pages expects) rather than the Hugo default which is to generate the site in the <code>public</code> folder. You can configure this by including the following line in the <code>config.toml</code> file:</p>
-<pre><code>publishDir = &quot;docs&quot;
-</code></pre>
-<p><strong>Second</strong>, the generated <code>docs</code> folder needs to contain a blank text file called <code>.nojekyll</code>, otherwise GitHub Pages will try to treat your content as a Jekyll blog and it won&rsquo;t deploy correctly. The easiest way to do this is to make sure that the <code>.nojekyll</code> file is in the <code>static</code> folder, which will ensure that every time blogdown re-generates the <code>docs</code> folder the <code>.nojekyll</code> file will be copied across with it.</p>
-<p><strong>Third</strong>, if you want the site to be hosted at a specific location (i.e., <code>https://username.github.io/reponame/</code> rather than <code>https://username.github.io/</code>), Hugo needs to know what <code>reponame</code> is, otherwise the paths to various files will break when the site deploys. To do this, there is a line in the <code>config.toml</code> file that (by default) reads as follows:</p>
+<p>If this is situation, your Hugo configuration file needs to specify the name of the deployment folder. To do this, open the <code>config.toml</code> file, and find the line that currently says:</p>
 <pre><code>baseurl = &quot;/&quot;
 </code></pre>
-<p>Edit this to refer to your repository name. For instance:</p>
+<p>Edit this to refer to your repository name, like this:</p>
 <pre><code>baseurl = &quot;/my-slumdown-site/&quot;
 </code></pre>
-<p>At this point you can, set up the <a href="https://pages.github.com/">GitHub Pages</a> site the way you normally would.</p>
+<p>The second thing you need to do is make sure that Hugo is writing your static site to the <code>docs</code> folder. Depending on what command you typed in to create your site, this might already be done for you. However, if it is not (for example, if your site has a <code>public</code> folder but no <code>docs</code> folder), then what you will need to do is open the <code>config.toml</code> line and find the <code>publishDir =</code> line. Edit that line so that it reads as follows:</p>
+<pre><code>publishDir = &quot;docs&quot;
+</code></pre>
+<p>Note that you may need to rebuild your site after doing this.</p>
+<p>At this point you are ready to deploy! If you haven&rsquo;t already done so, initialise a git repository in your project and then push it to GitHub. The laziest way I know of to do this is with the following R commands:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_git.html'>use_git</a></span>()
+<span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_github.html'>use_github</a></span>()</code></pre>
+</div>
+<p>On GitHub, go to the &ldquo;Settings&rdquo; tab and scroll down to the section entitled &ldquo;GitHub Pages&rdquo;. There should be a drop down menu underneath the subheading &ldquo;Source&rdquo;. Click on it and select &ldquo;master branch /docs folder&rdquo;.</p>
+<p>And that&rsquo;s it! The site should now deploy.</p>
 <h2 id="deploying-to-netlify">Deploying to Netlify</h2>
-<p>To be added!</p>
+<p>To be added later :-)</p>
 
       </main>
 

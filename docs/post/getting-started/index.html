@@ -25,7 +25,8 @@
 <meta property="og:description" content="The aim of slumdown is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both blogdown and hugodown. In this tutorial, I&rsquo;ll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with R Markdown, but is unfamiliar with blogdown, hugodown, or Hugo itself.">
 <meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
 
-<link rel='stylesheet' href='../../css/highlight.css' title='hl-light'>
+
+<link rel='stylesheet' href='../../css/highlight.css' title='hl'>
 
 
 </head>
@@ -90,18 +91,15 @@
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>slumdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/slumdown/man/create_blogdown_slum.html'>create_blogdown_slum</a></span>(<span class='s'>"path_to_blog_folder"</span>)</code></pre>
 </div>
-<p>Blogdown will download the slum template and generate the example site (i.e., this one!), and you are ready to get started. If you want to use hugodown, the installation command is this:</p>
+<p>Blogdown will download the slum template and generate the example site (i.e., this one!), and you are ready to get started. The <code>create_blogdown_slum()</code> command is just a very thin wrapper around <a href="https://rdrr.io/pkg/blogdown/man/hugo_cmd.html"><code>blogdown::new_site()</code></a>, so if you want to customise the install you can pass arguments to <code>new_site()</code> via the dots <code>...</code>.</p>
+<p>If you want to use hugodown, the installation command is this:</p>
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>slumdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/slumdown/man/create_hugodown_slum.html'>create_hugodown_slum</a></span>(<span class='s'>"path_to_blog_folder"</span>)</code></pre>
 </div>
-<p>When you do this, hugodown will download the slum template, configure the site appropriately and build the site.</p>
+<p>When you do this, hugodown will download the slum template, configure the site appropriately and build the site. There is one thing you may wish to consider for a hugodown install: if you are intending to deploy the site to GitHub Pages, the static site needs to be written in the <code>docs</code> folder rather than the default <code>public</code> folder. If you set <code>publish_dir = &quot;docs&quot;</code> when calling <code>create_hugodown_slum()</code>, the configuration files will automatically be edited to set this up for you.</p>
 <p>Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:</p>
 <div class="highlight">
-<pre class='chroma'><code class='language-r' data-lang='r'><span class='c'># for blogdown...</span>
-<span class='k'>blogdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/blogdown/man/serve_site.html'>serve_site</a></span>()
-
-<span class='c'># for hugodown...</span>
-<span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_build.html'>hugo_build</a></span>()
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>blogdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/blogdown/man/serve_site.html'>serve_site</a></span>()
 <span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_start.html'>hugo_start</a></span>()</code></pre>
 </div>
 <h2 id="initial-configuration">Initial configuration</h2>

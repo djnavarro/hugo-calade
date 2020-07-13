@@ -28,23 +28,21 @@ To make things as easy as possible, the slumdown package contains installer func
 slumdown::create_blogdown_slum("path_to_blog_folder")
 ```
 
-Blogdown will download the slum template and generate the example site (i.e., this one!), and you are ready to get started. If you want to use hugodown, the installation command is this:
+Blogdown will download the slum template and generate the example site (i.e., this one!), and you are ready to get started. The `create_blogdown_slum()` command is just a very thin wrapper around `blogdown::new_site()`, so if you want to customise the install you can pass arguments to `new_site()` via the dots `...`.  
+
+If you want to use hugodown, the installation command is this:
 
 ```{r, eval=FALSE}
 slumdown::create_hugodown_slum("path_to_blog_folder")
 ```
 
-When you do this, hugodown will download the slum template, configure the site appropriately and build the site. 
+When you do this, hugodown will download the slum template, configure the site appropriately and build the site. There is one thing you may wish to consider for a hugodown install: if you are intending to deploy the site to GitHub Pages, the static site needs to be written in the `docs` folder rather than the default `public` folder. If you set `publish_dir = "docs"` when calling `create_hugodown_slum()`, the configuration files will automatically be edited to set this up for you. 
 
 Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:
 
 
 ```{r, eval=FALSE}
-# for blogdown...
 blogdown::serve_site()
-
-# for hugodown...
-hugodown::hugo_build()
 hugodown::hugo_start()
 ```
 

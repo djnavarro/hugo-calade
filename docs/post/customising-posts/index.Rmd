@@ -24,7 +24,9 @@ library(tidyverse)
 ```
 
 
-The slum theme for Hugo allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don't want to have to fiddle with low level settings to do that. A slum page is defined by five colours that you can specify across the whole site within the `config.toml` file. For this site, the dark theme I have used is defined by the following lines:
+The slum theme allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don't want to have to fiddle with low level settings to do that. 
+
+A slum page is defined by five colours that you can specify across the whole site within the `config.toml` file. For this site, the dark theme I have used is defined by the following lines:
 
 ```
 colorPage = "#333333"    # background colour
@@ -34,7 +36,7 @@ colorAccent1 = "#ff69b4" # first accent colour ("highlight")
 colorAccent2 = "#ba68c8" # second accent colour ("lowlight")
 ```
 
-However, you can override the site defaults for an individual page by including the same parameters in the YAML header for your R markdown post. For example, in this post, the YAML header includes the following lines, which produces the lighter theme you see on the current page:
+If you want to change the colour scheme of your entire site, edit these lines in `config.toml`. However, there can be occasions when you wish to customise the colour scheme for a single page only. To do this, specify the colour parameters in the YAML header for your R markdown post. For example, to create the lighter theme in this post the YAML header includes the following lines:
 
 ```
 colorPage: "#eeeeee"
@@ -46,20 +48,23 @@ colorAccent2: "#8a2be2"
 
 ## Theme-consistent plots
 
-One thing that has sometimes been a frustration with blogdown is that the content generated on the R side doesn't use the same visual style as the Hugo theme. To illustrate, suppose I wanted to generate a plot using ggplot2 like this:
+One thing that has sometimes been a frustration for me when generating websites using R markdown is the visual styling of plots, which do not necessarily adopt the same colour scheme as the website. To illustrate, suppose I want to generate a plot using ggplot2, and I include code like this:
 
 ```{r}
 library(ggplot2)
 ggplot(mpg, aes(displ, hwy)) + geom_point() 
 ```
 
-This doesn't look *too* terrible but the white background is jarring. Although there are a few different ways this could be fixed, my preferred approach is to use the [thematic](https://github.com/rstudio/thematic/) package:
+This doesn't look *too* terrible, but the pure white background is jarring. What I would prefer is to have the plot background blend into the website background. When I first wrote slumdown I came up with my own system that allowed me to do this, but recently a better option has become available via the [thematic](https://github.com/rstudio/thematic/) package. To set the background colour of my plots to the same colour as my page (i.e., `#eeeeee`), what I would do is this:
 
 ```{r, warning=FALSE, message=FALSE}
 library(thematic)
 thematic_on(bg = "#eeeeee")
 ggplot(mpg, aes(displ, hwy)) + geom_point() 
 ```
+
+See the documemntation for thematic for more detail.
+
 
 ## Custom headers and profiles
 
@@ -72,7 +77,7 @@ header:
   profile: 'header/custom_profile.png'
 ```
 
-The header image is scaled to fit but otherwise left as is. I have been using images that are 1600x400 pixels in size as the headers. The profile image is scaled to be 70% of the height of the header. 
+The header image is scaled to fit the width of the page but otherwise left as is, so if you want a different aspect ratio to the one I have used in this site (e.g., to take up less vertical space), the simplest way to do so is to edit the image file itself. The profile image is locked to the center of the banner image, and is scaled to be 70% of the height of the header. 
 
 It is important to note that the description above only pertains to posts and projects. For the home page and other automatically generated pages, no caption is included, and the image and profile are set within the `config.toml` file. Specifically, the following two lines underneath the `[params]` section are used to set the images for those pages:
 
