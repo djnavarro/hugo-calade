@@ -35,9 +35,7 @@ If you want to use hugodown, the installation command is this:
 slumdown::create_hugodown_slum("path_to_blog_folder")
 ```
 
-When you do this, hugodown will download the slum template, configure the site appropriately and build the site. There is one thing you may wish to consider for a hugodown install: if you are intending to deploy the site to GitHub Pages, the static site needs to be written in the `docs` folder rather than the default `public` folder. If you set `publish_dir = "docs"` when calling `create_hugodown_slum()`, the configuration files will automatically be edited to set this up for you. 
-
-Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:
+When you do this, hugodown will download the slum template, configure the site appropriately and build the site. Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:
 
 
 ```{r, eval=FALSE}
@@ -66,8 +64,6 @@ Creating posts or pages is (usually) pretty straightfoward in both blogdown and 
 ```{r, eval=FALSE}
 blogdown::new_post(title = "My new post")
 ```
-
-Given that information, blogdown can take care of low level things like constructing the path and so on. 
 
 In hugodown, the `use_post()` function is similar but not quite identical. The main thing you need to do is specify the `path` that you'd like the new page to have. So if I want my website to create a page at `https://myfancywebsite.com/post/my-new-post` or whatever, the command I would need is this:
 
