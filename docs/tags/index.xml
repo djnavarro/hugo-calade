@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on A slum blog</title>
-    <link>/hugo-slum/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on A slum blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/hugo-slum/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>tutorial</title>
-      <link>/hugo-slum/tags/tutorial/</link>
+      <link>/tags/tutorial/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/tags/tutorial/</guid>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>art</title>
-      <link>/hugo-slum/tags/art/</link>
+      <link>/tags/art/</link>
       <pubDate>Sun, 01 Sep 1929 00:00:00 +0000</pubDate>
       
-      <guid>/hugo-slum/tags/art/</guid>
+      <guid>/tags/art/</guid>
       <description></description>
     </item>
     

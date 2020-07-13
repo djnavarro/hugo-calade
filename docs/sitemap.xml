@@ -3,61 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/hugo-slum/</loc>
+    <loc>/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/tags/tutorial/</loc>
+    <loc>/tags/tutorial/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/post/getting-started/</loc>
+    <loc>/post/getting-started/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/post/customising-posts/</loc>
+    <loc>/post/customising-posts/</loc>
     <lastmod>2020-06-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/post/deploying-the-site/</loc>
+    <loc>/post/deploying-the-site/</loc>
     <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/project/of-ones-own/</loc>
+    <loc>/project/of-ones-own/</loc>
     <lastmod>1929-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/tags/art/</loc>
+    <loc>/tags/art/</loc>
     <lastmod>1929-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/project/</loc>
+    <loc>/project/</loc>
     <lastmod>1929-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/hugo-slum/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>/hugo-slum/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>
