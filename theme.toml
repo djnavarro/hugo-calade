@@ -1,8 +1,8 @@
-name = "slum"
+name = "calade"
 license = "MIT"
-licenselink = "https://github.com/djnavarro/hugo-slum/blob/master/LICENSE.md"
-description = "SLUM: A minimal Hugo theme for R users"
-homepage = "https://github.com/djnavarro/hugo-slum/"
+licenselink = "https://github.com/djnavarro/hugo-calade/blob/master/LICENSE.md"
+description = "Calade: A minimal Hugo theme for R users"
+homepage = "https://github.com/djnavarro/hugo-calade/"
 tags = ["minimal", "blog", "personal"]
 features = ["blog"]
 min_version = "0.0.1"

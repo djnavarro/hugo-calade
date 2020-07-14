@@ -5,10 +5,10 @@
 # The URL for your website. It should end with a trailing slash,
 # e.g. "https://example.com/". If you're planning to deploy on
 # GitHub pages the way I've done for the example site at
-# https://djnavarro.github.io/hugo-slum/, then you can do something
+# https://djnavarro.github.io/hugo-calade/, then you can do something
 # like this:
 #
-#    baseurl = "/hugo-slum/"
+#    baseurl = "/hugo-calade/"
 #
 baseurl = "/"
 
@@ -19,10 +19,10 @@ relativeurls = true
 # need to point this to "docs".
 publishDir = "docs"
 
-# These settings specify the title for your blog, and the name of
+# These settings specify the title for your site, and the name of
 # the Hugo theme that it uses.
-title = "A slum blog"
-theme = "slum"
+title = "A calade website"
+theme = "calade"
 
 # What format should the permalinks take?
 [permalinks]
@@ -81,7 +81,7 @@ theme = "slum"
     siteProfile = "header/profile.png"
     description = "A website of one's own"
     footer = "A footer of one's own"
-    twitterImage = "https://djnavarro.github.io/hugo-slum/header/slumdown.png"
+    twitterImage = "https://djnavarro.github.io/hugo-calade/header/caladown.png"
     colorPage = "#333333"    # background colour
     colorText = "#dddddd"    # main text colour
     colorFade = "#888888"    # faded text colour
