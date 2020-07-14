@@ -96,8 +96,7 @@
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>slumdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/slumdown/man/create_hugodown_slum.html'>create_hugodown_slum</a></span>(<span class='s'>"path_to_blog_folder"</span>)</code></pre>
 </div>
-<p>When you do this, hugodown will download the slum template, configure the site appropriately and build the site. There is one thing you may wish to consider for a hugodown install: if you are intending to deploy the site to GitHub Pages, the static site needs to be written in the <code>docs</code> folder rather than the default <code>public</code> folder. If you set <code>publish_dir = &quot;docs&quot;</code> when calling <code>create_hugodown_slum()</code>, the configuration files will automatically be edited to set this up for you.</p>
-<p>Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:</p>
+<p>When you do this, hugodown will download the slum template, configure the site appropriately and build the site. Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:</p>
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>blogdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/blogdown/man/serve_site.html'>serve_site</a></span>()
 <span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_start.html'>hugo_start</a></span>()</code></pre>
@@ -115,7 +114,6 @@ theme = &quot;slum&quot;
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>blogdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/blogdown/man/hugo_cmd.html'>new_post</a></span>(title = <span class='s'>"My new post"</span>)</code></pre>
 </div>
-<p>Given that information, blogdown can take care of low level things like constructing the path and so on.</p>
 <p>In hugodown, the <code>use_post()</code> function is similar but not quite identical. The main thing you need to do is specify the <code>path</code> that you&rsquo;d like the new page to have. So if I want my website to create a page at <code>https://myfancywebsite.com/post/my-new-post</code> or whatever, the command I would need is this:</p>
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/use_post.html'>use_post</a></span>(path = <span class='s'>"post/my-new-post"</span>)</code></pre>

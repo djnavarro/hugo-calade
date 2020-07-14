@@ -23,7 +23,7 @@
   
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Home">
-<meta property="og:description" content="Slumdown A Hugo theme and R package by Danielle Navarro The goal of slumdown is to allow R users to create lightweight websites powered by Hugo and is designed to be compatible with both hugodown and blogdown, and allows users to generate graphics that match the visual style of the site via the thematic package. There are two components to slumdown, a Hugo theme and an R package. The simplest way to get started is simply to download the R package from GitHub using the following command:">
+<meta property="og:description" content="Slumdown: A Hugo theme and R package by Danielle Navarro">
 <meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
 
 
@@ -79,7 +79,13 @@
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>remotes</span>::<span class='nf'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span>(<span class='s'>"djnavarro/slumdown"</span>)</code></pre>
 </div>
-<p>Once the slumdown package is installed, the tutorial in the <a href="./post/">posts</a> section of this site will walk you through the rest of the process.</p>
+<p>Once the slumdown package is installed, the tutorial in the <a href="./post/">posts</a> section of this site will walk you through the rest of the process. For folks who already know what they are doing, here&rsquo;s the quick guide to setting up a Hugodown site on GitHub Pages:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>slumdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/slumdown/man/create_hugodown_slum.html'>create_hugodown_slum</a></span>(<span class='s'>"my-slumdown-site"</span>)
+<span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_build.html'>hugo_build</a></span>(dest = <span class='s'>"docs"</span>)
+<span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_git.html'>use_git</a></span>()
+<span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_github.html'>use_github</a></span>() <span class='c'># then enable GH Pages with /docs folder</span></code></pre>
+</div>
 <p>The underlying Hugo theme was originally adapted from Yihue Xie&rsquo;s &ldquo;Xmin&rdquo; theme, but also borrows stylistic elements from the Tufte R Markdown theme. Some aspects to the theme were inspired by the &ldquo;academic&rdquo; Hugo theme, but it is considerably simpler. The original goal was for the site to be extremely minimal: I wrote it with the modest goal of teaching myself about how Hugo generates static sites. Over time, however, I realised I had a useful little tool. So I decided to call it <em>slum</em>, a &ldquo;somewhat light, usefully minimal&rdquo; website generator.</p>
 
       </main>
