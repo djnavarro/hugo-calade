@@ -5,7 +5,7 @@ author: "Danielle Navarro"
 date: "1929-09-01"
 slug: of-ones-own
 tags: "art"
-summary: "An example of a project page, creating a simple generative art system in R. There is more code on this page than elsewhere on the example site, which may be useful if you want to see what the syntax highlighting looks like for slumdown sites."
+summary: "An example of a project page, creating a simple generative art system in R. There is more code on this page than elsewhere on the example site, which may be useful if you want to see what the syntax highlighting looks like for caladown sites."
 header:
   caption: "A caption"
   image: 'header/banner.png'
@@ -16,7 +16,7 @@ header:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-Projects are no different to blog posts in slumdown. They're formatted the same way, generated the same way, and so on. The only difference is that they're indexed separately. This is sometimes useful for separating casual blog posts from more substantive projects. 
+Projects are no different to blog posts in caladown. They're formatted the same way, generated the same way, and so on. The only difference is that they're indexed separately. This is sometimes useful for separating casual blog posts from more substantive projects. 
 
 ```{r, message=FALSE}
 library(scico)

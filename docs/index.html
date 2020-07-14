@@ -5,7 +5,7 @@
 	<meta name="generator" content="Hugo 0.66.0" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | A slum blog</title>
+    <title>Home | A calade website</title>
 
   <style>
   	:root {
@@ -23,8 +23,8 @@
   
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Home">
-<meta property="og:description" content="Slumdown: A Hugo theme and R package by Danielle Navarro">
-<meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
+<meta property="og:description" content="Calade: A Hugo theme and R package by Danielle Navarro">
+<meta property="og:image" content="https://djnavarro.github.io/hugo-calade/header/caladown.png">
 
 
 <link rel='stylesheet' href='./css/highlight.css' title='hl'>
@@ -71,22 +71,21 @@
 
 
       <main>
-        <h1 id="slumdown">Slumdown</h1>
+        <h1 id="calade">Calade</h1>
 <h3 id="a-hugo-theme-and-r-package-by-danielle-navarrohttpstwittercomdjnavarro">A Hugo theme and R package by <a href="https://twitter.com/djnavarro">Danielle Navarro</a></h3>
-<img src="header/slumdown.png" width="150px" style="float:right; padding:15px;">
+<img src="header/caladown.png" width="150px" style="float:right; padding:15px;">
 <br>
-<p>The goal of slumdown is to allow R users to create lightweight websites powered by Hugo and is designed to be compatible with both <a href="https://hugodown.r-lib.org/">hugodown</a> and <a href="https://bookdown.org/yihui/blogdown/">blogdown</a>, and allows users to generate graphics that match the visual style of the site via the <a href="https://rstudio.github.io/thematic/">thematic</a> package. There are two components to slumdown, a <a href="https://github.com/djnavarro/hugo-slum">Hugo theme</a> and an <a href="https://github.com/djnavarro/slumdown">R package</a>. The simplest way to get started is simply to download the R package from GitHub using the following command:</p>
+<p>The goal of calade and caladown is to allow R users to create lightweight websites powered by Hugo and is designed to be compatible with both <a href="https://hugodown.r-lib.org/">hugodown</a> and <a href="https://bookdown.org/yihui/blogdown/">blogdown</a>, and allows users to generate graphics that match the visual style of the site via the <a href="https://rstudio.github.io/thematic/">thematic</a> package. There are two components to caladown, a <a href="https://github.com/djnavarro/hugo-calade">Hugo theme</a> and an <a href="https://github.com/djnavarro/caladown">R package</a>. The simplest way to get started is simply to download the R package from GitHub using the following command:</p>
 <div class="highlight">
-<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>remotes</span>::<span class='nf'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span>(<span class='s'>"djnavarro/slumdown"</span>)</code></pre>
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>remotes</span>::<span class='nf'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span>(<span class='s'>"djnavarro/caladown"</span>)</code></pre>
 </div>
-<p>Once the slumdown package is installed, the tutorial in the <a href="./post/">posts</a> section of this site will walk you through the rest of the process. For folks who already know what they are doing, here&rsquo;s the quick guide to setting up a Hugodown site on GitHub Pages:</p>
+<p>Once the caladown package is installed, the tutorial in the <a href="./post/">posts</a> section of this site will walk you through the rest of the process. For folks who already know what they are doing, here&rsquo;s the quick guide to setting up a Hugodown site on GitHub Pages:</p>
 <div class="highlight">
-<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>slumdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/slumdown/man/create_hugodown_slum.html'>create_hugodown_slum</a></span>(<span class='s'>"my-slumdown-site"</span>)
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>caladown</span>::<span class='nf'><a href='https://rdrr.io/pkg/caladown/man/create_hugodown_calade.html'>create_hugodown_calade</a></span>(<span class='s'>"my-caladown-site"</span>)
 <span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_build.html'>hugo_build</a></span>(dest = <span class='s'>"docs"</span>)
 <span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_git.html'>use_git</a></span>()
 <span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_github.html'>use_github</a></span>() <span class='c'># then enable GH Pages with /docs folder</span></code></pre>
 </div>
-<p>The underlying Hugo theme was originally adapted from Yihue Xie&rsquo;s &ldquo;Xmin&rdquo; theme, but also borrows stylistic elements from the Tufte R Markdown theme. Some aspects to the theme were inspired by the &ldquo;academic&rdquo; Hugo theme, but it is considerably simpler. The original goal was for the site to be extremely minimal: I wrote it with the modest goal of teaching myself about how Hugo generates static sites. Over time, however, I realised I had a useful little tool. So I decided to call it <em>slum</em>, a &ldquo;somewhat light, usefully minimal&rdquo; website generator.</p>
 
       </main>
 

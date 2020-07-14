@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tutorial part 2: Customising posts | A slum blog</title>
+    <title>Tutorial part 2: Customising posts | A calade website</title>
 
   <style>
   	:root {
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Tutorial part 2: Customising posts">
 <meta property="og:description" content="In general I want to use a consistent palette and header across a site, but there are occasions where I might want a single page to use a different style. I don’t want to have to edit with low level settings to do that. In the second part of the tutorial I discuss this kind of customisation.">
-<meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
+<meta property="og:image" content="https://djnavarro.github.io/hugo-calade/header/caladown.png">
 
 
 <link rel='stylesheet' href='../../css/highlight.css' title='hl'>
@@ -84,8 +84,8 @@
 
 
       <main>
-        <p>The slum theme allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don&rsquo;t want to have to fiddle with low level settings to do that.</p>
-<p>A slum page is defined by five colours that you can specify across the whole site within the <code>config.toml</code> file. For this site, the dark theme I have used is defined by the following lines:</p>
+        <p>The calade theme allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don&rsquo;t want to have to fiddle with low level settings to do that.</p>
+<p>A calade page is defined by five colours that you can specify across the whole site within the <code>config.toml</code> file. For this site, the dark theme I have used is defined by the following lines:</p>
 <pre><code>colorPage = &quot;#333333&quot;    # background colour
 colorText = &quot;#dddddd&quot;    # main text colour
 colorFade = &quot;#888888&quot;    # faded text colour
@@ -107,7 +107,7 @@ colorAccent2: &quot;#8a2be2&quot;
 </code></pre>
 <p><img src="figs/unnamed-chunk-1-1.png" width="700px" style="display: block; margin: auto;" /></p>
 </div>
-<p>This doesn&rsquo;t look <em>too</em> terrible, but the pure white background is jarring. What I would prefer is to have the plot background blend into the website background. When I first wrote slumdown I came up with my own system that allowed me to do this, but recently a better option has become available via the <a href="https://github.com/rstudio/thematic/">thematic</a> package. To set the background colour of my plots to the same colour as my page (i.e., <code>#eeeeee</code>), what I would do is this:</p>
+<p>This doesn&rsquo;t look <em>too</em> terrible, but the pure white background is jarring. What I would prefer is to have the plot background blend into the website background. When I first wrote caladown I came up with my own system that allowed me to do this, but recently a better option has become available via the <a href="https://github.com/rstudio/thematic/">thematic</a> package. To set the background colour of my plots to the same colour as my page (i.e., <code>#eeeeee</code>), what I would do is this:</p>
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='nf'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='k'><a href='https://rstudio.github.io/thematic'>thematic</a></span>)
 <span class='nf'><a href='https://rdrr.io/pkg/thematic/man/thematic.html'>thematic_on</a></span>(bg = <span class='s'>"#eeeeee"</span>)
@@ -117,7 +117,7 @@ colorAccent2: &quot;#8a2be2&quot;
 </div>
 <p>See the documemntation for thematic for more detail.</p>
 <h2 id="custom-headers-and-profiles">Custom headers and profiles</h2>
-<p>The slum theme allows you to customise the header at the top of each page, by modifying the yaml at the top of the post. There are three fields you can customise: <code>image</code> provides the path to the header image (relative to the <code>static/</code> folder), <code>caption</code> is the caption text shown floating over the bottom right of the header image, and the <code>profile</code> picture that appears in the middle of the header. All three are optional, and if those fields are not included, then no image (or text) will appear. The relevant lines in the yaml for this post are:</p>
+<p>The calade theme allows you to customise the header at the top of each page, by modifying the yaml at the top of the post. There are three fields you can customise: <code>image</code> provides the path to the header image (relative to the <code>static/</code> folder), <code>caption</code> is the caption text shown floating over the bottom right of the header image, and the <code>profile</code> picture that appears in the middle of the header. All three are optional, and if those fields are not included, then no image (or text) will appear. The relevant lines in the yaml for this post are:</p>
 <pre><code>header:
   caption: &quot;A customised header&quot;
   image: 'header/custom_banner.png'

@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tutorial part 3: Deploying the site | A slum blog</title>
+    <title>Tutorial part 3: Deploying the site | A calade website</title>
 
   <style>
   	:root {
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Tutorial part 3: Deploying the site">
 <meta property="og:description" content="The usual advice for deploying a blogdown or hugodown site is to deploy to Netlify rather than GitHub Pages, because there are a few peculiarities to GitHub Pages that can make it difficult. The third part of the tutorial walks you through both versions.">
-<meta property="og:image" content="https://djnavarro.github.io/hugo-slum/header/slumdown.png">
+<meta property="og:image" content="https://djnavarro.github.io/hugo-calade/header/caladown.png">
 
 
 <link rel='stylesheet' href='../../css/highlight.css' title='hl'>
@@ -99,7 +99,7 @@
 <h2 id="deploying-a-blogdown-site-to-github">Deploying a blogdown site to GitHub</h2>
 <p>The process of deploying a blogdown site to GitHub is very similar to the hugodown process. Assuming that you have created and built the site in the usual way, e.g.,</p>
 <div class="highlight">
-<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>slumdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/slumdown/man/create_blogdown_slum.html'>create_blogdown_slum</a></span>(<span class='s'>"my-slumdown-site"</span>)
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>caladown</span>::<span class='nf'><a href='https://rdrr.io/pkg/caladown/man/create_blogdown_calade.html'>create_blogdown_calade</a></span>(<span class='s'>"my-caladown-site"</span>)
 <span class='k'>blogdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/blogdown/man/serve_site.html'>serve_site</a></span>()</code></pre>
 </div>
 <p>then the site will already be built in the &ldquo;docs&rdquo; folder. To deploy the site, initialise a git repository, push it to GitHub, and enable GitHub pages in exactly the same way you would for the hugodown version:</p>

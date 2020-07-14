@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on A slum blog</title>
+    <title>Posts on A calade website</title>
     <link>/post/</link>
-    <description>Recent content in Posts on A slum blog</description>
+    <description>Recent content in Posts on A calade website</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate>
     
@@ -16,7 +16,7 @@
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/getting-started/</guid>
-      <description>The aim of slumdown is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both blogdown and hugodown. In this tutorial, I&amp;rsquo;ll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with R Markdown, but is unfamiliar with blogdown, hugodown, or Hugo itself.</description>
+      <description>The aim of caladown is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both blogdown and hugodown. In this tutorial, I&amp;rsquo;ll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with R Markdown, but is unfamiliar with blogdown, hugodown, or Hugo itself.</description>
     </item>
     
     <item>
