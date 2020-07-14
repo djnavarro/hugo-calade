@@ -1,6 +1,7 @@
 ---
 title: About
 type: "generic_page"
+summary: "Slumdown: A Hugo theme and R package by Danielle Navarro"
 ---
 
 # About the author
