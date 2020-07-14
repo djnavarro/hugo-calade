@@ -33,13 +33,37 @@ usethis::use_github()
 ```
 On GitHub, go to the "Settings" tab and scroll down to the section entitled "GitHub Pages". There should be a drop down menu underneath the subheading "Source". Click on it and select "master branch /docs folder". The site should now deploy. 
 
+## Deploying a blogdown site to GitHub
+
+The process of deploying a blogdown site to GitHub is very similar to the hugodown process. Assuming that you have created and built the site in the usual way, e.g.,
+
+```{r, eval=FALSE}
+slumdown::create_blogdown_slum("my-slumdown-site")
+blogdown::serve_site()
+```
+
+then the site will already be built in the "docs" folder. To deploy the site, initialise a git repository, push it to GitHub, and enable GitHub pages in exactly the same way you would for the hugodown version:
+
+```{r, eval=FALSE}
+usethis::use_git()
+usethis::use_github() # then enable GH Pages with /docs folder
+```
+
+One thing to note here. The reason this works cleanly is that by default the `config.toml` file for contains a line that reads:
+
+```
+publishDir = 'docs'
+```
+
+This ensures that the static site is built to the docs folder. If you want blogdown to build to the "public" folder (as is more typical for Hugo sites) you should edit this line appropriately.
+
+
+
 ## Deploying a hugodown site to Netlify
 
 To be added later :-) 
 
-## Deploying a blogdown site to GitHub
 
-To be added later :-) 
 
 ## Deploying a blogdown site to Netlify
 
