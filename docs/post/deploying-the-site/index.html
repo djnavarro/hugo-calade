@@ -112,7 +112,14 @@
 </code></pre>
 <p>This ensures that the static site is built to the docs folder. If you want blogdown to build to the &ldquo;public&rdquo; folder (as is more typical for Hugo sites) you should edit this line appropriately.</p>
 <h2 id="deploying-a-hugodown-site-to-netlify">Deploying a hugodown site to Netlify</h2>
-<p>To be added later :-)</p>
+<p>To deploy to Netlify you need to have a Netlify account (naturally) and it should be linked to your GitHub account. The easiest way to do this is to sign up via your GitHub credentials, and allow Netlify to have access to the relevant repository. The process for this is as follows:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>caladown</span>::<span class='nf'><a href='https://rdrr.io/pkg/caladown/man/create_hugodown_calade.html'>create_hugodown_calade</a></span>(<span class='s'>"my_calade_site"</span>)
+<span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/use_netlify_toml.html'>use_netlify_toml</a></span>()
+<span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_build.html'>hugo_build</a></span>()
+<span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_git.html'>use_git</a></span>()
+<span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_github.html'>use_github</a></span>()</code></pre>
+</div>
 <h2 id="deploying-a-blogdown-site-to-netlify">Deploying a blogdown site to Netlify</h2>
 <p>To be added later :-)</p>
 
