@@ -61,12 +61,21 @@ This ensures that the static site is built to the docs folder. If you want blogd
 
 ## Deploying a hugodown site to Netlify
 
-To be added later :-) 
+To deploy to Netlify you need to have a Netlify account (naturally) and it should be linked to your GitHub account. The easiest way to do this is to sign up via your GitHub credentials, and allow Netlify to have access to the relevant repository. The process for this is as follows:
+
+```{r, eval=FALSE}
+caladown::create_hugodown_calade("my_calade_site")
+hugodown::use_netlify_toml()
+hugodown::hugo_build()
+usethis::use_git()
+usethis::use_github()
+```
 
 
 
 ## Deploying a blogdown site to Netlify
 
 To be added later :-) 
+
 
 
