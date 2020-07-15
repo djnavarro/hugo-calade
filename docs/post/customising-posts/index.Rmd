@@ -20,7 +20,7 @@ header:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 thematic::thematic_off()
-library(tidyverse)
+#library(tidyverse)
 ```
 
 
