@@ -35,8 +35,15 @@ If you want to use hugodown, the installation command is this:
 caladown::create_hugodown_calade("path_to_blog_folder")
 ```
 
-When you do this, hugodown will download the calade template, configure the site appropriately and build the site. Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:
+Note that because hugodown makes different choices to blogdown regarding what is and is not automated, you may need to install the appropriate version of Hugo first. The command for this is:
 
+```{r, eval=FALSE}
+hugodown::hugo_install("0.66.0")
+```
+
+Once you have installed Hugo and called the `create_hugodown_calade()` function, hugodown will download the calade template, configure the site appropriately and then knit all the R markdown files to "Hugo flavoured markdown". Please note that the success of this knitting may depend on the version of pandoc you have installed, which you can check with `rmarkdown::pandoc_version()`. For versions prior to 2.1 the knitting may not be successful, and `create_hugodown_calade()` may produce an error. If this happens it may be useful to note that the you can call this function setting `knit = FALSE` and it will set up the blog without attempting to knit the R markdown files.
+
+Regardless of whether you choose to use blogdown or hugodown, if you are using RStudio you will end up with a new project opened in a new session. To create a preview of the site use one of the following two commands:
 
 ```{r, eval=FALSE}
 blogdown::serve_site()
