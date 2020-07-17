@@ -96,7 +96,12 @@
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>caladown</span>::<span class='nf'><a href='https://rdrr.io/pkg/caladown/man/create_hugodown_calade.html'>create_hugodown_calade</a></span>(<span class='s'>"path_to_blog_folder"</span>)</code></pre>
 </div>
-<p>When you do this, hugodown will download the calade template, configure the site appropriately and build the site. Either way, if you are using RStudio you will end up with a new project that is open in a new session. To create a preview of the site use one of the following two commands:</p>
+<p>Note that because hugodown makes different choices to blogdown regarding what is and is not automated, you may need to install the appropriate version of Hugo first. The command for this is:</p>
+<div class="highlight">
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_install.html'>hugo_install</a></span>(<span class='s'>"0.66.0"</span>)</code></pre>
+</div>
+<p>Once you have installed Hugo and called the <code>create_hugodown_calade()</code> function, hugodown will download the calade template, configure the site appropriately and then knit all the R markdown files to &ldquo;Hugo flavoured markdown&rdquo;. Please note that the success of this knitting may depend on the version of pandoc you have installed, which you can check with <a href="https://rdrr.io/pkg/rmarkdown/man/pandoc_available.html"><code>rmarkdown::pandoc_version()</code></a>. For versions prior to 2.1 the knitting may not be successful, and <code>create_hugodown_calade()</code> may produce an error. If this happens it may be useful to note that the you can call this function setting <code>knit = FALSE</code> and it will set up the blog without attempting to knit the R markdown files.</p>
+<p>Regardless of whether you choose to use blogdown or hugodown, if you are using RStudio you will end up with a new project opened in a new session. To create a preview of the site use one of the following two commands:</p>
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>blogdown</span>::<span class='nf'><a href='https://rdrr.io/pkg/blogdown/man/serve_site.html'>serve_site</a></span>()
 <span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_start.html'>hugo_start</a></span>()</code></pre>

@@ -81,11 +81,13 @@
 </div>
 <p>Once the caladown package is installed, the tutorial in the <a href="./post/">posts</a> section of this site will walk you through the rest of the process. For folks who already know what they are doing, here&rsquo;s the quick guide to setting up a Hugodown site on GitHub Pages:</p>
 <div class="highlight">
-<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>caladown</span>::<span class='nf'><a href='https://rdrr.io/pkg/caladown/man/create_hugodown_calade.html'>create_hugodown_calade</a></span>(<span class='s'>"my-caladown-site"</span>)
+<pre class='chroma'><code class='language-r' data-lang='r'><span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_install.html'>hugo_install</a></span>(<span class='s'>"0.66.0"</span>) 
+<span class='k'>caladown</span>::<span class='nf'><a href='https://rdrr.io/pkg/caladown/man/create_hugodown_calade.html'>create_hugodown_calade</a></span>(<span class='s'>"my-caladown-site"</span>)
 <span class='k'>hugodown</span>::<span class='nf'><a href='https://rdrr.io/pkg/hugodown/man/hugo_build.html'>hugo_build</a></span>(dest = <span class='s'>"docs"</span>)
 <span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_git.html'>use_git</a></span>()
 <span class='k'>usethis</span>::<span class='nf'><a href='https://usethis.r-lib.org/reference/use_github.html'>use_github</a></span>() <span class='c'># then enable GH Pages with /docs folder</span></code></pre>
 </div>
+<p>Note that there is a known issue with knitting the R markdown files for some versions of pandoc: at present the earliest known version that works is pandoc 2.1</p>
 
       </main>
 

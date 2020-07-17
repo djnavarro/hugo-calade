@@ -22,10 +22,11 @@ remotes::install_github("djnavarro/caladown")
 Once the caladown package is installed, the tutorial in the [posts](/post/) section of this site will walk you through the rest of the process. For folks who already know what they are doing, here's the quick guide to setting up a Hugodown site on GitHub Pages:
 
 ```{r, eval=FALSE}
+hugodown::hugo_install("0.66.0") 
 caladown::create_hugodown_calade("my-caladown-site")
 hugodown::hugo_build(dest = "docs")
 usethis::use_git()
 usethis::use_github() # then enable GH Pages with /docs folder
 ```
-
+Note that there is a known issue with knitting the R markdown files for some versions of pandoc: at present the earliest known version that works is pandoc 2.1
 
