@@ -251,3 +251,31 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 .article-banner {
   width: 100%;
 }
+
+/* formatting table of contents */
+#TableOfContents {
+    background: var(--pagecolour);
+    display: table;
+    font-size: 75%;
+    margin-bottom: 1em;
+    padding: 0px;
+    width: auto;
+}
+
+aside {
+  width: 30%;
+  border: 1px dotted var(--faded);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+    aside {
+        display: none;
+    }
+}
+

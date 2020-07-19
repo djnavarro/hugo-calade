@@ -8,9 +8,10 @@
 
     <div class="main-content">
       {{ partial "menu_strip.html" . }}
-      {{ partial "post_title.html" .}}
+      {{ partial "post_title.html" . }}
 
       <main>
+        {{ partial "toc.html" . }}
         {{ .Content }}
       </main>
 
