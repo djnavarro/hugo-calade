@@ -84,6 +84,8 @@
 
 
       <main>
+        
+
         <p>The aim of caladown is to provide a simple Hugo template suitable for R users who want to build a website or start a blog, and is designed to be compatible with both <a href="https://github.com/rstudio/blogdown">blogdown</a> and <a href="https://github.com/r-lib/hugodown">hugodown</a>. In this tutorial, I&rsquo;ll show you how to get started. The assumed reader for this tutorial is an R user who has some experience with <a href="https://rmarkdown.rstudio.com/">R Markdown</a>, but is unfamiliar with blogdown, hugodown, or Hugo itself.</p>
 <h2 id="blogdown-or-hugodown">Blogdown or Hugodown?</h2>
 <p>The first decision you need to make is which R package to use, blogdown or hugodown? Both allow you to design and manage static websites within R, and both allow you to write pages/posts as R markdown documents. However, there are differences: blogdown blurs the roles played by Hugo and R, which can lead to some degree of messiness. In contrast, hugodown tries to maintain a clean separation: the role of hugodown is to translate your R markdown files into a &ldquo;plain&rdquo; markdown format that Hugo knows how to read, and then leaves the rest of the process to Hugo. To me, the cleaner separation in hugodown is highly desirable: but it is currently an experimental package, so some caution is warranted!</p>

@@ -11,6 +11,7 @@ colorText: "#111111"
 colorFade: "#999999"
 colorAccent1: "#0000dd"
 colorAccent2: "#8a2be2"
+toc: true
 header:
   caption: "A customised header"
   image: 'header/custom_banner.png'
@@ -86,5 +87,14 @@ siteHeader = "header/banner.png"
 siteProfile = "header/profile.png"
 ```
 
+## Inserting a table of contents
+
+It is sometimes the case that (particularly for longer posts) you would like a page to contain a table of contents. This feature is currently a work in progress, but a very early version of it is available. To insert a table of contents in a post, add the following to the yaml header:
+
+```
+toc: true
+```
+
+This will create a table of contents in the same style as the one that appears on this page. 
 
 

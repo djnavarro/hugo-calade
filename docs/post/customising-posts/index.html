@@ -84,6 +84,19 @@
 
 
       <main>
+        
+<aside>
+    <div align="center">Table of Contents</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#theme-consistent-plots">Theme-consistent plots</a></li>
+    <li><a href="#custom-headers-and-profiles">Custom headers and profiles</a></li>
+    <li><a href="#inserting-a-table-of-contents">Inserting a table of contents</a></li>
+  </ul>
+</nav>
+</aside>
+
+
         <p>The calade theme allows some degree of flexibility in visual styling, which is really nice when blogging. Most of the time I want my blog to use a consistent palette, but then there are occasions where I might want a single page to use a different colour scheme, and I don&rsquo;t want to have to fiddle with low level settings to do that.</p>
 <p>A calade page is defined by five colours that you can specify across the whole site within the <code>config.toml</code> file. For this site, the dark theme I have used is defined by the following lines:</p>
 <pre><code>colorPage = &quot;#333333&quot;    # background colour
@@ -128,6 +141,11 @@ colorAccent2: &quot;#8a2be2&quot;
 <pre><code>siteHeader = &quot;header/banner.png&quot;
 siteProfile = &quot;header/profile.png&quot;
 </code></pre>
+<h2 id="inserting-a-table-of-contents">Inserting a table of contents</h2>
+<p>It is sometimes the case that (particularly for longer posts) you would like a page to contain a table of contents. This feature is currently a work in progress, but a very early version of it is available. To insert a table of contents in a post, add the following to the yaml header:</p>
+<pre><code>toc: true
+</code></pre>
+<p>This will create a table of contents in the same style as the one that appears on this page.</p>
 
       </main>
 
