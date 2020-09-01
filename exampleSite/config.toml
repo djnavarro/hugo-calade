@@ -89,6 +89,19 @@ theme = "calade"
     colorAccent2 = "#ba68c8" # second accent colour ("lowlight")
 
 
+# Because hugodown and blogdown generate
+# the raw HTML for R code chunks, the "unsafe = true"
+# setting is required, or else Hugo will not allow the
+# raw HTML to be passed from the .md file to the .html
+# file. See:
+# https://gohugo.io/getting-started/configuration-markup
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 # additional settings
 languageCode = "en-us"
 googleAnalytics = ""
