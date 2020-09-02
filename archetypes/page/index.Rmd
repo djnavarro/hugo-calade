@@ -1,7 +1,7 @@
 ---
 output: hugodown::md_document
 title: "{{ title }}"
-type: "generic_page"
+type: "page"
 summary: ""
 author: ""
 tags: []
