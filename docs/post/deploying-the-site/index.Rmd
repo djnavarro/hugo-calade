@@ -1,6 +1,7 @@
 ---
 output: hugodown::md_document
 title: "Tutorial part 3: Deploying the site"
+type: "post"
 author: "Danielle Navarro"
 date: "2020-06-07"
 slug: deploying-the-site

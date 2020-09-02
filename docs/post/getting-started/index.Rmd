@@ -1,6 +1,7 @@
 ---
 output: hugodown::md_document
 title: "Tutorial part 1: Getting started"
+type: "post"
 author: "Danielle Navarro"
 date: "2020-06-10"
 slug: getting-started

@@ -1,6 +1,7 @@
 ---
 output: hugodown::md_document
 title: "A project of one's own"
+type: "project"
 author: "Danielle Navarro"
 date: "1929-09-01"
 slug: of-ones-own
